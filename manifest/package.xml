@@ -6,35 +6,23 @@
     </types>
     <types>
         <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>ApexTrigger</name>
     </types>
     <types>
         <members>*</members>
-        <name>AuraDefinitionBundle</name>
+        <name>CustomObject</name>
     </types>
     <types>
         <members>*</members>
-        <name>LightningComponentBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>StaticResource</name>
+        <name>CustomTab</name>
     </types>
     <types>
         <members>*</members>
         <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>OmniScript</name>
     </types>
     <types>
         <members>*</members>

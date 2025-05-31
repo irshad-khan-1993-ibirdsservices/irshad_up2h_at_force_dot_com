@@ -55,7 +55,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>subType</name>
-                    <value>BookRental</value>
+                    <value>BookRentalShowOnDetailsPage</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>theme</name>
