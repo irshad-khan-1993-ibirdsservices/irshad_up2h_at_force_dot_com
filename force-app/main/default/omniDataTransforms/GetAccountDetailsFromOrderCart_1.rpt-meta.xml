@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>The DR is used to get below fields from Quote. 1. AccountId 2. DefaultBillingAccountId__c 3. DefaultServiceAccountId__c</description>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>GetAccountDetailsFromOrderCart</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetAccountDetailsFromOrderCartCustom3313</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>Order</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountDetailsFromOrderCart</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Order</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetAccountDetailsFromOrderCartCustom5574</globalKey>
+        <inputFieldName>vlocity_cmt__DefaultServiceAccountId__c</inputFieldName>
+        <inputObjectName>Order</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountDetailsFromOrderCart</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Order</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetAccountDetailsFromOrderCartCustom8038</globalKey>
+        <inputFieldName>vlocity_cmt__DefaultBillingAccountId__c</inputFieldName>
+        <inputObjectName>Order</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountDetailsFromOrderCart</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Order</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>ID</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>OrderId</filterValue>
+        <globalKey>GetAccountDetailsFromOrderCartCustom8550</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Order</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetAccountDetailsFromOrderCart</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Order</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;OrderId&quot; : &quot;801Dn000000pakfIAA&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Turbo Extract</type>
+    <uniqueName>GetAccountDetailsFromOrderCart_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

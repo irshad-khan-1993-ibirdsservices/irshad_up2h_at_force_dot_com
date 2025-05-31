@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>irshad, Transform Rented Books Data</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;allBooksWithName&quot; : [ {
+    &quot;customer&quot; : &quot;cus 7&quot;,
+    &quot;status&quot; : &quot;on-rent&quot;,
+    &quot;totalRent&quot; : 345,
+    &quot;bookingEndDate&quot; : &quot;2025-05-30&quot;,
+    &quot;rentPerDay&quot; : 115,
+    &quot;name&quot; : &quot;Meditations&quot;,
+    &quot;totalDays&quot; : 3,
+    &quot;bookingStartDate&quot; : &quot;2025-05-28&quot;
+  } ]
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;Name&quot; : &quot;Text&quot;,
+  &quot;Customer Name&quot; : &quot;Text&quot;,
+  &quot;Start Date&quot; : &quot;Text&quot;,
+  &quot;End Date&quot; : &quot;Text&quot;,
+  &quot;Total Days&quot; : &quot;Text&quot;,
+  &quot;Rent Per Day&quot; : &quot;Text&quot;,
+  &quot;Total Rent&quot; : &quot;Text&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTBooksRentedDataTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBooksRentedDataTransformCustom5975</globalKey>
+        <inputFieldName>allBooksWithName:rentPerDay</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBooksRentedDataTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Rent Per Day</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBooksRentedDataTransformCustom2175</globalKey>
+        <inputFieldName>allBooksWithName:totalRent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBooksRentedDataTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Total Rent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBooksRentedDataTransformCustom6286</globalKey>
+        <inputFieldName>allBooksWithName:name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBooksRentedDataTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBooksRentedDataTransformCustom1982</globalKey>
+        <inputFieldName>allBooksWithName:bookingStartDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBooksRentedDataTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Start Date</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBooksRentedDataTransformCustom4976</globalKey>
+        <inputFieldName>allBooksWithName:customer</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBooksRentedDataTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Customer Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBooksRentedDataTransformCustom3488</globalKey>
+        <inputFieldName>allBooksWithName:bookingEndDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBooksRentedDataTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>End Date</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBooksRentedDataTransformCustom8045</globalKey>
+        <inputFieldName>allBooksWithName:totalDays</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBooksRentedDataTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Total Days</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;allBooksWithName&quot; : [ {
+    &quot;customer&quot; : &quot;cus 7&quot;,
+    &quot;status&quot; : &quot;on-rent&quot;,
+    &quot;totalRent&quot; : 345,
+    &quot;bookingEndDate&quot; : &quot;2025-05-30&quot;,
+    &quot;rentPerDay&quot; : 115,
+    &quot;name&quot; : &quot;Meditations&quot;,
+    &quot;totalDays&quot; : 3,
+    &quot;bookingStartDate&quot; : &quot;2025-05-28&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTBooksRentedDataTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

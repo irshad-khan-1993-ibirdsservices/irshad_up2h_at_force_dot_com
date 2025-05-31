@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>v244 - It&apos;s the OmniStudio DataMapper  which is responsible for transforming the Vlocity Data Model to TMFourm data model for Troubleticket GET API</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;ApexClass&quot; : null,
+    &quot;ProductSpecificationResult&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>TMFTMForumTroubleTicketResult</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom8610</globalKey>
+        <inputFieldName>ticketRelationship:type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:troubleTicketRelationship:relationshipType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom1135</globalKey>
+        <inputFieldName>ticketRelationship:name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:troubleTicketRelationship:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom9769</globalKey>
+        <inputFieldName>ticketRelationship:id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:troubleTicketRelationship:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom6631</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:troubleTicketRelationship</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom3101</globalKey>
+        <inputFieldName>troubleTicket:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:ticketType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustoma00RO000001EWArYAOItem33</globalKey>
+        <inputFieldName>troubleTicket:Description</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:description</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustoma00RO000001EWArYAOItem38</globalKey>
+        <inputFieldName>troubleTicket:CreatedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:creationDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom2822</globalKey>
+        <inputFieldName>channel:name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:channel:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom6870</globalKey>
+        <inputFieldName>channel:type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:channel:@type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom7786</globalKey>
+        <inputFieldName>attachments:Title</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:attachment:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom6074</globalKey>
+        <inputFieldName>attachments:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:attachment:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom9734</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:attachment</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom9143</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:relatedEntity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom5328</globalKey>
+        <inputFieldName>troubleTicket:Priority</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:priority</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom1509</globalKey>
+        <inputFieldName>notes:CommentBody</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:note:text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom8056</globalKey>
+        <inputFieldName>notes:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:note:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom1208</globalKey>
+        <inputFieldName>notes:CreatedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:note:date</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom3352</globalKey>
+        <inputFieldName>notes:CreatedBy:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:note:author</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom4556</globalKey>
+        <inputFieldName>notes:attributes:type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:note:@type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom2331</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:note</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom9615</globalKey>
+        <inputFieldName>troubleTicket:Subject</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom3497</globalKey>
+        <inputFieldName>troubleTicket:LastModifiedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:lastUpdate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom3387</globalKey>
+        <inputFieldName>troubleTicket:CaseNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustoma00RO000001EWAmYAOItem35</globalKey>
+        <inputFieldName>href</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:href</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom5721</globalKey>
+        <inputFieldName>statusChangeDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:statusChangeDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom8375</globalKey>
+        <inputFieldName>statusChange:NewValue</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:statusChange:status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom1702</globalKey>
+        <inputFieldName>statusChange:CreatedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:statusChange:changeDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom935</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:statusChange</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom8200</globalKey>
+        <inputFieldName>troubleTicket:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom8426</globalKey>
+        <inputFieldName>troubleTicket:vlocity_cmt__Severity__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:severity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom6274</globalKey>
+        <inputFieldName>troubleTicket:ClosedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:resolutionDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom5489</globalKey>
+        <inputFieldName>relatedParties:name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedParty:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom7488</globalKey>
+        <inputFieldName>relatedParties:id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedParty:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom9177</globalKey>
+        <inputFieldName>relatedParties:type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedParty:@referredType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom115</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:relatedParty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom4561</globalKey>
+        <inputFieldName>relatedEntities:name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedEntity:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom8911</globalKey>
+        <inputFieldName>relatedEntities:id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedEntity:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTroubleTicketResultCustom2533</globalKey>
+        <inputFieldName>relatedEntities:type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTroubleTicketResult</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedEntity:@referredType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;vlocity_cmt__EndOfLifeDate__c&quot; : 1524156143000,
+  &quot;vlocity_cmt__SellingStartDate__c&quot; : 1497830400000,
+  &quot;vlocity_cmt__SpecificationSubType__c&quot; : &quot;Bundle&quot;,
+  &quot;vlocity_cmt__SpecificationType__c&quot; : &quot;Offer&quot;,
+  &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;2.0&quot;,
+  &quot;Description&quot; : &quot;Siri works on this iPhone&quot;,
+  &quot;IsActive&quot; : true,
+  &quot;Name&quot; : &quot;iPhone 59&quot;,
+  &quot;ProductCode&quot; : &quot;I42-340-DX&quot;,
+  &quot;attributeAssignments&quot; : [ {
+    &quot;vlocity_cmt__AttributeDisplayNameOverride__c&quot; : &quot;Screen size&quot;,
+    &quot;vlocity_cmt__Description__c&quot; : &quot;Screen size&quot;,
+    &quot;vlocity_cmt__EffectiveFromDate__c&quot; : 1492620143000,
+    &quot;vlocity_cmt__EffectiveUntilDate__c&quot; : 1495212143000,
+    &quot;vlocity_cmt__IsConfigurable__c&quot; : false,
+    &quot;vlocity_cmt__ValueType__c&quot; : &quot;Number&quot;,
+    &quot;Name&quot; : &quot;Screen Size&quot;,
+    &quot;attributes&quot; : [ {
+      &quot;vlocity_cmt__EffectiveFromDate__c&quot; : 1600819200000,
+      &quot;vlocity_cmt__EffectiveUntilDate__c&quot; : 1669248000000,
+      &quot;isDefault&quot; : true,
+      &quot;value&quot; : 8,
+      &quot;valueType&quot; : &quot;number&quot;
+    } ]
+  }, {
+    &quot;vlocity_cmt__AttributeDisplayNameOverride__c&quot; : &quot;Colour&quot;,
+    &quot;vlocity_cmt__Description__c&quot; : &quot;Colour&quot;,
+    &quot;vlocity_cmt__EffectiveFromDate__c&quot; : 1492620143000,
+    &quot;vlocity_cmt__EffectiveUntilDate__c&quot; : 1495212143000,
+    &quot;vlocity_cmt__IsConfigurable__c&quot; : true,
+    &quot;vlocity_cmt__ValueType__c&quot; : &quot;String&quot;,
+    &quot;Name&quot; : &quot;Colour&quot;,
+    &quot;attributes&quot; : [ {
+      &quot;vlocity_cmt__EffectiveFromDate__c&quot; : 1492620143000,
+      &quot;vlocity_cmt__EffectiveUntilDate__c&quot; : 1495212143000,
+      &quot;isDefault&quot; : true,
+      &quot;value&quot; : &quot;Black&quot;,
+      &quot;valueType&quot; : &quot;String&quot;
+    }, {
+      &quot;vlocity_cmt__EffectiveFromDate__c&quot; : 1492620143000,
+      &quot;vlocity_cmt__EffectiveUntilDate__c&quot; : 1495212143000,
+      &quot;isDefault&quot; : false,
+      &quot;value&quot; : &quot;White&quot;,
+      &quot;valueType&quot; : &quot;String&quot;
+    } ]
+  } ],
+  &quot;createdBy&quot; : {
+    &quot;Id&quot; : &quot;1234&quot;,
+    &quot;Name&quot; : &quot;Gustave Flaubert&quot;,
+    &quot;UserRole&quot; : {
+      &quot;Name&quot; : &quot;Owner&quot;
+    }
+  },
+  &quot;priceListEntries&quot; : [ {
+    &quot;vlocity_cmt__DisplayText__c&quot; : &quot;New offer description&quot;,
+    &quot;vlocity_cmt__EffectiveFromDate__c&quot; : 1492620143000,
+    &quot;vlocity_cmt__EffectiveUntilDate__c&quot; : 1555692143000,
+    &quot;vlocity_cmt__PricingElementId__r&quot; : {
+      &quot;vlocity_cmt__Amount__c&quot; : 1,
+      &quot;vlocity_cmt__CurrencyCode__c&quot; : &quot;USD&quot;,
+      &quot;vlocity_cmt__PerUsageMeasurementId__r&quot; : {
+        &quot;Name&quot; : &quot;USD&quot;
+      },
+      &quot;vlocity_cmt__PricingVariableId__r&quot; : {
+        &quot;vlocity_cmt__ChargeType__c&quot; : &quot;recurring&quot;,
+        &quot;vlocity_cmt__RecurringFrequency__c&quot; : &quot;monthly&quot;
+      }
+    },
+    &quot;vlocity_cmt__ProductId__r&quot; : {
+      &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;1.0&quot;
+    },
+    &quot;vlocity_cmt__PromotionId__r&quot; : {
+      &quot;vlocity_cmt__DurationTimePlanId__r&quot; : {
+        &quot;vlocity_cmt__Description__c&quot; : &quot;New offer description2&quot;,
+        &quot;vlocity_cmt__EffectiveEndDate__c&quot; : 1555692143000,
+        &quot;vlocity_cmt__EffectiveStartDate__c&quot; : 1492620143000,
+        &quot;vlocity_cmt__TotalDurationUoM__c&quot; : &quot;Paisa&quot;,
+        &quot;vlocity_cmt__TotalDuration__c&quot; : &quot;2&quot;,
+        &quot;Name&quot; : &quot;offerNam2&quot;
+      }
+    },
+    &quot;Name&quot; : &quot;offerName&quot;
+  }, {
+    &quot;vlocity_cmt__DisplayText__c&quot; : &quot;New offer description2&quot;,
+    &quot;vlocity_cmt__EffectiveFromDate__c&quot; : 1492620143000,
+    &quot;vlocity_cmt__EffectiveUntilDate__c&quot; : 1555692143000,
+    &quot;vlocity_cmt__PricingElementId__r&quot; : {
+      &quot;vlocity_cmt__Amount__c&quot; : 1,
+      &quot;vlocity_cmt__CurrencyCode__c&quot; : &quot;USD&quot;,
+      &quot;vlocity_cmt__PerUsageMeasurementId__r&quot; : {
+        &quot;Name&quot; : &quot;Paisa&quot;
+      },
+      &quot;vlocity_cmt__PricingVariableId__r&quot; : {
+        &quot;vlocity_cmt__ChargeType__c&quot; : &quot;recurring&quot;,
+        &quot;vlocity_cmt__RecurringFrequency__c&quot; : &quot;Daily&quot;
+      }
+    },
+    &quot;vlocity_cmt__ProductId__r&quot; : {
+      &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;2.0&quot;
+    },
+    &quot;vlocity_cmt__PromotionId__r&quot; : {
+      &quot;vlocity_cmt__DurationTimePlanId__r&quot; : {
+        &quot;vlocity_cmt__Description__c&quot; : &quot;New offer description&quot;,
+        &quot;vlocity_cmt__EffectiveEndDate__c&quot; : 1555692143000,
+        &quot;vlocity_cmt__EffectiveStartDate__c&quot; : 1492620143000,
+        &quot;vlocity_cmt__TotalDurationUoM__c&quot; : &quot;Rs&quot;,
+        &quot;vlocity_cmt__TotalDuration__c&quot; : &quot;1&quot;,
+        &quot;Name&quot; : &quot;offerName&quot;
+      }
+    },
+    &quot;Name&quot; : &quot;offerName2&quot;
+  } ],
+  &quot;productRelationships&quot; : [ {
+    &quot;vlocity_cmt__RelatedProductId__c&quot; : &quot;23&quot;,
+    &quot;vlocity_cmt__RelationshipType__c&quot; : &quot;Dependency&quot;,
+    &quot;RelatedProductId__r&quot; : {
+      &quot;vlocity_cmt__SellingStartDate__c&quot; : 1492620143000
+    }
+  } ],
+  &quot;resourceSpecifications&quot; : [ {
+    &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;1.0&quot;,
+    &quot;Id&quot; : &quot;63&quot;,
+    &quot;Name&quot; : &quot;specification 63&quot;
+  } ],
+  &quot;serviceSpecifications&quot; : [ {
+    &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;1.0&quot;,
+    &quot;Id&quot; : &quot;22&quot;,
+    &quot;Name&quot; : &quot;specification 22&quot;
+  } ],
+  &quot;vlocityAttachments&quot; : [ {
+    &quot;vlocity_cmt__UrlLong__c&quot; : &quot;https://mycsp.com:7070/docloader?docnum=774454321&quot;,
+    &quot;Document&quot; : {
+      &quot;Type&quot; : &quot;application/pdf&quot;
+    },
+    &quot;Name&quot; : &quot;Product Manual&quot;
+  }, {
+    &quot;vlocity_cmt__AttachmentId__c&quot; : &quot;01t5f000000igLQAAY&quot;,
+    &quot;vlocity_cmt__UrlLong__c&quot; : &quot;https://mycsp.com:7070/docloader?docnum=01t5f000000igLQAAY&quot;,
+    &quot;Name&quot; : &quot;Product Manual&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>TMFTMForumTroubleTicketResult_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

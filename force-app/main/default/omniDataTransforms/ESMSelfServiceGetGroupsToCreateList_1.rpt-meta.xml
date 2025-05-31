@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>This DR gets the list of groups to be created for the bulk change flow</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;memberType&quot; : &quot;MemberType&quot;,
+  &quot;products&quot; : [ {
+    &quot;Assets&quot; : [ {
+      &quot;Id&quot; : &quot;02i4x000000pPETAA2&quot;,
+      &quot;Quantity&quot; : 1
+    } ],
+    &quot;Name&quot; : &quot;Pixel 3&quot;,
+    &quot;PriceBookId&quot; : &quot;01s4x000007Et7CAAS&quot;,
+    &quot;PricebookEntryId&quot; : &quot;01u4x000001G5bSAAS&quot;,
+    &quot;ProductId&quot; : &quot;01t4x000000wlJoAAI&quot;,
+    &quot;Quantity&quot; : 1
+  }, {
+    &quot;Assets&quot; : [ {
+      &quot;Id&quot; : &quot;02i4x000000pPEsAAM&quot;,
+      &quot;Quantity&quot; : 1
+    } ],
+    &quot;Name&quot; : &quot;Macbook Pro&quot;,
+    &quot;PriceBookId&quot; : &quot;01s4x000007Et7CAAS&quot;,
+    &quot;PricebookEntryId&quot; : &quot;01u4x000001G5akAAC&quot;,
+    &quot;ProductId&quot; : &quot;01t4x000000wlLkAAI&quot;,
+    &quot;Quantity&quot; : 1
+  }, {
+    &quot;Assets&quot; : [ {
+      &quot;Id&quot; : &quot;02i4x000000pQ7PAAU&quot;,
+      &quot;Quantity&quot; : 1
+    }, {
+      &quot;Id&quot; : &quot;02i4x000000pQ7QAAU&quot;,
+      &quot;Quantity&quot; : 1
+    } ],
+    &quot;Name&quot; : &quot;Iphone 12&quot;,
+    &quot;PriceBookId&quot; : &quot;01s4x000007Et7CAAS&quot;,
+    &quot;PricebookEntryId&quot; : &quot;01u4x000001G85aAAC&quot;,
+    &quot;ProductId&quot; : &quot;01t4x000000wmVCAAY&quot;,
+    &quot;Quantity&quot; : 2
+  }, {
+    &quot;Assets&quot; : [ {
+      &quot;Id&quot; : &quot;02i4x000000pRmoAAE&quot;,
+      &quot;Quantity&quot; : 1
+    } ],
+    &quot;Name&quot; : &quot;HDMI Cable&quot;,
+    &quot;PriceBookId&quot; : &quot;01s4x000007Et7CAAS&quot;,
+    &quot;PricebookEntryId&quot; : &quot;01u4x000001GScoAAG&quot;,
+    &quot;ProductId&quot; : &quot;01t4x000000wv6kAAA&quot;,
+    &quot;Quantity&quot; : 1
+  } ]
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;groupsToCreate&quot; : [ {
+    &quot;groupDescription&quot; : &quot;this is group 1&quot;,
+    &quot;groupName&quot; : &quot;GroupName&quot;,
+    &quot;isGroupAssociatedWithCart&quot; : true,
+    &quot;memberType&quot; : &quot;MemberType&quot;,
+    &quot;productId&quot; : &quot;ID&quot;
+  } ]
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>ESMSelfServiceGetGroupsToCreateList</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem3</globalKey>
+        <inputFieldName>products:ProductId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetGroupsToCreateList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>groupsToCreate:groupDescription</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem2</globalKey>
+        <inputFieldName>products:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetGroupsToCreateList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>groupsToCreate:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:timestamp var:null != | var:products:Name &quot;/\/\/&quot; var:timestamp CONCAT var:products:Name IF</formulaConverted>
+        <formulaExpression>IF(timestamp != null, CONCAT(products:Name,&quot; &quot;,timestamp), products:Name)</formulaExpression>
+        <formulaResultPath>products:Name</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetGroupsToCreateList</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Group/\/\/of/\/\/&quot; var:memberType CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;Group of &quot;, memberType)</formulaExpression>
+        <formulaResultPath>GroupDescription</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetGroupsToCreateList</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem10</globalKey>
+        <inputFieldName>products:ProductId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetGroupsToCreateList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>groupsToCreate:selectedAssetsCommonConfiguration:productId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem9</globalKey>
+        <inputFieldName>products:ProductFamily</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetGroupsToCreateList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>groupsToCreate:selectedAssetsCommonConfiguration:productFamily</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem8</globalKey>
+        <inputFieldName>bulkRequestType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetGroupsToCreateList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>groupsToCreate:selectedAssetsCommonConfiguration:bulkRequestType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem7</globalKey>
+        <inputFieldName>products:ProductId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetGroupsToCreateList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>groupsToCreate:productId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem6</globalKey>
+        <inputFieldName>memberType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetGroupsToCreateList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>groupsToCreate:memberType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>true</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetGroupsToCreateList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>groupsToCreate:isGroupAssociatedWithCart</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem4</globalKey>
+        <inputFieldName>products:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetGroupsToCreateList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>groupsToCreate:groupName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;bulkRequestType&quot; : &quot;bulkChange&quot;,
+  &quot;memberType&quot; : &quot;ServicePoint&quot;,
+  &quot;products&quot; : [ {
+    &quot;Name&quot; : &quot;Business Postpaid PRO Plan + Device&quot;,
+    &quot;PriceBookId&quot; : &quot;01s8Z000001n9bDQAQ&quot;,
+    &quot;PricebookEntryId&quot; : &quot;01u8Z00002kDOE3QAO&quot;,
+    &quot;ProductFamily&quot; : &quot;None&quot;,
+    &quot;ProductId&quot; : &quot;01t8Z00000AnjXsQAJ&quot;,
+    &quot;Quantity&quot; : 2,
+    &quot;assetIds&quot; : [ &quot;02i8Z00000X4krSQAR&quot;, &quot;02i8Z00000X4kraQAB&quot; ]
+  }, {
+    &quot;Name&quot; : &quot;iPhone 12&quot;,
+    &quot;PriceBookId&quot; : &quot;01s8Z000001n9bDQAQ&quot;,
+    &quot;PricebookEntryId&quot; : &quot;01u8Z00002kDODPQA4&quot;,
+    &quot;ProductFamily&quot; : &quot;None&quot;,
+    &quot;ProductId&quot; : &quot;01t8Z00000AnjXEQAZ&quot;,
+    &quot;Quantity&quot; : 3,
+    &quot;assetIds&quot; : [ &quot;02i8Z00000X4kriQAB&quot;, &quot;02i8Z00000X4krnQAB&quot;, &quot;02i8Z00000X4krxQAB&quot; ]
+  }, {
+    &quot;Name&quot; : &quot;Business Internet Essential&quot;,
+    &quot;PriceBookId&quot; : &quot;01s8Z000001n9bDQAQ&quot;,
+    &quot;PricebookEntryId&quot; : &quot;01u8Z00002kDODpQAO&quot;,
+    &quot;ProductFamily&quot; : &quot;Internet&quot;,
+    &quot;ProductId&quot; : &quot;01t8Z00000AnjXZQAZ&quot;,
+    &quot;Quantity&quot; : 2,
+    &quot;assetIds&quot; : [ &quot;02i8Z00000X4ks2QAB&quot;, &quot;02i8Z00000X4ks8QAB&quot; ]
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>ESMSelfServiceGetGroupsToCreateList_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

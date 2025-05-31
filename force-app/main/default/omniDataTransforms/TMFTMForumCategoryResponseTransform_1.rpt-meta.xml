@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>v246.0 - DR used to transform the response from remote class to TMF fields In Get, Post and Patch Category API.</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;description&quot; : &quot;A category to hold all available cloud service offers&quot;,
+  &quot;error&quot; : &quot;OK&quot;,
+  &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+  &quot;id&quot; : &quot;85340848-ef02-1050-1e32-f64ef77ef2b9&quot;,
+  &quot;isRoot&quot; : true,
+  &quot;name&quot; : &quot;Cloud Services tmf&quot;,
+  &quot;statusCode&quot; : &quot;200&quot;,
+  &quot;subCategory&quot; : [ {
+    &quot;id&quot; : &quot;03ed94db-2d33-af8e-f785-deddd0d6657d&quot;,
+    &quot;name&quot; : &quot;Cloud Storage&quot;
+  }, {
+    &quot;id&quot; : &quot;15701fbd-a017-9fed-eebb-44890bc4e86c&quot;,
+    &quot;name&quot; : &quot;Software as a Service&quot;
+  }, {
+    &quot;id&quot; : &quot;b489e30a-2a21-a972-a619-615205ebcfbb&quot;,
+    &quot;name&quot; : &quot;Cloud Storage&quot;
+  } ],
+  &quot;validFor&quot; : {
+    &quot;endDateTime&quot; : &quot;2024-03-25T00:00:00.000Z&quot;,
+    &quot;startDateTime&quot; : &quot;2020-08-24T00:00:00.000Z&quot;
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;description&quot; : &quot;A category to hold all available cloud service offers&quot;,
+  &quot;error&quot; : &quot;OK&quot;,
+  &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+  &quot;id&quot; : &quot;85340848-ef02-1050-1e32-f64ef77ef2b9&quot;,
+  &quot;isRoot&quot; : true,
+  &quot;name&quot; : &quot;Cloud Services tmf&quot;,
+  &quot;subCategory&quot; : [ {
+    &quot;id&quot; : &quot;03ed94db-2d33-af8e-f785-deddd0d6657d&quot;,
+    &quot;name&quot; : &quot;Cloud Storage&quot;
+  }, {
+    &quot;id&quot; : &quot;15701fbd-a017-9fed-eebb-44890bc4e86c&quot;,
+    &quot;name&quot; : &quot;Software as a Service&quot;
+  }, {
+    &quot;id&quot; : &quot;b489e30a-2a21-a972-a619-615205ebcfbb&quot;,
+    &quot;name&quot; : &quot;Cloud Storage&quot;
+  } ],
+  &quot;validFor&quot; : {
+    &quot;endDateTime&quot; : &quot;2024-03-25T00:00:00.000Z&quot;,
+    &quot;startDateTime&quot; : &quot;2020-08-24T00:00:00.000Z&quot;
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>TMFTMForumCategoryResponseTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:subCategory:vlocity_cmt__GlobalKey__c var:null != &apos;Catalog&apos; var:null IF</formulaConverted>
+        <formulaExpression>IF(subCategory:vlocity_cmt__GlobalKey__c != null , &apos;Catalog&apos;, null)</formulaExpression>
+        <formulaResultPath>subCategory:@type</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>TMFTMForumCategoryResponseTransform6092151158792283</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:parentCatalog:vlocity_cmt__IsActive__c var:null != | var:parentCatalog:vlocity_cmt__IsActive__c &apos;Active&apos; &apos;Inactive&apos; IF var:null IF</formulaConverted>
+        <formulaExpression>IF(parentCatalog:vlocity_cmt__IsActive__c != null,IF(parentCatalog:vlocity_cmt__IsActive__c, &apos;Active&apos;, &apos;Inactive&apos;), null)</formulaExpression>
+        <formulaResultPath>parentCatalog:lifecycleStatus</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>TMFTMForumCategoryResponseTransform37888257909848955</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform44961702279395555</globalKey>
+        <inputFieldName>parentCatalog:vlocity_cmt__StartDateTime__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:validFor:startDateTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform19323832311459221</globalKey>
+        <inputFieldName>parentCatalog:vlocity_cmt__EndDateTime__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:validFor:endDateTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform7116350409771035</globalKey>
+        <inputFieldName>subCategory:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:subCategory:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform04827581429583461</globalKey>
+        <inputFieldName>subCategory:vlocity_cmt__GlobalKey__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:subCategory:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform7082381874146273</globalKey>
+        <inputFieldName>parentCatalog:vlocity_cmt__Description__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:description</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform80396118037084</globalKey>
+        <inputFieldName>@type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:@type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:subCategory:vlocity_cmt__GlobalKey__c var:null != var:subCategory:attributes:url var:null IF</formulaConverted>
+        <formulaExpression>IF(subCategory:vlocity_cmt__GlobalKey__c != null ,subCategory:attributes:url,null)</formulaExpression>
+        <formulaResultPath>subCategory:href</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>TMFTMForumCategoryResponseTransform9951757452726171</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:parentCatalog:vlocity_cmt__GlobalKey__c var:null != | var:requestUrl &apos;category/&apos; var:parentCatalog:Id CONCAT var:null IF</formulaConverted>
+        <formulaExpression>IF(parentCatalog:vlocity_cmt__GlobalKey__c != null,CONCAT(requestUrl,&apos;category/&apos;,parentCatalog:Id), null)</formulaExpression>
+        <formulaResultPath>href</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>TMFTMForumCategoryResponseTransform01335038106120412</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:parentCatalog:vlocity_cmt__GlobalKey__c var:null != &apos;Category&apos; var:null IF</formulaConverted>
+        <formulaExpression>IF(parentCatalog:vlocity_cmt__GlobalKey__c != null,&apos;Category&apos;, null)</formulaExpression>
+        <formulaResultPath>@type</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>TMFTMForumCategoryResponseTransform7908123161637874</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:productOffering:vlocity_cmt__GlobalKey__c var:null != &apos;ProductOffering&apos; var:null IF</formulaConverted>
+        <formulaExpression>IF(productOffering:vlocity_cmt__GlobalKey__c != null,&apos;ProductOffering&apos;, null)</formulaExpression>
+        <formulaResultPath>productOffering:@type</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>TMFTMForumCategoryResponseTransform8285870771319614</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform8821147545795076</globalKey>
+        <inputFieldName>parentCatalog:lifecycleStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:lifecycleStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform09943189331437252</globalKey>
+        <inputFieldName>parentCatalog:LastModifiedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:lastUpdate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform10828223849178276</globalKey>
+        <inputFieldName>parentCatalog:vlocity_cmt__IsCatalogRoot__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:isRoot</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform18053159890571346</globalKey>
+        <inputFieldName>parentCatalog:vlocity_cmt__GlobalKey__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform4571640844819822</globalKey>
+        <inputFieldName>href</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:href</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform5455238759608456</globalKey>
+        <inputFieldName>error</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:error</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform8735583145454671</globalKey>
+        <inputFieldName>subCategory:href</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:subCategory:href</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform19606683862778018</globalKey>
+        <inputFieldName>subCategory:@type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:subCategory:@type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform6625855123119697</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:subCategory</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform2595279872638425</globalKey>
+        <inputFieldName>productOffering:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:productOffering:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform7928531122786366</globalKey>
+        <inputFieldName>productOffering:vlocity_cmt__GlobalKey__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:productOffering:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform016854485107908435</globalKey>
+        <inputFieldName>productOffering:attributes:url</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOffering:href</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform23160594855502992</globalKey>
+        <inputFieldName>productOffering:@type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOffering:@type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform5788637818001527</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:productOffering</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumCategoryResponseTransform17272363070874763</globalKey>
+        <inputFieldName>parentCatalog:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumCategoryResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;apiVersion&quot; : &quot;v48.0&quot;,
+  &quot;href&quot; : &quot;/services/apexrest/vlocity_cmt/tmforum/productopenapi/v1/category/a0e5e000003bKFeAAM&quot;,
+  &quot;parentCatalog&quot; : {
+    &quot;vlocity_cmt__Description__c&quot; : &quot;Postpaid add on catalog&quot;,
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;ad2afce3-2690-10f8-f765-16e0a0bb9bbd&quot;,
+    &quot;vlocity_cmt__IsActive__c&quot; : true,
+    &quot;vlocity_cmt__IsCatalogRoot__c&quot; : false,
+    &quot;Id&quot; : &quot;a0e5e000003bKFeAAM&quot;,
+    &quot;LastModifiedDate&quot; : &quot;2022-04-04T05:47:50.000+0000&quot;,
+    &quot;Name&quot; : &quot;Postpaid Add On&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__Catalog__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__Catalog__c/a0e5e000003bKFeAAM&quot;
+    }
+  },
+  &quot;productOffering&quot; : [ {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;693bb8d1-1c23-8aa8-13f2-561466651a38&quot;,
+    &quot;Id&quot; : &quot;01t5e000003gFzKAAU&quot;,
+    &quot;Name&quot; : &quot;10 GB Data Postpaid Addon&quot;,
+    &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;Product2&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gFzKAAU&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;cdced4ad-719e-6670-be85-8d55bf855f11&quot;,
+    &quot;Id&quot; : &quot;01t5e000003gG0bAAE&quot;,
+    &quot;Name&quot; : &quot;5GB, 500 Minutes &amp; 500 Texts Postpaid Addon&quot;,
+    &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;Product2&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gG0bAAE&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;edeafc77-336c-f915-bf13-78d65284de5c&quot;,
+    &quot;Id&quot; : &quot;01t5e000003gG0eAAE&quot;,
+    &quot;Name&quot; : &quot;50 GB Data Postpaid Addon&quot;,
+    &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;Product2&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gG0eAAE&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;5cd51d35-3413-c28b-3869-4faf56a0eb22&quot;,
+    &quot;Id&quot; : &quot;01t5e000003gG3sAAE&quot;,
+    &quot;Name&quot; : &quot;10GB, 500 Minutes &amp; 500 Texts Postpaid Addon&quot;,
+    &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;Product2&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gG3sAAE&quot;
+    }
+  } ],
+  &quot;subCategory&quot; : [ ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>TMFTMForumCategoryResponseTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

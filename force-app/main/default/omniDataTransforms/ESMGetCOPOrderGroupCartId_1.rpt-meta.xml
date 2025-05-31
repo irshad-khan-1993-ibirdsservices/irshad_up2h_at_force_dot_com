@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>This Turbo Extract helps you to get the working cart Id of a given Quote Id.</description>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>ESMGetCOPOrderGroupCartId</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>ORDER BY</filterOperator>
+        <filterValue>CreatedDate DESC</filterValue>
+        <globalKey>ESMGetCOPOrderGroupCartIdCustoma008Z00001rckrJQAQItem4</globalKey>
+        <inputObjectName>Order</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCOPOrderGroupCartId</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>GroupCart</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>LIMIT</filterOperator>
+        <filterValue>1</filterValue>
+        <globalKey>ESMGetCOPOrderGroupCartIdCustoma008Z00001rckrJQAQItem3</globalKey>
+        <inputObjectName>Order</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCOPOrderGroupCartId</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>GroupCart</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>PICKLIST</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;Draft&apos;</filterValue>
+        <globalKey>ESMGetCOPOrderGroupCartIdCustoma008Z00001rckrJQAQItem2</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>Order</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCOPOrderGroupCartId</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>GroupCart</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>STRING</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;Test Group Cart Change of Plan&apos;</filterValue>
+        <globalKey>ESMGetCOPOrderGroupCartIdCustoma008Z00001rckrJQAQItem1</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>Order</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCOPOrderGroupCartId</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>GroupCart</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>OrderId</filterValue>
+        <globalKey>ESMGetCOPOrderGroupCartIdCustoma008Z00001rckrJQAQItem0</globalKey>
+        <inputFieldName>vlocity_cmt__ParentOrderId__c</inputFieldName>
+        <inputObjectName>Order</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCOPOrderGroupCartId</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>GroupCart</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;QuoteId&quot; : &quot;0Q08Z000001rXeISAU&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Turbo Extract</type>
+    <uniqueName>ESMGetCOPOrderGroupCartId_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

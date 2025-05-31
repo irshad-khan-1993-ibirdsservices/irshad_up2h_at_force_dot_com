@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;messages&quot; : [ ],
+  &quot;records&quot; : [ {
+    &quot;id&quot; : &quot;a3S4W000000cTkvUAE&quot;,
+    &quot;name&quot; : &quot;iphone&quot;
+  } ],
+  &quot;totalSize&quot; : 1
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;messages&quot; : [ ],
+  &quot;records&quot; : [ {
+    &quot;id&quot; : &quot;a3S4W000000cTkvUAE&quot;,
+    &quot;name&quot; : &quot;iphone&quot;
+  } ],
+  &quot;totalSize&quot; : 1
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>ESMGetCartsPromotionsTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMGetCartsPromotionsTransform9614777559829131</globalKey>
+        <inputFieldName>totalSize</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCartsPromotionsTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>totalSize</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMGetCartsPromotionsTransform036819623766250364</globalKey>
+        <inputFieldName>records:name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCartsPromotionsTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>records:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMGetCartsPromotionsTransform006560890138153086</globalKey>
+        <inputFieldName>records:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCartsPromotionsTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>records:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:records:name ISBLANK &quot;&quot; &quot;CMEXInPromotions/\/\/-/\/\/&quot; var:records:name + IF</formulaConverted>
+        <formulaExpression>IF(ISBLANK(records:name),&quot;&quot;,&quot;CMEXInPromotions - &quot;+records:name)</formulaExpression>
+        <formulaResultPath>records:name</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>ESMGetCartsPromotionsTransform7052173400358328</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCartsPromotionsTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;messages&quot; : [ ],
+  &quot;records&quot; : [ {
+    &quot;id&quot; : &quot;a3S4W000000cTkvUAE&quot;,
+    &quot;name&quot; : &quot;iphone&quot;
+  } ],
+  &quot;totalSize&quot; : 1
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>ESMGetCartsPromotionsTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

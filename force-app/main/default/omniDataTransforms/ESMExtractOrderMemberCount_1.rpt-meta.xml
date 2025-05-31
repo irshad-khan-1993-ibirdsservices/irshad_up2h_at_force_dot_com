@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>This is used to Extract the total member count of both Locations and Subscribers</description>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>ESMExtractOrderMemberCount</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMExtractOrderMemberCount2786753593749849</globalKey>
+        <inputFieldName>subscriberCount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMExtractOrderMemberCount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>subscriberCount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMExtractOrderMemberCount9734982636874201</globalKey>
+        <inputFieldName>locationCount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMExtractOrderMemberCount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>locationCount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;SELECT/\/\/COUNT()/\/\/FROM/\/\/	vlocity_cmt__OrderMember__c/\/\/WHERE/\/\/	vlocity_cmt__OrderId__c/\/\/=/\/\/&apos;{0}&apos;/\/\/and/\/\/vlocity_cmt__MemberType__c/\/\/=&apos;Subscriber&apos;&quot; var:orderId COUNTQUERY</formulaConverted>
+        <formulaExpression>COUNTQUERY ( &quot;SELECT COUNT() FROM 	vlocity_cmt__OrderMember__c WHERE 	vlocity_cmt__OrderId__c = &apos;{0}&apos; and vlocity_cmt__MemberType__c =&apos;Subscriber&apos;&quot;, orderId )</formulaExpression>
+        <formulaResultPath>subscriberCount</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>ESMExtractOrderMemberCount9032571844378183</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMExtractOrderMemberCount</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;SELECT/\/\/COUNT()/\/\/FROM/\/\/	vlocity_cmt__OrderMember__c/\/\/WHERE/\/\/	vlocity_cmt__OrderId__c/\/\/=/\/\/&apos;{0}&apos;/\/\/and/\/\/vlocity_cmt__MemberType__c/\/\/=&apos;Location&apos;&quot; var:orderId COUNTQUERY</formulaConverted>
+        <formulaExpression>COUNTQUERY ( &quot;SELECT COUNT() FROM 	vlocity_cmt__OrderMember__c WHERE 	vlocity_cmt__OrderId__c = &apos;{0}&apos; and vlocity_cmt__MemberType__c =&apos;Location&apos;&quot;, orderId )</formulaExpression>
+        <formulaResultPath>locationCount</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>ESMExtractOrderMemberCount2995099961035932</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMExtractOrderMemberCount</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;quoteId&quot; : &quot;0Q04x000000J9UaCAK&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>ESMExtractOrderMemberCount_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

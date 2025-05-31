@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>This DR gets the asset referenceID from Asset details</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;input&quot; : {
+    &quot;02iRN0000006rUqYAI&quot; : {
+      &quot;vlocity_cmt__AssetReferenceId__c&quot; : &quot;3a2317c7-6d99-44bb-2252-8ae6ac3e8881&quot;,
+      &quot;vlocity_cmt__BillingAccountId__c&quot; : &quot;001RN0000031H0AYAU&quot;,
+      &quot;vlocity_cmt__BillingAccountId__r&quot; : {
+        &quot;Id&quot; : &quot;001RN0000031H0AYAU&quot;,
+        &quot;Name&quot; : &quot;Pashupati Account&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;Account&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Account/001RN0000031H0AYAU&quot;
+        }
+      },
+      &quot;vlocity_cmt__OneTimeTotal__c&quot; : 500,
+      &quot;vlocity_cmt__PriceListId__c&quot; : &quot;a3GRN0000000cdI2AQ&quot;,
+      &quot;vlocity_cmt__PriceListId__r&quot; : {
+        &quot;Id&quot; : &quot;a3GRN0000000cdI2AQ&quot;,
+        &quot;Name&quot; : &quot;B2B Pricelist&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;vlocity_cmt__PriceList__c&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__PriceList__c/a3GRN0000000cdI2AQ&quot;
+        }
+      },
+      &quot;vlocity_cmt__ProvisioningStatus__c&quot; : &quot;Active&quot;,
+      &quot;vlocity_cmt__RecurringTotal__c&quot; : 30,
+      &quot;vlocity_cmt__ServiceAccountId__c&quot; : &quot;001RN0000032YHDYA2&quot;,
+      &quot;vlocity_cmt__ServiceAccountId__r&quot; : {
+        &quot;Id&quot; : &quot;001RN0000032YHDYA2&quot;,
+        &quot;Name&quot; : &quot;600 North State Street&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;Account&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Account/001RN0000032YHDYA2&quot;
+        }
+      },
+      &quot;Id&quot; : &quot;02iRN0000006rUqYAI&quot;,
+      &quot;Name&quot; : &quot;Business Internet Essential&quot;,
+      &quot;_flex&quot; : {
+        &quot;state0element0&quot; : true,
+        &quot;state0element0_child&quot; : true,
+        &quot;state0element0block_element0block_element0block_element0&quot; : true,
+        &quot;state0element0block_element0block_element0block_element0_child&quot; : true,
+        &quot;state0element0block_element0block_element0block_element0block_element0&quot; : true,
+        &quot;state0element0block_element0block_element0block_element0block_element0_child&quot; : true,
+        &quot;state0element0block_element0block_element0block_element0block_element1&quot; : false,
+        &quot;state0element0block_element0block_element0block_element0block_element1_child&quot; : false,
+        &quot;state0element0block_element0block_element0block_element0block_element2&quot; : true,
+        &quot;state0element0block_element0block_element0block_element0block_element2_child&quot; : true,
+        &quot;state0element0block_element1&quot; : false,
+        &quot;state0element0block_element1_child&quot; : false,
+        &quot;state0element0block_element2&quot; : true,
+        &quot;state0element0block_element2_child&quot; : true,
+        &quot;state0element1&quot; : true,
+        &quot;state0element1_child&quot; : true,
+        &quot;state0element1block_element1&quot; : false,
+        &quot;state0element1block_element1_child&quot; : false,
+        &quot;state0element2&quot; : false,
+        &quot;state0element2_child&quot; : false,
+        &quot;state0element3&quot; : false,
+        &quot;state0element3_child&quot; : false,
+        &quot;uniqueKey&quot; : &quot;REC2&quot;
+      },
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Asset&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Asset/02iRN0000006rUqYAI&quot;
+      },
+      &quot;checked&quot; : &quot;true&quot;,
+      &quot;uniqueKey&quot; : &quot;REC2&quot;
+    },
+    &quot;02iRN0000006rUxYAI&quot; : {
+      &quot;vlocity_cmt__AssetReferenceId__c&quot; : &quot;31847ac6-22f3-42b3-5bd0-1a3c00ddbc6c&quot;,
+      &quot;vlocity_cmt__BillingAccountId__c&quot; : &quot;001RN0000031H0AYAU&quot;,
+      &quot;vlocity_cmt__BillingAccountId__r&quot; : {
+        &quot;Id&quot; : &quot;001RN0000031H0AYAU&quot;,
+        &quot;Name&quot; : &quot;Pashupati Account&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;Account&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Account/001RN0000031H0AYAU&quot;
+        }
+      },
+      &quot;vlocity_cmt__OneTimeTotal__c&quot; : 500,
+      &quot;vlocity_cmt__PriceListId__c&quot; : &quot;a3GRN0000000cdI2AQ&quot;,
+      &quot;vlocity_cmt__PriceListId__r&quot; : {
+        &quot;Id&quot; : &quot;a3GRN0000000cdI2AQ&quot;,
+        &quot;Name&quot; : &quot;B2B Pricelist&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;vlocity_cmt__PriceList__c&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__PriceList__c/a3GRN0000000cdI2AQ&quot;
+        }
+      },
+      &quot;vlocity_cmt__ProvisioningStatus__c&quot; : &quot;Active&quot;,
+      &quot;vlocity_cmt__RecurringTotal__c&quot; : 30,
+      &quot;vlocity_cmt__ServiceAccountId__c&quot; : &quot;001RN0000032YHIYA2&quot;,
+      &quot;vlocity_cmt__ServiceAccountId__r&quot; : {
+        &quot;Id&quot; : &quot;001RN0000032YHIYA2&quot;,
+        &quot;Name&quot; : &quot;720 South Michigan Ave&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;Account&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Account/001RN0000032YHIYA2&quot;
+        }
+      },
+      &quot;Id&quot; : &quot;02iRN0000006rUxYAI&quot;,
+      &quot;Name&quot; : &quot;Business Internet Essential&quot;,
+      &quot;_flex&quot; : {
+        &quot;state0element0&quot; : true,
+        &quot;state0element0_child&quot; : true,
+        &quot;state0element0block_element0block_element0block_element0&quot; : true,
+        &quot;state0element0block_element0block_element0block_element0_child&quot; : true,
+        &quot;state0element0block_element0block_element0block_element0block_element0&quot; : true,
+        &quot;state0element0block_element0block_element0block_element0block_element0_child&quot; : true,
+        &quot;state0element0block_element0block_element0block_element0block_element1&quot; : false,
+        &quot;state0element0block_element0block_element0block_element0block_element1_child&quot; : false,
+        &quot;state0element0block_element0block_element0block_element0block_element2&quot; : true,
+        &quot;state0element0block_element0block_element0block_element0block_element2_child&quot; : true,
+        &quot;state0element0block_element1&quot; : false,
+        &quot;state0element0block_element1_child&quot; : false,
+        &quot;state0element0block_element2&quot; : true,
+        &quot;state0element0block_element2_child&quot; : true,
+        &quot;state0element1&quot; : true,
+        &quot;state0element1_child&quot; : true,
+        &quot;state0element1block_element1&quot; : false,
+        &quot;state0element1block_element1_child&quot; : false,
+        &quot;state0element2&quot; : false,
+        &quot;state0element2_child&quot; : false,
+        &quot;state0element3&quot; : false,
+        &quot;state0element3_child&quot; : false,
+        &quot;uniqueKey&quot; : &quot;REC1&quot;
+      },
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Asset&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Asset/02iRN0000006rUxYAI&quot;
+      },
+      &quot;checked&quot; : &quot;true&quot;,
+      &quot;uniqueKey&quot; : &quot;REC1&quot;
+    }
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>ESMSelfServiceGetAssetReferenceIdFromAssetDetails</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceGetAssetReferenceIdFromAssetDetailsCustom3650</globalKey>
+        <inputFieldName>result</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetAssetReferenceIdFromAssetDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>response</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &apos;ESMSelfService_CustomFunctions&apos; &apos;getAssetReferenceIds&apos; var:input FUNCTION</formulaConverted>
+        <formulaExpression>FUNCTION(&apos;ESMSelfService_CustomFunctions&apos;,&apos;getAssetReferenceIds&apos;,input)</formulaExpression>
+        <formulaResultPath>result</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>ESMSelfServiceGetAssetReferenceIdFromAssetDetailsCustom6802</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceGetAssetReferenceIdFromAssetDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;input&quot; : {
+    &quot;02iRN0000006rUqYAI&quot; : { },
+    &quot;Name&quot; : &quot;Business Internet Essential&quot;,
+    &quot;vlocity_cmt__BillingAccountId__c&quot; : &quot;001RN0000031H0AYAU&quot;,
+    &quot;vlocity_cmt__OneTimeTotal__c&quot; : 500,
+    &quot;vlocity_cmt__ProvisioningStatus__c&quot; : &quot;Active&quot;,
+    &quot;vlocity_cmt__RecurringTotal__c&quot; : 30,
+    &quot;vlocity_cmt__ServiceAccountId__c&quot; : &quot;001RN0000032YHIYA2&quot;,
+    &quot;vlocity_cmt__PriceListId__c&quot; : &quot;a3GRN0000000cdI2AQ&quot;,
+    &quot;vlocity_cmt__AssetReferenceId__c&quot; : &quot;31847ac6-22f3-42b3-5bd0-1a3c00ddbc6c&quot;,
+    &quot;vlocity_cmt__BillingAccountId__r&quot; : {
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Account&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Account/001RN0000031H0AYAU&quot;
+      },
+      &quot;Name&quot; : &quot;Pashupati Account&quot;,
+      &quot;Id&quot; : &quot;001RN0000031H0AYAU&quot;
+    },
+    &quot;vlocity_cmt__ServiceAccountId__r&quot; : {
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Account&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Account/001RN0000032YHIYA2&quot;
+      },
+      &quot;Name&quot; : &quot;720 South Michigan Ave&quot;,
+      &quot;Id&quot; : &quot;001RN0000032YHIYA2&quot;
+    },
+    &quot;vlocity_cmt__PriceListId__r&quot; : {
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;vlocity_cmt__PriceList__c&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__PriceList__c/a3GRN0000000cdI2AQ&quot;
+      },
+      &quot;Name&quot; : &quot;B2B Pricelist&quot;,
+      &quot;Id&quot; : &quot;a3GRN0000000cdI2AQ&quot;
+    },
+    &quot;checked&quot; : &quot;true&quot;,
+    &quot;uniqueKey&quot; : &quot;REC1&quot;,
+    &quot;_flex&quot; : {
+      &quot;uniqueKey&quot; : &quot;REC1&quot;,
+      &quot;state0element0&quot; : true,
+      &quot;state0element0_child&quot; : true,
+      &quot;state0element0block_element0block_element0block_element0&quot; : true,
+      &quot;state0element0block_element0block_element0block_element0_child&quot; : true,
+      &quot;state0element0block_element0block_element0block_element0block_element0&quot; : true,
+      &quot;state0element0block_element0block_element0block_element0block_element0_child&quot; : true,
+      &quot;state0element0block_element0block_element0block_element0block_element1&quot; : false,
+      &quot;state0element0block_element0block_element0block_element0block_element1_child&quot; : false,
+      &quot;state0element0block_element0block_element0block_element0block_element2&quot; : true,
+      &quot;state0element0block_element0block_element0block_element0block_element2_child&quot; : true,
+      &quot;state0element0block_element1&quot; : false,
+      &quot;state0element0block_element1_child&quot; : false,
+      &quot;state0element0block_element2&quot; : true,
+      &quot;state0element0block_element2_child&quot; : true,
+      &quot;state0element1&quot; : true,
+      &quot;state0element1_child&quot; : true,
+      &quot;state0element1block_element1&quot; : false,
+      &quot;state0element1block_element1_child&quot; : false,
+      &quot;state0element2&quot; : false,
+      &quot;state0element2_child&quot; : false,
+      &quot;state0element3&quot; : false,
+      &quot;state0element3_child&quot; : false
+    }
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>ESMSelfServiceGetAssetReferenceIdFromAssetDetails_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

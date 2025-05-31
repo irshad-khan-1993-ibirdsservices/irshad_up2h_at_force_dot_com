@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>irshad, insert Book Rent Information, parent of Customer(Contact)</description>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRInsertBookRentInformation</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRInsertBookRentInformationCustom8418</globalKey>
+        <inputFieldName>conId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRInsertBookRentInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Customer__c</outputFieldName>
+        <outputObjectName>Book_Rent_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRInsertBookRentInformationCustom7833</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRInsertBookRentInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Book_Rent_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRInsertBookRentInformationCustom3922</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRInsertBookRentInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status__c</outputFieldName>
+        <outputObjectName>Book_Rent_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRInsertBookRentInformationCustom2992</globalKey>
+        <inputFieldName>BookingDate:DayDifference</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRInsertBookRentInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Total_Days__c</outputFieldName>
+        <outputObjectName>Book_Rent_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRInsertBookRentInformationCustom7810</globalKey>
+        <inputFieldName>SelectABook:CustomLWC3:SelectedBook:price</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRInsertBookRentInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Rent_Per_Day__c</outputFieldName>
+        <outputObjectName>Book_Rent_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRInsertBookRentInformationCustom3216</globalKey>
+        <inputFieldName>SelectABook:CustomLWC3:SelectedBook:name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRInsertBookRentInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>Book_Rent_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRInsertBookRentInformationCustom3946</globalKey>
+        <inputFieldName>BookingDate:BookingStartDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRInsertBookRentInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BookingStartDate__c</outputFieldName>
+        <outputObjectName>Book_Rent_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRInsertBookRentInformationCustom8978</globalKey>
+        <inputFieldName>BookingDate:BookingEndDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRInsertBookRentInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BookingEndDate__c</outputFieldName>
+        <outputObjectName>Book_Rent_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;omniscriptId&quot; : &quot;0jNWd0000009InJMAU&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;Management&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNWd0000009InJMAU&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;BookRental&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;timeStamp&quot; : &quot;2025-05-25T16:53:41.862Z&quot;,
+  &quot;userTimeZoneName&quot; : &quot;Asia/Kolkata&quot;,
+  &quot;userTimeZone&quot; : &quot;330&quot;,
+  &quot;userCurrencyCode&quot; : &quot;INR&quot;,
+  &quot;userName&quot; : &quot;irshad-up2h@force.com&quot;,
+  &quot;userId&quot; : &quot;005Wd000000bkjpIAA&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNWd0000009InJMAU&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;SelectABook&quot; : {
+    &quot;CustomLWC3&quot; : {
+      &quot;SelectedBook&quot; : {
+        &quot;selectrow&quot; : &quot;true&quot;,
+        &quot;Name&quot; : &quot;Meditations&quot;,
+        &quot;Price&quot; : &quot;115&quot;,
+        &quot;isbn&quot; : &quot;LTP104&quot;,
+        &quot;book_cover&quot; : &quot;https://m.media-amazon.com/images/I/61922ZHZ21L._SY342_.jpg&quot;,
+        &quot;description&quot; : &quot;Penned by the 16th century Roman emperor Marcus Aurelius, Meditations enumerates how to live wisely and meaningfully in an unpredictable world. Brimming with timeless wisdom, this book has found its way into the the bookshelves of many notable statesmen, thinkers, and intellectuals.&quot;,
+        &quot;Id&quot; : &quot;REC3&quot;
+      }
+    }
+  },
+  &quot;BookingDate&quot; : {
+    &quot;DayDifference&quot; : 2,
+    &quot;BookingStartDate&quot; : &quot;2025-06-28&quot;,
+    &quot;BookingEndDate&quot; : &quot;2025-06-30&quot;
+  },
+  &quot;isBooked&quot; : false,
+  &quot;RenterInformation&quot; : {
+    &quot;FirstName&quot; : &quot;khk&quot;,
+    &quot;LastName&quot; : &quot;cvxcvx&quot;,
+    &quot;Phone&quot; : &quot;7567567675&quot;
+  },
+  &quot;omniScriptId&quot; : &quot;0jNWd0000009InJMAU&quot;,
+  &quot;elementName&quot; : &quot;IntegrationProcedureAction2&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRInsertBookRentInformation_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

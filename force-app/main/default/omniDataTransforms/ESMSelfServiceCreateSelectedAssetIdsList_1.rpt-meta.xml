@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>This DR create a list of all select assets from group carts</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;CreateSelectedAssetIdsList&quot; : null,
+    &quot;ExtractAssetIdsFromMember&quot; : null,
+    &quot;ExtractOrderGroups&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>ESMSelfServiceCreateSelectedAssetIdsList</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceCreateSelectedAssetIdsListCustoma1h8Z000003fWFEQA2Item1</globalKey>
+        <inputFieldName>Members:vlocity_cmt__SelectedAssetIds</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceCreateSelectedAssetIdsList</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;String&gt;</outputFieldFormat>
+        <outputFieldName>Members:SelectedAssetIds</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Members:vlocity_cmt__SelectedAssetIds__c &apos;,&apos; SPLIT</formulaConverted>
+        <formulaExpression>SPLIT(Members:vlocity_cmt__SelectedAssetIds__c,&apos;,&apos;)</formulaExpression>
+        <formulaResultPath>Members:vlocity_cmt__SelectedAssetIds</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>ESMSelfServiceCreateSelectedAssetIdsListCustoma1h8Z000003fWFEQA2Item0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceCreateSelectedAssetIdsList</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;Members&quot; : [ {
+    &quot;vlocity_cmt__OrderGroupId__c&quot; : &quot;a3X8Z0000011SKVUA2&quot;,
+    &quot;vlocity_cmt__SelectedAssetIds__c&quot; : &quot;02i8Z00000X4kriQAB,02i8Z00000X4krnQAB,02i8Z00000X4krsQAB&quot;,
+    &quot;Id&quot; : &quot;a3b8Z000002enGVQAY&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>ESMSelfServiceCreateSelectedAssetIdsList_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>v248.0 - OmniStudio DataMapper which is responsible for transforming the request from TMForum data model to Vlocity Data Model for Quote Managemnet</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;@type&quot; : &quot;ProductOrder&quot;,
+  &quot;category&quot; : &quot;B2C product order&quot;,
+  &quot;channel&quot; : [ {
+    &quot;id&quot; : &quot;1&quot;,
+    &quot;name&quot; : &quot;Online chanel&quot;,
+    &quot;role&quot; : &quot;Used channel for order capture&quot;
+  } ],
+  &quot;description&quot; : &quot;Product Order illustration sample&quot;,
+  &quot;externalId&quot; : &quot;PO-456&quot;,
+  &quot;note&quot; : [ {
+    &quot;author&quot; : &quot;Jean Pontus&quot;,
+    &quot;date&quot; : &quot;2019-04-30T08:13:59.509Z&quot;,
+    &quot;id&quot; : &quot;1&quot;,
+    &quot;text&quot; : &quot;This is a TMF product order illustration&quot;
+  } ],
+  &quot;priority&quot; : &quot;1&quot;,
+  &quot;productOrderItem&quot; : [ {
+    &quot;@type&quot; : &quot;ProductOrderItem&quot;,
+    &quot;action&quot; : &quot;add&quot;,
+    &quot;id&quot; : &quot;100&quot;,
+    &quot;productOffering&quot; : {
+      &quot;href&quot; : &quot;https://host:port/productCatalogManagement/v4/productOffering/14277&quot;,
+      &quot;id&quot; : &quot;14277&quot;,
+      &quot;name&quot; : &quot;TMF25&quot;
+    },
+    &quot;productOrderItemRelationship&quot; : [ {
+      &quot;id&quot; : &quot;110&quot;,
+      &quot;relationshipType&quot; : &quot;bundles&quot;
+    }, {
+      &quot;id&quot; : &quot;120&quot;,
+      &quot;relationshipType&quot; : &quot;bundles&quot;
+    }, {
+      &quot;id&quot; : &quot;130&quot;,
+      &quot;relationshipType&quot; : &quot;bundles&quot;
+    } ],
+    &quot;quantity&quot; : 1
+  }, {
+    &quot;@type&quot; : &quot;ProductOrderItem&quot;,
+    &quot;action&quot; : &quot;add&quot;,
+    &quot;id&quot; : &quot;110&quot;,
+    &quot;itemPrice&quot; : [ {
+      &quot;description&quot; : &quot;Access Fee&quot;,
+      &quot;name&quot; : &quot;Access Fee&quot;,
+      &quot;price&quot; : {
+        &quot;dutyFreeAmount&quot; : {
+          &quot;unit&quot; : &quot;EUR&quot;,
+          &quot;value&quot; : 0.99
+        },
+        &quot;taxIncludedAmount&quot; : {
+          &quot;unit&quot; : &quot;EUT&quot;,
+          &quot;value&quot; : 0.99
+        },
+        &quot;taxRate&quot; : 0
+      },
+      &quot;priceType&quot; : &quot;nonRecurring&quot;
+    } ],
+    &quot;payment&quot; : [ {
+      &quot;@referredType&quot; : &quot;Payment&quot;,
+      &quot;@type&quot; : &quot;CashPayment&quot;,
+      &quot;href&quot; : &quot;https://host:port/paymentManagement/v4/cashPayment/2365&quot;,
+      &quot;id&quot; : &quot;2365&quot;,
+      &quot;name&quot; : &quot;Cash payment for access fee&quot;
+    } ],
+    &quot;product&quot; : {
+      &quot;@type&quot; : &quot;Product&quot;,
+      &quot;isBundle&quot; : false,
+      &quot;productCharacteristic&quot; : [ {
+        &quot;name&quot; : &quot;TEL_MSISDN&quot;,
+        &quot;value&quot; : &quot;415 279 7439&quot;,
+        &quot;valueType&quot; : &quot;string&quot;
+      } ],
+      &quot;productSpecification&quot; : {
+        &quot;@type&quot; : &quot;ProductSpecificationRef&quot;,
+        &quot;href&quot; : &quot;https://host:port/productCatalogManagement/v4/productSpecification/14307&quot;,
+        &quot;id&quot; : &quot;14307&quot;,
+        &quot;name&quot; : &quot;Mobile Telephony&quot;,
+        &quot;version&quot; : &quot;1&quot;
+      }
+    },
+    &quot;productOffering&quot; : {
+      &quot;href&quot; : &quot;https://host:port/productCatalogManagement/v4/productOffering/14305&quot;,
+      &quot;id&quot; : &quot;14305&quot;,
+      &quot;name&quot; : &quot;TMF Mobile Telephony&quot;
+    },
+    &quot;quantity&quot; : 1
+  }, {
+    &quot;@type&quot; : &quot;ProductOrderItem&quot;,
+    &quot;action&quot; : &quot;add&quot;,
+    &quot;billingAccount&quot; : {
+      &quot;@type&quot; : &quot;BillingAccount&quot;,
+      &quot;href&quot; : &quot;https://host:port/billingAccountManagement/v4/billingAccount/1513&quot;,
+      &quot;id&quot; : &quot;1513&quot;
+    },
+    &quot;id&quot; : &quot;120&quot;,
+    &quot;itemPrice&quot; : [ {
+      &quot;description&quot; : &quot;Tariff plan monthly fee&quot;,
+      &quot;name&quot; : &quot;MonthlyFee&quot;,
+      &quot;price&quot; : {
+        &quot;dutyFreeAmount&quot; : {
+          &quot;unit&quot; : &quot;EUR&quot;,
+          &quot;value&quot; : 20
+        },
+        &quot;taxIncludedAmount&quot; : {
+          &quot;unit&quot; : &quot;EUR&quot;,
+          &quot;value&quot; : 20
+        },
+        &quot;taxRate&quot; : 0
+      },
+      &quot;priceAlteration&quot; : [ {
+        &quot;applicationDuration&quot; : 3,
+        &quot;description&quot; : &quot;20% for first 3 months&quot;,
+        &quot;name&quot; : &quot;WelcomeDiscount&quot;,
+        &quot;price&quot; : {
+          &quot;@type&quot; : &quot;price&quot;,
+          &quot;percentage&quot; : 20,
+          &quot;taxRate&quot; : 0
+        },
+        &quot;priceType&quot; : &quot;recurring&quot;,
+        &quot;priority&quot; : 1,
+        &quot;recurringChargePeriod&quot; : &quot;month&quot;
+      } ],
+      &quot;priceType&quot; : &quot;recurring&quot;,
+      &quot;recurringChargePeriod&quot; : &quot;month&quot;
+    } ],
+    &quot;itemTerm&quot; : [ {
+      &quot;description&quot; : &quot;Tariff plan 12 Months commitment&quot;,
+      &quot;duration&quot; : {
+        &quot;amount&quot; : 12,
+        &quot;units&quot; : &quot;month&quot;
+      },
+      &quot;name&quot; : &quot;12Months&quot;
+    } ],
+    &quot;product&quot; : {
+      &quot;@type&quot; : &quot;Product&quot;,
+      &quot;isBundle&quot; : false,
+      &quot;productSpecification&quot; : {
+        &quot;@type&quot; : &quot;ProductSpecificationRef&quot;,
+        &quot;href&quot; : &quot;https://host:port/productCatalogManagement/v4/productSpecification/14395&quot;,
+        &quot;id&quot; : &quot;14395&quot;,
+        &quot;name&quot; : &quot;TMF Tariff plan&quot;,
+        &quot;version&quot; : &quot;1&quot;
+      }
+    },
+    &quot;productOffering&quot; : {
+      &quot;href&quot; : &quot;https://host:port/productCatalogManagement/v4/productOffering/14344&quot;,
+      &quot;id&quot; : &quot;14344&quot;,
+      &quot;name&quot; : &quot;TMF Tariff Plan&quot;
+    },
+    &quot;productOrderItemRelationship&quot; : [ {
+      &quot;id&quot; : &quot;110&quot;,
+      &quot;relationshipType&quot; : &quot;reliesOn&quot;
+    } ],
+    &quot;quantity&quot; : 1
+  }, {
+    &quot;@type&quot; : &quot;ProductOrderItem&quot;,
+    &quot;action&quot; : &quot;add&quot;,
+    &quot;id&quot; : &quot;130&quot;,
+    &quot;product&quot; : {
+      &quot;@type&quot; : &quot;Product&quot;,
+      &quot;isBundle&quot; : false,
+      &quot;productCharacteristic&quot; : [ {
+        &quot;name&quot; : &quot;CoverageOptions&quot;,
+        &quot;value&quot; : &quot;National&quot;,
+        &quot;valueType&quot; : &quot;string&quot;
+      } ],
+      &quot;productSpecification&quot; : {
+        &quot;@type&quot; : &quot;ProductSpecificationRef&quot;,
+        &quot;href&quot; : &quot;https://host:port/productCatalogManagement/v4/productSpecification/14353&quot;,
+        &quot;id&quot; : &quot;14353&quot;,
+        &quot;name&quot; : &quot;Coverage&quot;,
+        &quot;version&quot; : &quot;1&quot;
+      }
+    },
+    &quot;productOffering&quot; : {
+      &quot;href&quot; : &quot;https://host:port/productCatalogManagement/v4/productOffering/14354&quot;,
+      &quot;id&quot; : &quot;14354&quot;,
+      &quot;name&quot; : &quot;Coverage Options&quot;
+    },
+    &quot;productOrderItemRelationship&quot; : [ {
+      &quot;id&quot; : &quot;110&quot;,
+      &quot;relationshipType&quot; : &quot;reliesOn&quot;
+    } ],
+    &quot;quantity&quot; : 1
+  } ],
+  &quot;relatedParty&quot; : [ {
+    &quot;@referredType&quot; : &quot;Individual&quot;,
+    &quot;@type&quot; : &quot;RelatedParty&quot;,
+    &quot;href&quot; : &quot;https://host:port/partyManagement/v4/individual/456-dd-df45&quot;,
+    &quot;id&quot; : &quot;456-dd-df45&quot;,
+    &quot;name&quot; : &quot;Joe Doe&quot;,
+    &quot;role&quot; : &quot;Seller&quot;
+  }, {
+    &quot;@referredType&quot; : &quot;Customer&quot;,
+    &quot;@type&quot; : &quot;RelatedParty&quot;,
+    &quot;href&quot; : &quot;https://host:port/partyRoleManagement/v4/customer/ff55-hjy4&quot;,
+    &quot;id&quot; : &quot;ff55-hjy4&quot;,
+    &quot;name&quot; : &quot;Jean Pontus&quot;
+  } ],
+  &quot;requestedCompletionDate&quot; : &quot;2019-05-02T08:13:59.506Z&quot;,
+  &quot;requestedStartDate&quot; : &quot;2019-05-03T08:13:59.506Z&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>TMFTMForumTransformQuoteRequest</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTransformQuoteRequestCustoma00Dp00000BM1ugIADItem1</globalKey>
+        <inputFieldName>id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTransformQuoteRequest</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTransformQuoteRequestCustom669</globalKey>
+        <inputFieldName>description</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTransformQuoteRequest</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Description</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTransformQuoteRequestCustoma00Dp00000BM1ugIADItem0</globalKey>
+        <inputFieldName>quoteDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTransformQuoteRequest</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CreatedDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTransformQuoteRequestCustom3657</globalKey>
+        <inputFieldName>category</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTransformQuoteRequest</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_cmt__Type__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumTransformQuoteRequestCustoma00Dp00000BM1ugIADItem3</globalKey>
+        <inputFieldName>state</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumTransformQuoteRequest</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;description&quot; : &quot;Asset illustration sample&quot;,
+  &quot;isBundle&quot; : &quot;Simple&quot;,
+  &quot;name&quot; : &quot;TMForum Asset&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>TMFTMForumTransformQuoteRequest_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

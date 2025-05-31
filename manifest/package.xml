@@ -32,5 +32,9 @@
         <members>*</members>
         <name>OmniIntegrationProcedure</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>OmniDataTransform</name>
+    </types>
     <version>63.0</version>
 </Package>

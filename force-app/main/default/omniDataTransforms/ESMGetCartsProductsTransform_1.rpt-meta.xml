@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;messages&quot; : [ ],
+  &quot;records&quot; : [ {
+    &quot;name&quot; : &quot;GenWatt Diesel 1000kW&quot;,
+    &quot;productId&quot; : &quot;01t4W00000CUEM9QAP&quot;
+  }, {
+    &quot;name&quot; : &quot;Iphone12&quot;,
+    &quot;productId&quot; : &quot;01t4W00000CksCWQAZ&quot;
+  }, {
+    &quot;name&quot; : &quot;iphone11&quot;,
+    &quot;productId&quot; : &quot;01t4W00000ClJqkQAF&quot;
+  } ],
+  &quot;test&quot; : &quot;name&quot;,
+  &quot;totalSize&quot; : 3
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;messages&quot; : [ ],
+  &quot;records&quot; : [ {
+    &quot;name&quot; : &quot;GenWatt Diesel 1000kW&quot;,
+    &quot;productId&quot; : &quot;01t4W00000CUEM9QAP&quot;
+  }, {
+    &quot;name&quot; : &quot;Iphone12&quot;,
+    &quot;productId&quot; : &quot;01t4W00000CksCWQAZ&quot;
+  }, {
+    &quot;name&quot; : &quot;iphone11&quot;,
+    &quot;productId&quot; : &quot;01t4W00000ClJqkQAF&quot;
+  } ],
+  &quot;test&quot; : &quot;name&quot;,
+  &quot;totalSize&quot; : 3
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>ESMGetCartsProductsTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMGetCartsProductsTransform22962172538879977</globalKey>
+        <inputFieldName>totalSize</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCartsProductsTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>totalSize</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMGetCartsProductsTransform6284862549899459</globalKey>
+        <inputFieldName>records:productId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCartsProductsTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>records:productId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMGetCartsProductsTransform28798428105729634</globalKey>
+        <inputFieldName>records:name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCartsProductsTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>records:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:records:name ISBLANK &quot;&quot; &quot;CMEXInProducts/\/\/-/\/\/&quot; var:records:name + IF</formulaConverted>
+        <formulaExpression>IF(ISBLANK(records:name),&quot;&quot;,&quot;CMEXInProducts - &quot;+ records:name)</formulaExpression>
+        <formulaResultPath>records:name</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>ESMGetCartsProductsTransform30081999885674837</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMGetCartsProductsTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;messages&quot; : [ ],
+  &quot;records&quot; : [ {
+    &quot;name&quot; : &quot;GenWatt Diesel 1000kW&quot;,
+    &quot;productId&quot; : &quot;01t4W00000CUEM9QAP&quot;
+  }, {
+    &quot;name&quot; : &quot;Iphone12&quot;,
+    &quot;productId&quot; : &quot;01t4W00000CksCWQAZ&quot;
+  }, {
+    &quot;name&quot; : &quot;iphone11&quot;,
+    &quot;productId&quot; : &quot;01t4W00000ClJqkQAF&quot;
+  } ],
+  &quot;test&quot; : &quot;name&quot;,
+  &quot;totalSize&quot; : 3
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>ESMGetCartsProductsTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

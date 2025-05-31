@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>B2B Express: This DR will filter parent QLIs from array of QLIs.</description>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>B2BQueryParentQLIs</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>STRING</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>B2BQueryParentQLIs1858834575621351</globalKey>
+        <inputFieldName>vlocity_cmt__RootItemId__c</inputFieldName>
+        <inputObjectName>QuoteLineItem</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>B2BQueryParentQLIs</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QLI</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>ID</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>IN</filterOperator>
+        <filterValue>NewSQLIsId</filterValue>
+        <globalKey>B2BQueryParentQLIs4876444970616285</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>QuoteLineItem</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>B2BQueryParentQLIs</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>QLI</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>STRING</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;$Vlocity:NULL&apos;</filterValue>
+        <globalKey>B2BQueryParentQLIs6297455963056373</globalKey>
+        <inputFieldName>vlocity_cmt__ParentItemId__c</inputFieldName>
+        <inputObjectName>QuoteLineItem</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>B2BQueryParentQLIs</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>QLI</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;NewSQLIsId&quot; : [ &quot;0QL3g000000Ta47GAC&quot;, &quot;0QL3g000000Ta48GAC&quot;, &quot;0QL3g000000Ta49GAC&quot;, &quot;0QL3g000000Ta4AGAS&quot;, &quot;0QL3g000000Ta4BGAS&quot;, &quot;0QL3g000000Ta4CGAS&quot;, &quot;0QL3g000000Ta4DGAS&quot; ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Turbo Extract</type>
+    <uniqueName>B2BQueryParentQLIs_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>This DR transforms the data to generate the input to be consumed by createCart API.</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;BuildCreateOrderRecordData&quot; : null,
+    &quot;CreateOrderRecord&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>ESMSelfServiceCreateOrderRequestdata</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:isBulk &apos;bulk&apos; == &apos;EnterpriseOrder&apos; &apos;StandardOrder&apos; IF</formulaConverted>
+        <formulaExpression>IF(isBulk == &apos;bulk&apos;, &apos;EnterpriseOrder&apos;, &apos;StandardOrder&apos;)</formulaExpression>
+        <formulaResultPath>orderRecordType</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceCreateOrderRequestdata</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem10</globalKey>
+        <inputFieldName>status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceCreateOrderRequestdata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem9</globalKey>
+        <inputFieldName>orderRecordType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceCreateOrderRequestdata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recordType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem4</globalKey>
+        <inputFieldName>effectivedate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceCreateOrderRequestdata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>effectivedate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem8</globalKey>
+        <inputFieldName>orderName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceCreateOrderRequestdata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem5</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceCreateOrderRequestdata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceCreateOrderRequestdataCustom9720</globalKey>
+        <inputFieldName>orderStartRequestDateTime</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceCreateOrderRequestdata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_cmt__requestedstartdate__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceCreateOrderRequestdataCustom4010</globalKey>
+        <inputFieldName>priceList</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceCreateOrderRequestdata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_cmt__pricelistid__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem2</globalKey>
+        <inputFieldName>asyncOperation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceCreateOrderRequestdata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_cmt__AsyncOperation__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:isBulk &apos;bulk&apos; == &apos;BulkRequest&apos; &apos;&apos; IF</formulaConverted>
+        <formulaExpression>IF(isBulk == &apos;bulk&apos;, &apos;BulkRequest&apos;, &apos;&apos;)</formulaExpression>
+        <formulaResultPath>asyncOperation</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ESMSelfServiceCreateOrderRequestdata</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;AccountId&quot; : &quot;0018b000020Y4SFAA0&quot;,
+  &quot;cartType&quot; : &quot;Order&quot;,
+  &quot;effectivedate&quot; : &quot;2022-06-29T19:00:00.000Z&quot;,
+  &quot;isBulk&quot; : true,
+  &quot;orderName&quot; : &quot;test order 31&quot;,
+  &quot;priceList&quot; : &quot;sdfvfv&quot;,
+  &quot;recordType&quot; : &quot;EnterpriseOrder&quot;,
+  &quot;selectType&quot; : &quot;createOrder&quot;,
+  &quot;status&quot; : &quot;Draft&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>ESMSelfServiceCreateOrderRequestdata_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

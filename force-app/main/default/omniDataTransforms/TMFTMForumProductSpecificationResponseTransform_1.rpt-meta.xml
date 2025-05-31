@@ -1,0 +1,1702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>v244.0 - It&apos;s the OmniStudio DataMapper  which is responsible for transforming the Vlocity Data Model to TMFourm data model for Product Specification API</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;ApexClass&quot; : null,
+    &quot;ProductSpecificationResult&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>TMFTMForumProductSpecificationResponseTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform03828105330303733</globalKey>
+        <inputFieldName>catalogProductRelationships:vlocity_cmt__CatalogId__r:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:category:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform6817919658098768</globalKey>
+        <inputFieldName>catalogProductRelationships:vlocity_cmt__CatalogId__r:vlocity_cmt__GlobalKey__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:category:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform09659389836153154</globalKey>
+        <inputFieldName>catalogProductRelationships:vlocity_cmt__CatalogId__r:attributes:url</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:category:href</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform2494127548168823</globalKey>
+        <inputFieldName>productChildItems:vlocity_cmt__ParentProductId__r:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:bundledProductSpecification:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform4935545993900128</globalKey>
+        <inputFieldName>productChildItems:lifecycleStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:bundledProductSpecification:lifecycleStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform5823064631067343</globalKey>
+        <inputFieldName>productChildItems:vlocity_cmt__ParentProductId__r:vlocity_cmt__GlobalKey__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:bundledProductSpecification:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform8940197880656984</globalKey>
+        <inputFieldName>productChildItems:href</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:bundledProductSpecification:href</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform8375410734010464</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:bundledProductSpecification</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform7242938766686788</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:brand</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform8150983944805441</globalKey>
+        <inputFieldName>vlocityAttachments:vlocity_cmt__UrlLong__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:attachment:url</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:vlocityAttachments:Id var:null != | &apos;/services/data/&apos; var:apiVersion &apos;/sobjects/vlocity_cmt__VlocityAttachment__c/&apos; var:vlocityAttachments:Id CONCAT var:null IF</formulaConverted>
+        <formulaExpression>IF(vlocityAttachments:Id != null,CONCAT(&apos;/services/data/&apos;,apiVersion, &apos;/sobjects/vlocity_cmt__VlocityAttachment__c/&apos;,vlocityAttachments:Id), null)</formulaExpression>
+        <formulaResultPath>vlocityAttachments:href</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform776494760387711</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform16164150142188505</globalKey>
+        <inputFieldName>attributeAssignments:attributeAssignment:vlocity_cmt__AttributeDisplayNameOverride__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecCharacteristic:displayName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &apos;/services/data/&apos; var:apiVersion &apos;/sobjects/User/&apos; var:product:CreatedBy:Id CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&apos;/services/data/&apos;,apiVersion, &apos;/sobjects/User/&apos;,product:CreatedBy:Id)</formulaExpression>
+        <formulaResultPath>product:CreatedBy:href</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform9816673142572556</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform8197082580831954</globalKey>
+        <inputFieldName>attributeAssignments:attributeAssignment:Description</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecCharacteristic:description</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:product:vlocity_cmt__SpecificationSubType__c var:null != | var:product:vlocity_cmt__SpecificationSubType__c &apos;Bundle&apos; == true false IF var:null IF</formulaConverted>
+        <formulaExpression>IF(product:vlocity_cmt__SpecificationSubType__c != null,IF(product:vlocity_cmt__SpecificationSubType__c == &apos;Bundle&apos;, true, false), null)</formulaExpression>
+        <formulaResultPath>product:isBundle</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform08285626403200053</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform7875590758862803</globalKey>
+        <inputFieldName>attributeAssignments:attributeAssignment:vlocity_cmt__IsConfigurable__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecCharacteristic:configurable</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:product:Id var:null != | var:requestUrl &apos;productSpecification/&apos; var:product:Id CONCAT var:null IF</formulaConverted>
+        <formulaExpression>IF(product:Id != null, CONCAT(requestUrl,&apos;productSpecification/&apos;,product:Id), null)</formulaExpression>
+        <formulaResultPath>product:href</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform6537548575803391</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform3441225967603043</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:productSpecCharacteristic</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:product:IsActive var:null != | var:product:IsActive &apos;Active&apos; &apos;Inactive&apos; IF var:null IF</formulaConverted>
+        <formulaExpression>IF(product:IsActive != null,IF(product:IsActive, &apos;Active&apos;, &apos;Inactive&apos;), null)</formulaExpression>
+        <formulaResultPath>product:lifecycleStatus</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform040261985886060225</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform7999558241758353</globalKey>
+        <inputFieldName>product:ProductCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform022016439763982376</globalKey>
+        <inputFieldName>product:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform1049965557045367</globalKey>
+        <inputFieldName>product:lifecycleStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:lifecycleStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform3403726120582291</globalKey>
+        <inputFieldName>product:LastModifiedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:lastUpdate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform7489486714668476</globalKey>
+        <inputFieldName>product:isBundle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:isBundle</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform5079182450475006</globalKey>
+        <inputFieldName>product:vlocity_cmt__GlobalKey__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform9241842655627768</globalKey>
+        <inputFieldName>product:href</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:href</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform3879905660108438</globalKey>
+        <inputFieldName>product:Description</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:description</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform32639400151022</globalKey>
+        <inputFieldName>product:vlocity_cmt__CustomTest__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:x</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform9083538621089737</globalKey>
+        <inputFieldName>product:vlocity_cmt__VersionLabel__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:version</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform9298556226301096</globalKey>
+        <inputFieldName>product:vlocity_cmt__SellingStartDate__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:validFor:startDateTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform006826769456836912</globalKey>
+        <inputFieldName>vlocityAttachments:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:attachment:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform2216381652599222</globalKey>
+        <inputFieldName>vlocityAttachments:vlocity_cmt__Channel__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:attachment:mimeType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform19607171584119065</globalKey>
+        <inputFieldName>productRelationships:vlocity_cmt__GlobalKey__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecificationRelationship:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform18269076129309014</globalKey>
+        <inputFieldName>vlocityAttachments:vlocity_cmt__GlobalKey__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:attachment:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform17962953020387618</globalKey>
+        <inputFieldName>productRelationships:attributes:url</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecificationRelationship:href</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform7258721627885469</globalKey>
+        <inputFieldName>vlocityAttachments:href</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:attachment:href</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform8607060287384507</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:productSpecificationRelationship</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform7248926187342646</globalKey>
+        <inputFieldName>vlocityAttachments:vlocity_cmt__Description__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:attachment:description</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform2788816173176576</globalKey>
+        <inputFieldName>attributeAssignments:attributeAssignment:vlocity_cmt__ValueDataType__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecCharacteristic:valueType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform03272242286029048</globalKey>
+        <inputFieldName>vlocityAttachments:vlocity_cmt__ContentType__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:attachment:attachmentType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform879894882909906</globalKey>
+        <inputFieldName>attributeAssignments:attributeAssignment:vlocity_cmt__AttributeId__r:vlocity_cmt__EffectiveFromDate__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecCharacteristic:validFor:startDateTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform7059799136957614</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:attachment</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform21409170302003688</globalKey>
+        <inputFieldName>attributeAssignments:attributeAssignment:vlocity_cmt__AttributeId__r:vlocity_cmt__EffectiveUntilDate__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecCharacteristic:validFor:endDateTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform15955894993100483</globalKey>
+        <inputFieldName>product:vlocity_cmt__Status__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:Status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform5880762065242466</globalKey>
+        <inputFieldName>attributeAssignments:listOfValues:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecCharacteristic:productSpecCharacteristicValue:valueType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform3597658675496216</globalKey>
+        <inputFieldName>schemaLocation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:@schemaLocation</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform9967475556223719</globalKey>
+        <inputFieldName>attributeAssignments:listOfValues:Value</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecCharacteristic:productSpecCharacteristicValue:value</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform059066885501063204</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform6755256051473844</globalKey>
+        <inputFieldName>attributeAssignments:attributeAssignment:vlocity_cmt__AttributeId__r:vlocity_cmt__EffectiveFromDate__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecCharacteristic:productSpecCharacteristicValue:validFor:startDateTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>ProductSpecification</defaultValue>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform5260776154659064</globalKey>
+        <inputFieldName>@type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>@type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform8404516594625617</globalKey>
+        <inputFieldName>attributeAssignments:attributeAssignment:vlocity_cmt__AttributeId__r:vlocity_cmt__EffectiveUntilDate__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecCharacteristic:productSpecCharacteristicValue:validFor:endDateTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:attributeAssignments:attributeAssignment:vlocity_cmt__AttributeDisplayName__c var:null == var:null | var:attributeAssignments:attributeAssignment:vlocity_cmt__AttributeDisplayName__c &apos;/\/\/:/\/\/&apos; CONCAT IF var:attributeAssignments:attributeAssignment:vlocity_cmt__ValueDescription__c CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(IF(attributeAssignments:attributeAssignment:vlocity_cmt__AttributeDisplayName__c == null,null,CONCAT(attributeAssignments:attributeAssignment:vlocity_cmt__AttributeDisplayName__c,&apos; : &apos;)),attributeAssignments:attributeAssignment:vlocity_cmt__ValueDescription__c)</formulaExpression>
+        <formulaResultPath>attributeAssignments:attributeAssignment:Description</formulaResultPath>
+        <formulaSequence>9.0</formulaSequence>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform48220905778908296</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform019828512413541333</globalKey>
+        <inputFieldName>attributeAssignments:listOfValues:IsDefault</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecCharacteristic:productSpecCharacteristicValue:isDefault</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:productRelationships:Id var:null != | var:requestUrl &apos;productSpecification/&apos; var:productRelationships:vlocity_cmt__RelatedProductId__c CONCAT var:null IF</formulaConverted>
+        <formulaExpression>IF(productRelationships:Id != null, CONCAT(requestUrl,&apos;productSpecification/&apos;,productRelationships:vlocity_cmt__RelatedProductId__c), null)</formulaExpression>
+        <formulaResultPath>productRelationships:href</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform09798519943281314</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform3186928096523787</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:productSpecCharacteristic:productSpecCharacteristicValue</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:productChildItems:Id var:null != | var:productChildItems:vlocity_cmt__ChildProductId__r:IsActive &apos;Active&apos; &apos;Inactive&apos; IF var:null IF</formulaConverted>
+        <formulaExpression>IF(productChildItems:Id != null, IF(productChildItems:vlocity_cmt__ChildProductId__r:IsActive, &apos;Active&apos;, &apos;Inactive&apos;), null)</formulaExpression>
+        <formulaResultPath>productChildItems:lifecycleStatus</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform6284618016121295</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform791671092393357</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:productSpecCharacteristic:productSpecCharRelationship</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:productChildItems:Id var:null != | var:requestUrl &apos;productSpecification/&apos; var:productChildItems:vlocity_cmt__ParentProductId__r:Id CONCAT var:null IF</formulaConverted>
+        <formulaExpression>IF(productChildItems:Id != null, CONCAT(requestUrl,&apos;productSpecification/&apos;,productChildItems:vlocity_cmt__ParentProductId__r:Id), null)</formulaExpression>
+        <formulaResultPath>productChildItems:href</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform8298379080198393</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform5870620528894392</globalKey>
+        <inputFieldName>attributeAssignments:attributeAssignment:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecCharacteristic:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform49988809071414875</globalKey>
+        <inputFieldName>product:vlocity_cmt__EndOfLifeDate__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:validFor:endDateTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform7555337472154626</globalKey>
+        <inputFieldName>product:vlocity_cmt__ProductSpecId__r:vlocity_cmt__SpecificationType__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:tempSpecType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform5085655804483653</globalKey>
+        <inputFieldName>product:vlocity_cmt__VendorAccountId__r:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedParty:role</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform17559698467930018</globalKey>
+        <inputFieldName>product:vlocity_cmt__VendorAccountId__r:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedParty:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform8952638214431152</globalKey>
+        <inputFieldName>product:vlocity_cmt__VendorAccountId__r:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedParty:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform5507735857356169</globalKey>
+        <inputFieldName>product:vlocity_cmt__VendorAccountId__r:attributes:url</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedParty:href</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform8789407538261553</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:relatedParty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform28142415450510505</globalKey>
+        <inputFieldName>productRelationships:vlocity_cmt__RelatedProductId__r:vlocity_cmt__VersionLabel__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecificationRelationship:version</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform8493406966123349</globalKey>
+        <inputFieldName>productRelationships:vlocity_cmt__RelatedProductId__r:vlocity_cmt__SellingStartDate__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecificationRelationship:validFor:startDateTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform4710530672842559</globalKey>
+        <inputFieldName>productRelationships:vlocity_cmt__RelatedProductId__r:vlocity_cmt__EndOfLifeDate__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecificationRelationship:validFor:endDateTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform5330602889629863</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecificationRelationship:relationshipType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumProductSpecificationResponseTransform46761279202568895</globalKey>
+        <inputFieldName>productRelationships:vlocity_cmt__RelationshipType__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumProductSpecificationResponseTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productSpecificationRelationship:relationshipType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>[ {
+  &quot;apiVersion&quot; : &quot;v48.0&quot;,
+  &quot;attributeAssignments&quot; : [ {
+    &quot;attributeAssignment&quot; : {
+      &quot;vlocity_cmt__AttributeConfigurable__c&quot; : true,
+      &quot;vlocity_cmt__AttributeDisplayNameOverride__c&quot; : &quot;Tangible&quot;,
+      &quot;vlocity_cmt__AttributeDisplayName__c&quot; : &quot;Tangible&quot;,
+      &quot;vlocity_cmt__AttributeDisplaySequence__c&quot; : &quot;16&quot;,
+      &quot;vlocity_cmt__AttributeId__c&quot; : &quot;a0X5e0000018SteEAE&quot;,
+      &quot;vlocity_cmt__AttributeId__r&quot; : {
+        &quot;vlocity_cmt__Code__c&quot; : &quot;B2CCmex_ATTR_TANGIBLE_CHAR&quot;,
+        &quot;vlocity_cmt__Description__c&quot; : &quot;Tangible&quot;,
+        &quot;vlocity_cmt__ValueType__c&quot; : &quot;Checkbox&quot;,
+        &quot;vlocity_cmt__Value__c&quot; : &quot;false&quot;,
+        &quot;Id&quot; : &quot;a0X5e0000018SteEAE&quot;,
+        &quot;Name&quot; : &quot;Tangible&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;vlocity_cmt__Attribute__c&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__Attribute__c/a0X5e0000018SteEAE&quot;
+        }
+      },
+      &quot;vlocity_cmt__HasRule__c&quot; : false,
+      &quot;vlocity_cmt__IsActiveAssignment__c&quot; : true,
+      &quot;vlocity_cmt__IsActive__c&quot; : true,
+      &quot;vlocity_cmt__IsConfigurable__c&quot; : true,
+      &quot;vlocity_cmt__IsEncrypted__c&quot; : false,
+      &quot;vlocity_cmt__IsHidden__c&quot; : false,
+      &quot;vlocity_cmt__IsNotAssetizable__c&quot; : false,
+      &quot;vlocity_cmt__IsNotTranslatable__c&quot; : false,
+      &quot;vlocity_cmt__IsReadOnly__c&quot; : false,
+      &quot;vlocity_cmt__IsRequired__c&quot; : false,
+      &quot;vlocity_cmt__ObjectId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+      &quot;vlocity_cmt__ValueDataType__c&quot; : &quot;Checkbox&quot;,
+      &quot;vlocity_cmt__ValueDescription__c&quot; : &quot;Tangible&quot;,
+      &quot;vlocity_cmt__Value__c&quot; : &quot;false&quot;,
+      &quot;Id&quot; : &quot;a245e000001W0UvAAK&quot;,
+      &quot;Name&quot; : &quot;TempAA-B2CCmex_ATTR_ TANGIBLE_CHAR&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;vlocity_cmt__AttributeAssignment__c&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__AttributeAssignment__c/a245e000001W0UvAAK&quot;
+      }
+    },
+    &quot;listOfValues&quot; : [ {
+      &quot;IsDefault&quot; : &quot;true&quot;,
+      &quot;Type&quot; : &quot;Checkbox&quot;,
+      &quot;Value&quot; : &quot;false&quot;
+    } ]
+  }, {
+    &quot;attributeAssignment&quot; : {
+      &quot;vlocity_cmt__AttributeConfigurable__c&quot; : true,
+      &quot;vlocity_cmt__AttributeDisplayNameOverride__c&quot; : &quot;Data&quot;,
+      &quot;vlocity_cmt__AttributeDisplayName__c&quot; : &quot;Data&quot;,
+      &quot;vlocity_cmt__AttributeDisplaySequence__c&quot; : &quot;26&quot;,
+      &quot;vlocity_cmt__AttributeId__c&quot; : &quot;a0X5e0000018StSEAU&quot;,
+      &quot;vlocity_cmt__AttributeId__r&quot; : {
+        &quot;vlocity_cmt__Code__c&quot; : &quot;B2CCmex_ATTR_DATA_CHAR&quot;,
+        &quot;vlocity_cmt__Description__c&quot; : &quot;Data&quot;,
+        &quot;vlocity_cmt__ValueType__c&quot; : &quot;Text&quot;,
+        &quot;Id&quot; : &quot;a0X5e0000018StSEAU&quot;,
+        &quot;Name&quot; : &quot;Data&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;vlocity_cmt__Attribute__c&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__Attribute__c/a0X5e0000018StSEAU&quot;
+        }
+      },
+      &quot;vlocity_cmt__HasRule__c&quot; : false,
+      &quot;vlocity_cmt__IsActiveAssignment__c&quot; : true,
+      &quot;vlocity_cmt__IsActive__c&quot; : true,
+      &quot;vlocity_cmt__IsConfigurable__c&quot; : false,
+      &quot;vlocity_cmt__IsEncrypted__c&quot; : false,
+      &quot;vlocity_cmt__IsHidden__c&quot; : false,
+      &quot;vlocity_cmt__IsNotAssetizable__c&quot; : false,
+      &quot;vlocity_cmt__IsNotTranslatable__c&quot; : false,
+      &quot;vlocity_cmt__IsReadOnly__c&quot; : false,
+      &quot;vlocity_cmt__IsRequired__c&quot; : false,
+      &quot;vlocity_cmt__ObjectId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+      &quot;vlocity_cmt__UIDisplayType__c&quot; : &quot;Text&quot;,
+      &quot;vlocity_cmt__ValueDataType__c&quot; : &quot;Text&quot;,
+      &quot;vlocity_cmt__ValueDescription__c&quot; : &quot;Data&quot;,
+      &quot;vlocity_cmt__Value__c&quot; : &quot;25 GB&quot;,
+      &quot;Id&quot; : &quot;a245e000001W0UqAAK&quot;,
+      &quot;Name&quot; : &quot;TempAA-B2CCmex_ATTR_DATA_CHAR&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;vlocity_cmt__AttributeAssignment__c&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__AttributeAssignment__c/a245e000001W0UqAAK&quot;
+      }
+    },
+    &quot;listOfValues&quot; : [ {
+      &quot;IsDefault&quot; : &quot;false&quot;,
+      &quot;Type&quot; : &quot;Text&quot;,
+      &quot;Value&quot; : &quot;25 GB&quot;
+    } ]
+  }, {
+    &quot;attributeAssignment&quot; : {
+      &quot;vlocity_cmt__AttributeConfigurable__c&quot; : true,
+      &quot;vlocity_cmt__AttributeDisplayNameOverride__c&quot; : &quot;HasDiscount&quot;,
+      &quot;vlocity_cmt__AttributeDisplayName__c&quot; : &quot;HasDiscount&quot;,
+      &quot;vlocity_cmt__AttributeDisplaySequence__c&quot; : &quot;27&quot;,
+      &quot;vlocity_cmt__AttributeId__c&quot; : &quot;a0X5e0000018StVEAU&quot;,
+      &quot;vlocity_cmt__AttributeId__r&quot; : {
+        &quot;vlocity_cmt__Code__c&quot; : &quot;B2CCmex_ATTR_HASDISCOUNT_CHAR&quot;,
+        &quot;vlocity_cmt__Description__c&quot; : &quot;Has Discount&quot;,
+        &quot;vlocity_cmt__ValueType__c&quot; : &quot;Checkbox&quot;,
+        &quot;vlocity_cmt__Value__c&quot; : &quot;false&quot;,
+        &quot;Id&quot; : &quot;a0X5e0000018StVEAU&quot;,
+        &quot;Name&quot; : &quot;HasDiscount&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;vlocity_cmt__Attribute__c&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__Attribute__c/a0X5e0000018StVEAU&quot;
+        }
+      },
+      &quot;vlocity_cmt__HasRule__c&quot; : false,
+      &quot;vlocity_cmt__IsActiveAssignment__c&quot; : true,
+      &quot;vlocity_cmt__IsActive__c&quot; : true,
+      &quot;vlocity_cmt__IsConfigurable__c&quot; : true,
+      &quot;vlocity_cmt__IsEncrypted__c&quot; : false,
+      &quot;vlocity_cmt__IsHidden__c&quot; : false,
+      &quot;vlocity_cmt__IsNotAssetizable__c&quot; : false,
+      &quot;vlocity_cmt__IsNotTranslatable__c&quot; : false,
+      &quot;vlocity_cmt__IsReadOnly__c&quot; : false,
+      &quot;vlocity_cmt__IsRequired__c&quot; : false,
+      &quot;vlocity_cmt__ObjectId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+      &quot;vlocity_cmt__ValueDataType__c&quot; : &quot;Checkbox&quot;,
+      &quot;vlocity_cmt__ValueDescription__c&quot; : &quot;Has Discount&quot;,
+      &quot;vlocity_cmt__Value__c&quot; : &quot;false&quot;,
+      &quot;Id&quot; : &quot;a245e000001W0UrAAK&quot;,
+      &quot;Name&quot; : &quot;TempAA-B2CCmex_ATTR_HASDISCOUNT_CHAR&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;vlocity_cmt__AttributeAssignment__c&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__AttributeAssignment__c/a245e000001W0UrAAK&quot;
+      }
+    },
+    &quot;listOfValues&quot; : [ {
+      &quot;IsDefault&quot; : &quot;true&quot;,
+      &quot;Type&quot; : &quot;Checkbox&quot;,
+      &quot;Value&quot; : &quot;false&quot;
+    } ]
+  }, {
+    &quot;attributeAssignment&quot; : {
+      &quot;vlocity_cmt__AttributeConfigurable__c&quot; : true,
+      &quot;vlocity_cmt__AttributeDisplayNameOverride__c&quot; : &quot;MMS&quot;,
+      &quot;vlocity_cmt__AttributeDisplayName__c&quot; : &quot;MMS&quot;,
+      &quot;vlocity_cmt__AttributeDisplaySequence__c&quot; : &quot;31&quot;,
+      &quot;vlocity_cmt__AttributeId__c&quot; : &quot;a0X5e0000018StYEAU&quot;,
+      &quot;vlocity_cmt__AttributeId__r&quot; : {
+        &quot;vlocity_cmt__Code__c&quot; : &quot;B2CCmex_ATTR_MMS&quot;,
+        &quot;vlocity_cmt__ValueType__c&quot; : &quot;Number&quot;,
+        &quot;Id&quot; : &quot;a0X5e0000018StYEAU&quot;,
+        &quot;Name&quot; : &quot;MMS&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;vlocity_cmt__Attribute__c&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__Attribute__c/a0X5e0000018StYEAU&quot;
+        }
+      },
+      &quot;vlocity_cmt__HasRule__c&quot; : false,
+      &quot;vlocity_cmt__IsActiveAssignment__c&quot; : true,
+      &quot;vlocity_cmt__IsActive__c&quot; : true,
+      &quot;vlocity_cmt__IsConfigurable__c&quot; : false,
+      &quot;vlocity_cmt__IsEncrypted__c&quot; : false,
+      &quot;vlocity_cmt__IsHidden__c&quot; : false,
+      &quot;vlocity_cmt__IsNotAssetizable__c&quot; : false,
+      &quot;vlocity_cmt__IsNotTranslatable__c&quot; : false,
+      &quot;vlocity_cmt__IsReadOnly__c&quot; : false,
+      &quot;vlocity_cmt__IsRequired__c&quot; : false,
+      &quot;vlocity_cmt__ObjectId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+      &quot;vlocity_cmt__UIDisplayType__c&quot; : &quot;Single Value&quot;,
+      &quot;vlocity_cmt__ValueDataType__c&quot; : &quot;Number&quot;,
+      &quot;vlocity_cmt__ValueDescription__c&quot; : null,
+      &quot;Id&quot; : &quot;a245e000001W0UsAAK&quot;,
+      &quot;Name&quot; : &quot;TempAA-B2CCmex_ATTR_MMS&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;vlocity_cmt__AttributeAssignment__c&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__AttributeAssignment__c/a245e000001W0UsAAK&quot;
+      }
+    },
+    &quot;listOfValues&quot; : [ {
+      &quot;IsDefault&quot; : null,
+      &quot;Type&quot; : &quot;Number&quot;,
+      &quot;Value&quot; : null
+    } ]
+  }, {
+    &quot;attributeAssignment&quot; : {
+      &quot;vlocity_cmt__AttributeConfigurable__c&quot; : true,
+      &quot;vlocity_cmt__AttributeDisplayNameOverride__c&quot; : &quot;Payment Option&quot;,
+      &quot;vlocity_cmt__AttributeDisplayName__c&quot; : &quot;Payment Option&quot;,
+      &quot;vlocity_cmt__AttributeDisplaySequence__c&quot; : &quot;12&quot;,
+      &quot;vlocity_cmt__AttributeId__c&quot; : &quot;a0X5e0000018StcEAE&quot;,
+      &quot;vlocity_cmt__AttributeId__r&quot; : {
+        &quot;vlocity_cmt__Code__c&quot; : &quot;B2CCmex_ATTR_PAYMENT_OPTION_CHAR&quot;,
+        &quot;vlocity_cmt__Description__c&quot; : &quot;Payment Option&quot;,
+        &quot;vlocity_cmt__EffectiveFromDate__c&quot; : null,
+        &quot;vlocity_cmt__EffectiveUntilDate__c&quot; : null,
+        &quot;vlocity_cmt__ValueType__c&quot; : &quot;Picklist&quot;,
+        &quot;Id&quot; : &quot;a0X5e0000018StcEAE&quot;,
+        &quot;Name&quot; : &quot;Payment Option&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;vlocity_cmt__Attribute__c&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__Attribute__c/a0X5e0000018StcEAE&quot;
+        }
+      },
+      &quot;vlocity_cmt__HasRule__c&quot; : false,
+      &quot;vlocity_cmt__IsActiveAssignment__c&quot; : true,
+      &quot;vlocity_cmt__IsActive__c&quot; : true,
+      &quot;vlocity_cmt__IsConfigurable__c&quot; : true,
+      &quot;vlocity_cmt__IsEncrypted__c&quot; : false,
+      &quot;vlocity_cmt__IsHidden__c&quot; : false,
+      &quot;vlocity_cmt__IsNotAssetizable__c&quot; : false,
+      &quot;vlocity_cmt__IsNotTranslatable__c&quot; : false,
+      &quot;vlocity_cmt__IsReadOnly__c&quot; : false,
+      &quot;vlocity_cmt__IsRequired__c&quot; : false,
+      &quot;vlocity_cmt__ObjectId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+      &quot;vlocity_cmt__PicklistId__c&quot; : &quot;a3A5e000000CoKNEA0&quot;,
+      &quot;vlocity_cmt__PicklistId__r&quot; : {
+        &quot;vlocity_cmt__DataType__c&quot; : &quot;Text&quot;,
+        &quot;Id&quot; : &quot;a3A5e000000CoKNEA0&quot;,
+        &quot;Name&quot; : &quot;Payment Option&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;vlocity_cmt__Picklist__c&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__Picklist__c/a3A5e000000CoKNEA0&quot;
+        }
+      },
+      &quot;vlocity_cmt__UIDisplayType__c&quot; : &quot;Dropdown&quot;,
+      &quot;vlocity_cmt__ValidValuesData__c&quot; : &quot;[{\&quot;displayText\&quot;:\&quot;Prepaid\&quot;,\&quot;id\&quot;:\&quot;0f15dd23-30c6-8421-28f9-766032801761\&quot;,\&quot;isDefault\&quot;:true,\&quot;isEditable\&quot;:false,\&quot;sequence\&quot;:10,\&quot;value\&quot;:\&quot;Prepaid\&quot;},{\&quot;displayText\&quot;:\&quot;Postpaid\&quot;,\&quot;id\&quot;:\&quot;090a4118-30b7-09ae-516b-443f8b9a4da9\&quot;,\&quot;isDefault\&quot;:false,\&quot;isEditable\&quot;:false,\&quot;sequence\&quot;:20,\&quot;value\&quot;:\&quot;Postpaid\&quot;},{\&quot;displayText\&quot;:\&quot;Hybrid\&quot;,\&quot;id\&quot;:\&quot;9796b455-a7ea-e804-8dae-3da0b8c282b7\&quot;,\&quot;isDefault\&quot;:false,\&quot;isEditable\&quot;:false,\&quot;sequence\&quot;:30,\&quot;value\&quot;:\&quot;Hybrid\&quot;}]&quot;,
+      &quot;vlocity_cmt__ValueDataType__c&quot; : &quot;Text&quot;,
+      &quot;vlocity_cmt__ValueDescription__c&quot; : &quot;Payment Option&quot;,
+      &quot;vlocity_cmt__Value__c&quot; : &quot;Prepaid&quot;,
+      &quot;Id&quot; : &quot;a245e000001W0UtAAK&quot;,
+      &quot;Name&quot; : &quot;TempAA-B2CCmex_ATTR_PAYMENT_OPTION_CHAR&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;vlocity_cmt__AttributeAssignment__c&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__AttributeAssignment__c/a245e000001W0UtAAK&quot;
+      }
+    },
+    &quot;listOfValues&quot; : [ {
+      &quot;IsDefault&quot; : &quot;false&quot;,
+      &quot;Type&quot; : &quot;Text&quot;,
+      &quot;Value&quot; : &quot;Prepaid&quot;
+    } ]
+  }, {
+    &quot;attributeAssignment&quot; : {
+      &quot;vlocity_cmt__AttributeConfigurable__c&quot; : true,
+      &quot;vlocity_cmt__AttributeDisplayNameOverride__c&quot; : &quot;SMS&quot;,
+      &quot;vlocity_cmt__AttributeDisplayName__c&quot; : &quot;SMS&quot;,
+      &quot;vlocity_cmt__AttributeDisplaySequence__c&quot; : &quot;29&quot;,
+      &quot;vlocity_cmt__AttributeId__c&quot; : &quot;a0X5e0000018StdEAE&quot;,
+      &quot;vlocity_cmt__AttributeId__r&quot; : {
+        &quot;vlocity_cmt__Code__c&quot; : &quot;B2CCmex_ATTR_SMS_CHAR&quot;,
+        &quot;vlocity_cmt__ValueType__c&quot; : &quot;Text&quot;,
+        &quot;Id&quot; : &quot;a0X5e0000018StdEAE&quot;,
+        &quot;Name&quot; : &quot;Texts&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;vlocity_cmt__Attribute__c&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__Attribute__c/a0X5e0000018StdEAE&quot;
+        }
+      },
+      &quot;vlocity_cmt__HasRule__c&quot; : false,
+      &quot;vlocity_cmt__IsActiveAssignment__c&quot; : true,
+      &quot;vlocity_cmt__IsActive__c&quot; : true,
+      &quot;vlocity_cmt__IsConfigurable__c&quot; : false,
+      &quot;vlocity_cmt__IsEncrypted__c&quot; : false,
+      &quot;vlocity_cmt__IsHidden__c&quot; : false,
+      &quot;vlocity_cmt__IsNotAssetizable__c&quot; : false,
+      &quot;vlocity_cmt__IsNotTranslatable__c&quot; : false,
+      &quot;vlocity_cmt__IsReadOnly__c&quot; : false,
+      &quot;vlocity_cmt__IsRequired__c&quot; : false,
+      &quot;vlocity_cmt__ObjectId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+      &quot;vlocity_cmt__UIDisplayType__c&quot; : &quot;Text&quot;,
+      &quot;vlocity_cmt__ValueDataType__c&quot; : &quot;Text&quot;,
+      &quot;vlocity_cmt__ValueDescription__c&quot; : null,
+      &quot;vlocity_cmt__Value__c&quot; : &quot;500&quot;,
+      &quot;Id&quot; : &quot;a245e000001W0UuAAK&quot;,
+      &quot;Name&quot; : &quot;TempAA-B2CCmex_ATTR_SMS_CHAR&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;vlocity_cmt__AttributeAssignment__c&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__AttributeAssignment__c/a245e000001W0UuAAK&quot;
+      }
+    },
+    &quot;listOfValues&quot; : [ {
+      &quot;IsDefault&quot; : &quot;false&quot;,
+      &quot;Type&quot; : &quot;Text&quot;,
+      &quot;Value&quot; : &quot;500&quot;
+    } ]
+  }, {
+    &quot;attributeAssignment&quot; : {
+      &quot;vlocity_cmt__AttributeConfigurable__c&quot; : true,
+      &quot;vlocity_cmt__AttributeDisplayNameOverride__c&quot; : &quot;Voice&quot;,
+      &quot;vlocity_cmt__AttributeDisplayName__c&quot; : &quot;Voice&quot;,
+      &quot;vlocity_cmt__AttributeDisplaySequence__c&quot; : &quot;28&quot;,
+      &quot;vlocity_cmt__AttributeId__c&quot; : &quot;a0X5e0000018StgEAE&quot;,
+      &quot;vlocity_cmt__AttributeId__r&quot; : {
+        &quot;vlocity_cmt__Code__c&quot; : &quot;B2CCmex_ATTR_VOICE_CHAR&quot;,
+        &quot;vlocity_cmt__ValueType__c&quot; : &quot;Text&quot;,
+        &quot;Id&quot; : &quot;a0X5e0000018StgEAE&quot;,
+        &quot;Name&quot; : &quot;Voice&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;vlocity_cmt__Attribute__c&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__Attribute__c/a0X5e0000018StgEAE&quot;
+        }
+      },
+      &quot;vlocity_cmt__HasRule__c&quot; : false,
+      &quot;vlocity_cmt__IsActiveAssignment__c&quot; : true,
+      &quot;vlocity_cmt__IsActive__c&quot; : true,
+      &quot;vlocity_cmt__IsConfigurable__c&quot; : false,
+      &quot;vlocity_cmt__IsEncrypted__c&quot; : false,
+      &quot;vlocity_cmt__IsHidden__c&quot; : false,
+      &quot;vlocity_cmt__IsNotAssetizable__c&quot; : false,
+      &quot;vlocity_cmt__IsNotTranslatable__c&quot; : false,
+      &quot;vlocity_cmt__IsReadOnly__c&quot; : false,
+      &quot;vlocity_cmt__IsRequired__c&quot; : false,
+      &quot;vlocity_cmt__ObjectId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+      &quot;vlocity_cmt__UIDisplayType__c&quot; : &quot;Text&quot;,
+      &quot;vlocity_cmt__ValueDataType__c&quot; : &quot;Text&quot;,
+      &quot;vlocity_cmt__ValueDescription__c&quot; : null,
+      &quot;vlocity_cmt__Value__c&quot; : &quot;500&quot;,
+      &quot;Id&quot; : &quot;a245e000001W0UwAAK&quot;,
+      &quot;Name&quot; : &quot;TempAA-B2CCmex_ATTR_VOICE_CHAR&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;vlocity_cmt__AttributeAssignment__c&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__AttributeAssignment__c/a245e000001W0UwAAK&quot;
+      }
+    },
+    &quot;listOfValues&quot; : [ {
+      &quot;IsDefault&quot; : &quot;false&quot;,
+      &quot;Type&quot; : &quot;Text&quot;,
+      &quot;Value&quot; : &quot;500&quot;
+    } ]
+  } ],
+  &quot;catalogProductRelationships&quot; : [ {
+    &quot;vlocity_cmt__CatalogId__c&quot; : &quot;a0e5e000003bKFoAAM&quot;,
+    &quot;vlocity_cmt__CatalogId__r&quot; : {
+      &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;1c09e6cb-3c74-6641-130e-e33d0feb3802&quot;,
+      &quot;Id&quot; : &quot;a0e5e000003bKFoAAM&quot;,
+      &quot;Name&quot; : &quot;Prepaid Offers&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;vlocity_cmt__Catalog__c&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__Catalog__c/a0e5e000003bKFoAAM&quot;
+      }
+    },
+    &quot;vlocity_cmt__Product2Id__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;Id&quot; : &quot;a2Q5e000000mM5LEAU&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__CatalogProductRelationship__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__CatalogProductRelationship__c/a2Q5e000000mM5LEAU&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__CatalogId__c&quot; : &quot;a0e5e000003bLDtAAM&quot;,
+    &quot;vlocity_cmt__CatalogId__r&quot; : {
+      &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;2704ca75-1878-bfa3-9069-78d425ff6fc1&quot;,
+      &quot;Id&quot; : &quot;a0e5e000003bLDtAAM&quot;,
+      &quot;Name&quot; : &quot;Mobile Offers&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;vlocity_cmt__Catalog__c&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__Catalog__c/a0e5e000003bLDtAAM&quot;
+      }
+    },
+    &quot;vlocity_cmt__Product2Id__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;Id&quot; : &quot;a2Q5e000000mM67EAE&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__CatalogProductRelationship__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__CatalogProductRelationship__c/a2Q5e000000mM67EAE&quot;
+    }
+  } ],
+  &quot;priceListEntries&quot; : [ {
+    &quot;vlocity_cmt__DisplayText__c&quot; : &quot;20.00&quot;,
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;96c84cdb-96f4-8747-ad38-50c458b5d2ec&quot;,
+    &quot;vlocity_cmt__IsActive__c&quot; : true,
+    &quot;vlocity_cmt__IsBasePrice__c&quot; : false,
+    &quot;vlocity_cmt__PriceListId__c&quot; : &quot;a3D5e000000LZJUEA4&quot;,
+    &quot;vlocity_cmt__PricingElementId__c&quot; : &quot;a3F5e000000otkLEAQ&quot;,
+    &quot;vlocity_cmt__PricingElementId__r&quot; : {
+      &quot;vlocity_cmt__Amount__c&quot; : 20,
+      &quot;vlocity_cmt__CurrencyCode__c&quot; : &quot;USD&quot;,
+      &quot;vlocity_cmt__PricingVariableId__c&quot; : &quot;a3J5e000000PbpEEAS&quot;,
+      &quot;vlocity_cmt__PricingVariableId__r&quot; : {
+        &quot;vlocity_cmt__ChargeType__c&quot; : &quot;One-time&quot;,
+        &quot;Id&quot; : &quot;a3J5e000000PbpEEAS&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;vlocity_cmt__PricingVariable__c&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__PricingVariable__c/a3J5e000000PbpEEAS&quot;
+        }
+      },
+      &quot;Id&quot; : &quot;a3F5e000000otkLEAQ&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;vlocity_cmt__PricingElement__c&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__PricingElement__c/a3F5e000000otkLEAQ&quot;
+      }
+    },
+    &quot;vlocity_cmt__ProductId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;vlocity_cmt__ProductId__r&quot; : {
+      &quot;vlocity_cmt__SpecificationSubType__c&quot; : &quot;Simple&quot;,
+      &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;V1&quot;,
+      &quot;Id&quot; : &quot;01t5e000003gFzLAAU&quot;,
+      &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Product2&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gFzLAAU&quot;
+      }
+    },
+    &quot;Id&quot; : &quot;a3C5e000000tOa0EAE&quot;,
+    &quot;Name&quot; : &quot;96c84cdb-96f4-8747-ad38-50c458b5d2ec&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__PriceListEntry__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__PriceListEntry__c/a3C5e000000tOa0EAE&quot;
+    }
+  } ],
+  &quot;product&quot; : {
+    &quot;vlocity_cmt__FulfilmentStartDate__c&quot; : &quot;2022-05-05T18:30:00.000+0000&quot;,
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;8ad6f687-56aa-9ccd-bbc3-5f01214018d2&quot;,
+    &quot;vlocity_cmt__IsOrderable__c&quot; : true,
+    &quot;vlocity_cmt__ObjectTypeId__c&quot; : &quot;a2k5e0000006u6RAAQ&quot;,
+    &quot;vlocity_cmt__ObjectTypeId__r&quot; : {
+      &quot;Id&quot; : &quot;a2k5e0000006u6RAAQ&quot;,
+      &quot;Name&quot; : &quot;Prepaid Plan Product Spec&quot;,
+      &quot;RecordTypeId&quot; : &quot;0125e00000095LsAAI&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;vlocity_cmt__ObjectClass__c&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__ObjectClass__c/a2k5e0000006u6RAAQ&quot;
+      }
+    },
+    &quot;vlocity_cmt__SellingStartDate__c&quot; : &quot;2022-05-05T18:30:00.000+0000&quot;,
+    &quot;vlocity_cmt__SpecificationSubType__c&quot; : &quot;Simple&quot;,
+    &quot;vlocity_cmt__SpecificationType__c&quot; : &quot;Offer&quot;,
+    &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;V1&quot;,
+    &quot;CreatedBy&quot; : {
+      &quot;Id&quot; : &quot;0055e000001m0OCAAY&quot;,
+      &quot;Name&quot; : &quot;Devuser Devuser&quot;,
+      &quot;UserRole&quot; : {
+        &quot;Id&quot; : &quot;00E5e000000LgvkEAC&quot;,
+        &quot;Name&quot; : &quot;Supervisor&quot;,
+        &quot;attributes&quot; : {
+          &quot;type&quot; : &quot;UserRole&quot;,
+          &quot;url&quot; : &quot;/services/data/v55.0/sobjects/UserRole/00E5e000000LgvkEAC&quot;
+        }
+      },
+      &quot;UserRoleId&quot; : &quot;00E5e000000LgvkEAC&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;User&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/User/0055e000001m0OCAAY&quot;
+      }
+    },
+    &quot;CreatedById&quot; : &quot;0055e000001m0OCAAY&quot;,
+    &quot;Description&quot; : &quot;Prepaid plan with 25GB Data, 500 minutes and 500 texts. Once consumed, charges as per default tariff will be applicable&quot;,
+    &quot;Id&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;IsActive&quot; : true,
+    &quot;LastModifiedDate&quot; : &quot;2022-05-06T02:59:26.000+0000&quot;,
+    &quot;Name&quot; : &quot;25GB Prepaid Plan&quot;,
+    &quot;ProductCode&quot; : &quot;B2CCmex_OFFERING_PREPAID_25GB_DATA_OFFER&quot;,
+    &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;Product2&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gFzLAAU&quot;
+    }
+  },
+  &quot;productChildItems&quot; : [ ],
+  &quot;productRelationships&quot; : [ {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;ab357d41-aa5f-7567-6ca8-263dbf24a71b&quot;,
+    &quot;vlocity_cmt__RelatedProductId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;vlocity_cmt__RelationshipType__c&quot; : &quot;DependsOn&quot;,
+    &quot;Id&quot; : &quot;a3O5e000000sIuEEAU&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__ProductRelationship__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__ProductRelationship__c/a3O5e000000sIuEEAU&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;d66257ec-42f8-bf1d-2838-0d2348d8359e&quot;,
+    &quot;vlocity_cmt__RelatedProductId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;vlocity_cmt__RelationshipType__c&quot; : &quot;DependsOn&quot;,
+    &quot;Id&quot; : &quot;a3O5e000000sIuJEAU&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__ProductRelationship__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__ProductRelationship__c/a3O5e000000sIuJEAU&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;bcff0af3-eeff-b05c-d766-e5ed52d59801&quot;,
+    &quot;vlocity_cmt__RelatedProductId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;vlocity_cmt__RelationshipType__c&quot; : &quot;DependsOn&quot;,
+    &quot;Id&quot; : &quot;a3O5e000000sIuOEAU&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__ProductRelationship__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__ProductRelationship__c/a3O5e000000sIuOEAU&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;5a16b35d-613a-0667-32dc-2a07915fb1f0&quot;,
+    &quot;vlocity_cmt__Product2Id__c&quot; : &quot;01t5e000003gn2mAAA&quot;,
+    &quot;vlocity_cmt__Product2Id__r&quot; : {
+      &quot;vlocity_cmt__EndOfLifeDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__FulfilmentStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingEndDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;1.0&quot;,
+      &quot;Id&quot; : &quot;01t5e000003gn2mAAA&quot;,
+      &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Product2&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gn2mAAA&quot;
+      }
+    },
+    &quot;vlocity_cmt__RelatedProductId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;vlocity_cmt__RelationshipType__c&quot; : &quot;DependsOn&quot;,
+    &quot;Id&quot; : &quot;a3O5e000000sIuTEAU&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__ProductRelationship__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__ProductRelationship__c/a3O5e000000sIuTEAU&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;e1126ce6-9693-ea14-c1fa-7e6202ad6403&quot;,
+    &quot;vlocity_cmt__Product2Id__c&quot; : &quot;01t5e000003gn2rAAA&quot;,
+    &quot;vlocity_cmt__Product2Id__r&quot; : {
+      &quot;vlocity_cmt__EndOfLifeDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__FulfilmentStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingEndDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;1.0&quot;,
+      &quot;Id&quot; : &quot;01t5e000003gn2rAAA&quot;,
+      &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Product2&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gn2rAAA&quot;
+      }
+    },
+    &quot;vlocity_cmt__RelatedProductId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;vlocity_cmt__RelationshipType__c&quot; : &quot;DependsOn&quot;,
+    &quot;Id&quot; : &quot;a3O5e000000sIuYEAU&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__ProductRelationship__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__ProductRelationship__c/a3O5e000000sIuYEAU&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;0b6105a0-59e5-5572-dcda-140856de5754&quot;,
+    &quot;vlocity_cmt__Product2Id__c&quot; : &quot;01t5e000003gn2wAAA&quot;,
+    &quot;vlocity_cmt__Product2Id__r&quot; : {
+      &quot;vlocity_cmt__EndOfLifeDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__FulfilmentStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingEndDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;1.0&quot;,
+      &quot;Id&quot; : &quot;01t5e000003gn2wAAA&quot;,
+      &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Product2&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gn2wAAA&quot;
+      }
+    },
+    &quot;vlocity_cmt__RelatedProductId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;vlocity_cmt__RelationshipType__c&quot; : &quot;DependsOn&quot;,
+    &quot;Id&quot; : &quot;a3O5e000000sIudEAE&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__ProductRelationship__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__ProductRelationship__c/a3O5e000000sIudEAE&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;9dbaba5c-6819-c50b-acf7-a4ac5710708f&quot;,
+    &quot;vlocity_cmt__Product2Id__c&quot; : &quot;01t5e000003gn31AAA&quot;,
+    &quot;vlocity_cmt__Product2Id__r&quot; : {
+      &quot;vlocity_cmt__EndOfLifeDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__FulfilmentStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingEndDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;1.0&quot;,
+      &quot;Id&quot; : &quot;01t5e000003gn31AAA&quot;,
+      &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Product2&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gn31AAA&quot;
+      }
+    },
+    &quot;vlocity_cmt__RelatedProductId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;vlocity_cmt__RelationshipType__c&quot; : &quot;DependsOn&quot;,
+    &quot;Id&quot; : &quot;a3O5e000000sIuiEAE&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__ProductRelationship__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__ProductRelationship__c/a3O5e000000sIuiEAE&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;040e0d09-2bd6-cbda-222a-d3a6fd2b9221&quot;,
+    &quot;vlocity_cmt__Product2Id__c&quot; : &quot;01t5e000003gn36AAA&quot;,
+    &quot;vlocity_cmt__Product2Id__r&quot; : {
+      &quot;vlocity_cmt__EndOfLifeDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__FulfilmentStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingEndDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;1.0&quot;,
+      &quot;Id&quot; : &quot;01t5e000003gn36AAA&quot;,
+      &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Product2&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gn36AAA&quot;
+      }
+    },
+    &quot;vlocity_cmt__RelatedProductId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;vlocity_cmt__RelationshipType__c&quot; : &quot;DependsOn&quot;,
+    &quot;Id&quot; : &quot;a3O5e000000sIunEAE&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__ProductRelationship__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__ProductRelationship__c/a3O5e000000sIunEAE&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;031ecd80-5e7f-2482-a6bc-fd6b70174e05&quot;,
+    &quot;vlocity_cmt__Product2Id__c&quot; : &quot;01t5e000003gn3BAAQ&quot;,
+    &quot;vlocity_cmt__Product2Id__r&quot; : {
+      &quot;vlocity_cmt__EndOfLifeDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__FulfilmentStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingEndDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;1.0&quot;,
+      &quot;Id&quot; : &quot;01t5e000003gn3BAAQ&quot;,
+      &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Product2&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gn3BAAQ&quot;
+      }
+    },
+    &quot;vlocity_cmt__RelatedProductId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;vlocity_cmt__RelationshipType__c&quot; : &quot;DependsOn&quot;,
+    &quot;Id&quot; : &quot;a3O5e000000sIusEAE&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__ProductRelationship__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__ProductRelationship__c/a3O5e000000sIusEAE&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__GlobalKey__c&quot; : &quot;b8a9853b-e017-b644-906f-1dcba60b2b28&quot;,
+    &quot;vlocity_cmt__Product2Id__c&quot; : &quot;01t5e000003gn3GAAQ&quot;,
+    &quot;vlocity_cmt__Product2Id__r&quot; : {
+      &quot;vlocity_cmt__EndOfLifeDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__FulfilmentStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingEndDate__c&quot; : &quot;2022-08-25T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__SellingStartDate__c&quot; : &quot;2022-05-23T00:00:00.000+0000&quot;,
+      &quot;vlocity_cmt__VersionLabel__c&quot; : &quot;1.0&quot;,
+      &quot;Id&quot; : &quot;01t5e000003gn3GAAQ&quot;,
+      &quot;RecordTypeId&quot; : &quot;0125e00000095LwAAI&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Product2&quot;,
+        &quot;url&quot; : &quot;/services/data/v55.0/sobjects/Product2/01t5e000003gn3GAAQ&quot;
+      }
+    },
+    &quot;vlocity_cmt__RelatedProductId__c&quot; : &quot;01t5e000003gFzLAAU&quot;,
+    &quot;vlocity_cmt__RelationshipType__c&quot; : &quot;DependsOn&quot;,
+    &quot;Id&quot; : &quot;a3O5e000000sIuxEAE&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;vlocity_cmt__ProductRelationship__c&quot;,
+      &quot;url&quot; : &quot;/services/data/v55.0/sobjects/vlocity_cmt__ProductRelationship__c/a3O5e000000sIuxEAE&quot;
+    }
+  } ],
+  &quot;requestUrl&quot; : &quot;/services/apexrest/vlocity_cmt/tmforum/productopenapi/v1/&quot;,
+  &quot;vlocityAttachments&quot; : [ ]
+} ]</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>TMFTMForumProductSpecificationResponseTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

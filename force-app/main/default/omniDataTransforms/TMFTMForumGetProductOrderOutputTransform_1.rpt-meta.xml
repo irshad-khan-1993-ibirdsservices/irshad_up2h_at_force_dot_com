@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>v244.0 - OmniStudio DataMapper  which is responsible for transforming the Vlocity Data Model to TMForum data model for ProductOrder GET API</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;ApexClass&quot; : null,
+    &quot;ProductSpecificationResult&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>TMFTMForumGetProductOrderOutputTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform22668388839607556</globalKey>
+        <inputFieldName>productOrderItem:type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:@type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom9828</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:productOrderItem</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom5998</globalKey>
+        <inputFieldName>order:CreatedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:orderDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform8687972585911345</globalKey>
+        <inputFieldName>order:vlocity_cmt__Notes__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:note</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform8904208520885213</globalKey>
+        <inputFieldName>order:OrderNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform7706894477247579</globalKey>
+        <inputFieldName>order:href</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:href</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform9277864938808897</globalKey>
+        <inputFieldName>order:OrderReferenceNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:externalId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform3634634130684531</globalKey>
+        <inputFieldName>order:Description</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:description</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform569004399209398</globalKey>
+        <inputFieldName>order:vlocity_cmt__OriginatingChannel__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:channel</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:productOrderItem:pricingAdjustments:Absolute var:productOrderItem:pricingAdjustments:Percent || &apos;Price&apos; var:null IF</formulaConverted>
+        <formulaExpression>IF(productOrderItem:pricingAdjustments:Absolute || productOrderItem:pricingAdjustments:Percent, &apos;Price&apos;, null)</formulaExpression>
+        <formulaResultPath>priceAlteration:type</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom6556</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:relatedParty:Id var:null != &apos;RelatedParty&apos; var:null IF</formulaConverted>
+        <formulaExpression>IF(relatedParty:Id != null, &apos;RelatedParty&apos;, null)</formulaExpression>
+        <formulaResultPath>relatedParty:type</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom4735</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:productOrderItem:Id var:null != &apos;ProductOrderItem&apos; var:null IF</formulaConverted>
+        <formulaExpression>IF(productOrderItem:Id != null, &apos;ProductOrderItem&apos;, null)</formulaExpression>
+        <formulaResultPath>productOrderItem:type</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom1902</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:relatedParty:Id var:null != | var:requestUrl &apos;Account/&apos; var:relatedParty:Id CONCAT var:null IF</formulaConverted>
+        <formulaExpression>IF(relatedParty:Id != null, CONCAT(requestUrl,&apos;Account/&apos;,relatedParty:Id), null)</formulaExpression>
+        <formulaResultPath>relatedParty:href</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom79</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:order:Id var:null != | var:requestUrl &apos;Order/&apos; var:order:Id CONCAT var:null IF</formulaConverted>
+        <formulaExpression>IF(order:Id != null, CONCAT(requestUrl,&apos;Order/&apos;,order:Id), null)</formulaExpression>
+        <formulaResultPath>order:href</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom8966</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:account:Id var:null != &apos;Customer&apos; var:null IF</formulaConverted>
+        <formulaExpression>IF(account:Id != null, &apos;Customer&apos;, null)</formulaExpression>
+        <formulaResultPath>account:referredType</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom7015</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:account:Id var:null != &apos;RelatedParty&apos; var:null IF</formulaConverted>
+        <formulaExpression>IF(account:Id != null, &apos;RelatedParty&apos;, null)</formulaExpression>
+        <formulaResultPath>account:type</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom6838</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom1268</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:product</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom5283</globalKey>
+        <inputFieldName>productOrderItem:pricingAdjustments:priceType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:itemPrice:priceAlteration:priceType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom8869</globalKey>
+        <inputFieldName>productOrderItem:pricingAdjustments:Percent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:itemPrice:priceAlteration:price:percentage</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom9642</globalKey>
+        <inputFieldName>productOrderItem:pricingAdjustments:Absolute</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:itemPrice:priceAlteration:price:absolute</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom1106</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:productOrderItem:itemPrice:priceAlteration</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom3149</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:productOrderItem:itemPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform581183665535729</globalKey>
+        <inputFieldName>productOrderItem:vlocity_cmt__ProductGroupKey__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom7003</globalKey>
+        <inputFieldName>productOrderItem:billingAccount:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:billingAccount:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom770</globalKey>
+        <inputFieldName>productOrderItem:billingAccount:AccountNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:billingAccount:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform05257843997790612</globalKey>
+        <inputFieldName>productOrderItem:vlocity_cmt__Action__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:action</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom3081</globalKey>
+        <inputFieldName>order:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:state</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform282601077418303</globalKey>
+        <inputFieldName>order:vlocity_cmt__RequestedStartDate__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:requestedStartDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform011777656958134708</globalKey>
+        <inputFieldName>order:vlocity_cmt__RequestedCompletionDate__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:requestedCompletionDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform971601279202982</globalKey>
+        <inputFieldName>relatedParty:RecordType:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedParty:role</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform242184161746817</globalKey>
+        <inputFieldName>relatedParty:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedParty:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform11207952320400727</globalKey>
+        <inputFieldName>relatedParty:AccountNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedParty:id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom2272</globalKey>
+        <inputFieldName>relatedParty:href</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedParty:href</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransform2181396026539415</globalKey>
+        <inputFieldName>relatedParty:type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:relatedParty:@type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom6175</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:relatedParty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom5997</globalKey>
+        <inputFieldName>productOrderItem:Quantity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:quantity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom2926</globalKey>
+        <inputFieldName>productOrderItem:productCharacteristic:valuedatatype__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:product:productCharacteristics:valueType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom54</globalKey>
+        <inputFieldName>productOrderItem:productCharacteristic:value__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:product:productCharacteristics:value</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom2874</globalKey>
+        <inputFieldName>productOrderItem:productCharacteristic:attributeuniquecode__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputResponse:productOrderItem:product:productCharacteristics:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom7106</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>outputResponse:productOrderItem:product:productCharacteristics</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:productOrderItem:Id var:null != &apos;ProductOrderItem&apos; var:null IF</formulaConverted>
+        <formulaExpression>IF(productOrderItem:Id != null, &apos;ProductOrderItem&apos;, null)</formulaExpression>
+        <formulaResultPath>productOrderItem:type</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>TMFTMForumGetProductOrderOutputTransformCustom7931</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TMFTMForumGetProductOrderOutputTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>[ {
+  &quot;apiVersion&quot; : &quot;v48.0&quot;,
+  &quot;order&quot; : {
+    &quot;vlocity_cmt__OriginatingChannel__c&quot; : &quot;Call Center&quot;,
+    &quot;AccountId&quot; : &quot;0014x00000KlmAgAAJ&quot;,
+    &quot;Id&quot; : &quot;8014x000000njmoAAA&quot;,
+    &quot;OrderNumber&quot; : &quot;00004122&quot;,
+    &quot;Status&quot; : &quot;Draft&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;Order&quot;,
+      &quot;url&quot; : &quot;/services/data/v57.0/sobjects/Order/8014x000000njmoAAA&quot;
+    }
+  },
+  &quot;productOrderItem&quot; : [ {
+    &quot;vlocity_cmt__Action__c&quot; : &quot;Add&quot;,
+    &quot;vlocity_cmt__BillingAccountId__c&quot; : &quot;0014x000018chUeAAI&quot;,
+    &quot;vlocity_cmt__PricingLogData__c&quot; : &quot;{\&quot;LogData\&quot;:{\&quot;REC_MNTH_STD_PRC_TOTAL\&quot;:[{\&quot;ChargeTiming\&quot;:null,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;[Recurring Calculated Price (0.00) + Rollup Recurring Total (0.00)] x Quantity (1.00)\&quot;}],\&quot;REC_MNTH_STD_PRC_CALC\&quot;:[{\&quot;ChargeTiming\&quot;:null,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;Recurring Charge (0.00) - Recurring Manual Discount (0.00%)\&quot;}],\&quot;OT_STD_PRC_TOTAL\&quot;:[{\&quot;ChargeTiming\&quot;:\&quot;One-Time\&quot;,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;[One Time Calculated Price (10.00) + Rollup One Time Total (0.00)] x Quantity (1.00)\&quot;}],\&quot;OT_STD_PRC_CALC\&quot;:[{\&quot;ChargeTiming\&quot;:null,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;One Time Charge (10.00000) - One Time Manual Discount (0.00%)\&quot;}],\&quot;OT_STD_PRC\&quot;:[{\&quot;LogSequence\&quot;:0,\&quot;IsEffective\&quot;:true,\&quot;EndDate\&quot;:null,\&quot;StartDate\&quot;:null,\&quot;AdjustmentType\&quot;:\&quot;None\&quot;,\&quot;LoyaltyCode\&quot;:\&quot;PTS\&quot;,\&quot;CurrencyCode\&quot;:\&quot;USD\&quot;,\&quot;CurrencyType\&quot;:\&quot;Currency\&quot;,\&quot;Amount\&quot;:12.00000,\&quot;AdjustmentValue\&quot;:0.00,\&quot;AdjustmentMethod\&quot;:null,\&quot;BaseValue\&quot;:12.00000,\&quot;BaseAdjustment\&quot;:null,\&quot;PriceListId\&quot;:\&quot;a3C4x000000cXvqEAE\&quot;,\&quot;OfferId\&quot;:null,\&quot;PromotionId\&quot;:null,\&quot;PricingElementId\&quot;:\&quot;a3E4x000000cFWdEAM\&quot;,\&quot;PricingVariableCode\&quot;:\&quot;OT_STD_PRC\&quot;,\&quot;DisplayText\&quot;:\&quot;PLE\&quot;,\&quot;EndValue\&quot;:12.00000,\&quot;ChargeTiming\&quot;:\&quot;One-time\&quot;,\&quot;Frequency\&quot;:null,\&quot;SubType\&quot;:\&quot;Standard\&quot;,\&quot;StartValue\&quot;:12.00000,\&quot;PricingElementGlobalKey\&quot;:\&quot;9b7a8cc9-093b-9867-858a-414b0927cd13\&quot;,\&quot;LogType\&quot;:\&quot;PRICE\&quot;,\&quot;PriceListEntryId\&quot;:\&quot;a3B4x000001bPvlEAE\&quot;},{\&quot;LogSequence\&quot;:1,\&quot;IsEffective\&quot;:true,\&quot;EndDate\&quot;:null,\&quot;StartDate\&quot;:null,\&quot;DateApplied\&quot;:\&quot;2023-02-15T11:58:52.000Z\&quot;,\&quot;AppliedBy\&quot;:\&quot;epc epc\&quot;,\&quot;DisplayText\&quot;:\&quot;Discount applied by epc epc\&quot;,\&quot;PricingAdjustmentId\&quot;:\&quot;a344x000000mC6vAAE\&quot;,\&quot;Source\&quot;:\&quot;Agent\&quot;,\&quot;AdjustmentType\&quot;:\&quot;Discount\&quot;,\&quot;Amount\&quot;:0.00,\&quot;AdjustmentValue\&quot;:-2.00,\&quot;AdjustmentMethod\&quot;:\&quot;Absolute\&quot;,\&quot;PricingVariableCode\&quot;:\&quot;OT_STD_PRC_ADJ_ABS\&quot;,\&quot;EndValue\&quot;:10.00000,\&quot;ChargeTiming\&quot;:\&quot;Adjustment\&quot;,\&quot;Frequency\&quot;:null,\&quot;SubType\&quot;:\&quot;Standard\&quot;,\&quot;StartValue\&quot;:12.00000,\&quot;LogType\&quot;:\&quot;ADJUSTMENT\&quot;}]},\&quot;PricingVariableCodeFieldBinding\&quot;:{\&quot;vlocity_cmt__EffectiveQuantity__c\&quot;:\&quot;EFFECTIVE_QUANTITY\&quot;,\&quot;Quantity\&quot;:\&quot;LINE_QUANTITY\&quot;,\&quot;vlocity_cmt__EffectiveRecurringTotal__c\&quot;:\&quot;EFF_REC_MNTH_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__RecurringTotal__c\&quot;:\&quot;REC_MNTH_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__RecurringCalculatedPrice__c\&quot;:\&quot;REC_MNTH_STD_PRC_CALC\&quot;,\&quot;vlocity_cmt__RecurringCharge__c\&quot;:\&quot;REC_MNTH_STD_PRC\&quot;,\&quot;vlocity_cmt__EffectiveOneTimeTotal__c\&quot;:\&quot;EFF_OT_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__OneTimeTotal__c\&quot;:\&quot;OT_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__OneTimeCalculatedPrice__c\&quot;:\&quot;OT_STD_PRC_CALC\&quot;,\&quot;vlocity_cmt__OneTimeCharge__c\&quot;:\&quot;OT_STD_PRC\&quot;,\&quot;vlocity_cmt__RecurringManualDiscount__c\&quot;:\&quot;REC_MNTH_STD_PRC_DISC_PCT_MAN\&quot;,\&quot;vlocity_cmt__OneTimeManualDiscount__c\&quot;:\&quot;OT_STD_PRC_DISC_PCT_MAN\&quot;},\&quot;PriceAdjustmentPromoKeys\&quot;:[],\&quot;PricingVariableCodeValues\&quot;:{\&quot;DISP_OT_STD_PRC\&quot;:10.00000,\&quot;ROLLUP_OT_STD_PRC_TOTAL\&quot;:0.00,\&quot;ROLLUP_REC_MNTH_STD_PRC_TOTAL\&quot;:0.00,\&quot;EFFECTIVE_QUANTITY\&quot;:1.00,\&quot;LINE_QUANTITY\&quot;:1.00,\&quot;EFF_REC_MNTH_STD_PRC_TOTAL\&quot;:0.00,\&quot;REC_MNTH_STD_PRC_TOTAL\&quot;:0.00,\&quot;REC_MNTH_STD_PRC_CALC\&quot;:0.00,\&quot;REC_MNTH_STD_PRC\&quot;:0.00,\&quot;EFF_OT_STD_PRC_TOTAL\&quot;:10.00,\&quot;OT_STD_PRC_TOTAL\&quot;:10.00,\&quot;OT_STD_PRC_CALC\&quot;:10.00,\&quot;OT_STD_PRC\&quot;:10.00000,\&quot;REC_MNTH_STD_PRC_DISC_PCT_MAN\&quot;:0.00,\&quot;OT_STD_PRC_DISC_PCT_MAN\&quot;:0.00},\&quot;PricingVariableCodeBaseValues\&quot;:{\&quot;OT_STD_PRC\&quot;:12.00000},\&quot;LogVersion\&quot;:\&quot;3.0\&quot;,\&quot;PriceAsOfDateTime\&quot;:\&quot;2023-02-22T14:19:33.905Z\&quot;,\&quot;LastPricingTime\&quot;:\&quot;2023-02-22T14:19:33.905Z\&quot;,\&quot;SequentialOffers\&quot;:false,\&quot;SequentialPromotions\&quot;:false,\&quot;SequentialDiscounts\&quot;:false}&quot;,
+    &quot;vlocity_cmt__ProductGroupKey__c&quot; : &quot;edba76d6-5e06-ab1b-7dd0-c00064a792f1&quot;,
+    &quot;Id&quot; : &quot;8024x00000TFb66AAD&quot;,
+    &quot;OrderId&quot; : &quot;8014x000000njmoAAA&quot;,
+    &quot;Quantity&quot; : 1,
+    &quot;billingAccount&quot; : [ {
+      &quot;Id&quot; : &quot;0014x000018chUeAAI&quot;,
+      &quot;Name&quot; : &quot;Account-01&quot;,
+      &quot;attributes&quot; : {
+        &quot;type&quot; : &quot;Account&quot;,
+        &quot;url&quot; : &quot;/services/data/v57.0/sobjects/Account/0014x000018chUeAAI&quot;
+      }
+    } ],
+    &quot;pricingAdjustments&quot; : {
+      &quot;Absolute&quot; : -2,
+      &quot;priceType&quot; : &quot;One-time&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__Action__c&quot; : &quot;Add&quot;,
+    &quot;vlocity_cmt__BillingAccountId__c&quot; : &quot;0014x00000KlmAgAAJ&quot;,
+    &quot;vlocity_cmt__PricingLogData__c&quot; : &quot;{\&quot;LogData\&quot;:{\&quot;REC_MNTH_STD_PRC_TOTAL\&quot;:[{\&quot;ChargeTiming\&quot;:null,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;[Recurring Calculated Price (0.00) + Rollup Recurring Total (0.00)] x Quantity (1.00)\&quot;}],\&quot;REC_MNTH_STD_PRC_CALC\&quot;:[{\&quot;ChargeTiming\&quot;:null,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;Recurring Charge (0.00) - Recurring Manual Discount (0.00%)\&quot;}],\&quot;OT_STD_PRC_TOTAL\&quot;:[{\&quot;ChargeTiming\&quot;:\&quot;One-Time\&quot;,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;[One Time Calculated Price (135.00) + Rollup One Time Total (0.00)] x Quantity (1.00)\&quot;}],\&quot;OT_STD_PRC_CALC\&quot;:[{\&quot;ChargeTiming\&quot;:null,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;One Time Charge (135.0000000) - One Time Manual Discount (0.00%)\&quot;}],\&quot;OT_STD_PRC\&quot;:[{\&quot;LogSequence\&quot;:0,\&quot;IsEffective\&quot;:true,\&quot;EndDate\&quot;:null,\&quot;StartDate\&quot;:null,\&quot;AdjustmentType\&quot;:\&quot;None\&quot;,\&quot;LoyaltyCode\&quot;:\&quot;PTS\&quot;,\&quot;CurrencyCode\&quot;:\&quot;USD\&quot;,\&quot;CurrencyType\&quot;:\&quot;Currency\&quot;,\&quot;Amount\&quot;:150.00000,\&quot;AdjustmentValue\&quot;:0.00,\&quot;AdjustmentMethod\&quot;:null,\&quot;BaseValue\&quot;:150.00000,\&quot;BaseAdjustment\&quot;:null,\&quot;PriceListId\&quot;:\&quot;a3C4x000000cXvqEAE\&quot;,\&quot;OfferId\&quot;:null,\&quot;PromotionId\&quot;:null,\&quot;PricingElementId\&quot;:\&quot;a3E4x000000uQ0UEAU\&quot;,\&quot;PricingVariableCode\&quot;:\&quot;OT_STD_PRC\&quot;,\&quot;DisplayText\&quot;:\&quot;PLE\&quot;,\&quot;EndValue\&quot;:150.00000,\&quot;ChargeTiming\&quot;:\&quot;One-time\&quot;,\&quot;Frequency\&quot;:null,\&quot;SubType\&quot;:\&quot;Standard\&quot;,\&quot;StartValue\&quot;:150.00000,\&quot;PricingElementGlobalKey\&quot;:\&quot;c2da55a6-9c5c-224d-871e-8d0886689300\&quot;,\&quot;LogType\&quot;:\&quot;PRICE\&quot;,\&quot;PriceListEntryId\&quot;:\&quot;a3B4x000001bPvqEAE\&quot;},{\&quot;LogSequence\&quot;:1,\&quot;IsEffective\&quot;:true,\&quot;EndDate\&quot;:null,\&quot;StartDate\&quot;:null,\&quot;DateApplied\&quot;:\&quot;2023-02-15T12:05:40.000Z\&quot;,\&quot;AppliedBy\&quot;:\&quot;epc epc\&quot;,\&quot;DisplayText\&quot;:\&quot;Discount applied by epc epc\&quot;,\&quot;PricingAdjustmentId\&quot;:\&quot;a344x000000mC70AAE\&quot;,\&quot;Source\&quot;:\&quot;Agent\&quot;,\&quot;AdjustmentType\&quot;:\&quot;Discount\&quot;,\&quot;Amount\&quot;:0.00,\&quot;AdjustmentValue\&quot;:-10.00,\&quot;AdjustmentMethod\&quot;:\&quot;Percent\&quot;,\&quot;PricingVariableCode\&quot;:\&quot;OT_STD_PRC_ADJ_PCT\&quot;,\&quot;EndValue\&quot;:135.0000000,\&quot;ChargeTiming\&quot;:\&quot;Adjustment\&quot;,\&quot;Frequency\&quot;:null,\&quot;SubType\&quot;:\&quot;Standard\&quot;,\&quot;StartValue\&quot;:150.00000,\&quot;LogType\&quot;:\&quot;ADJUSTMENT\&quot;}]},\&quot;PricingVariableCodeFieldBinding\&quot;:{\&quot;vlocity_cmt__EffectiveQuantity__c\&quot;:\&quot;EFFECTIVE_QUANTITY\&quot;,\&quot;Quantity\&quot;:\&quot;LINE_QUANTITY\&quot;,\&quot;vlocity_cmt__EffectiveRecurringTotal__c\&quot;:\&quot;EFF_REC_MNTH_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__RecurringTotal__c\&quot;:\&quot;REC_MNTH_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__RecurringCalculatedPrice__c\&quot;:\&quot;REC_MNTH_STD_PRC_CALC\&quot;,\&quot;vlocity_cmt__RecurringCharge__c\&quot;:\&quot;REC_MNTH_STD_PRC\&quot;,\&quot;vlocity_cmt__EffectiveOneTimeTotal__c\&quot;:\&quot;EFF_OT_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__OneTimeTotal__c\&quot;:\&quot;OT_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__OneTimeCalculatedPrice__c\&quot;:\&quot;OT_STD_PRC_CALC\&quot;,\&quot;vlocity_cmt__OneTimeCharge__c\&quot;:\&quot;OT_STD_PRC\&quot;,\&quot;vlocity_cmt__RecurringManualDiscount__c\&quot;:\&quot;REC_MNTH_STD_PRC_DISC_PCT_MAN\&quot;,\&quot;vlocity_cmt__OneTimeManualDiscount__c\&quot;:\&quot;OT_STD_PRC_DISC_PCT_MAN\&quot;},\&quot;PriceAdjustmentPromoKeys\&quot;:[],\&quot;PricingVariableCodeValues\&quot;:{\&quot;DISP_OT_STD_PRC\&quot;:135.0000000,\&quot;ROLLUP_OT_STD_PRC_TOTAL\&quot;:0.00,\&quot;ROLLUP_REC_MNTH_STD_PRC_TOTAL\&quot;:0.00,\&quot;EFFECTIVE_QUANTITY\&quot;:1.00,\&quot;LINE_QUANTITY\&quot;:1.00,\&quot;EFF_REC_MNTH_STD_PRC_TOTAL\&quot;:0.00,\&quot;REC_MNTH_STD_PRC_TOTAL\&quot;:0.00,\&quot;REC_MNTH_STD_PRC_CALC\&quot;:0.00,\&quot;REC_MNTH_STD_PRC\&quot;:0.00,\&quot;EFF_OT_STD_PRC_TOTAL\&quot;:135.00,\&quot;OT_STD_PRC_TOTAL\&quot;:135.00,\&quot;OT_STD_PRC_CALC\&quot;:135.00,\&quot;OT_STD_PRC\&quot;:135.0000000,\&quot;REC_MNTH_STD_PRC_DISC_PCT_MAN\&quot;:0.00,\&quot;OT_STD_PRC_DISC_PCT_MAN\&quot;:0.00},\&quot;PricingVariableCodeBaseValues\&quot;:{\&quot;OT_STD_PRC\&quot;:150.00000},\&quot;LogVersion\&quot;:\&quot;3.0\&quot;,\&quot;PriceAsOfDateTime\&quot;:\&quot;2023-02-22T14:19:33.905Z\&quot;,\&quot;LastPricingTime\&quot;:\&quot;2023-02-22T14:19:33.905Z\&quot;,\&quot;SequentialOffers\&quot;:false,\&quot;SequentialPromotions\&quot;:false,\&quot;SequentialDiscounts\&quot;:false}&quot;,
+    &quot;vlocity_cmt__ProductGroupKey__c&quot; : &quot;71f67531-4691-1b28-6165-ff4aa956a94e&quot;,
+    &quot;Id&quot; : &quot;8024x00000TFb6BAAT&quot;,
+    &quot;OrderId&quot; : &quot;8014x000000njmoAAA&quot;,
+    &quot;Quantity&quot; : 1,
+    &quot;pricingAdjustments&quot; : {
+      &quot;Percent&quot; : -10,
+      &quot;priceType&quot; : &quot;One-time&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__Action__c&quot; : &quot;Add&quot;,
+    &quot;vlocity_cmt__BillingAccountId__c&quot; : &quot;0014x00000KlmAgAAJ&quot;,
+    &quot;vlocity_cmt__PricingLogData__c&quot; : &quot;{\&quot;LogData\&quot;:{\&quot;REC_MNTH_STD_PRC_TOTAL\&quot;:[{\&quot;ChargeTiming\&quot;:null,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;[Recurring Calculated Price (90.00) + Rollup Recurring Total (0.00)] x Quantity (1.00)\&quot;}],\&quot;REC_MNTH_STD_PRC_CALC\&quot;:[{\&quot;ChargeTiming\&quot;:null,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;Recurring Charge (90.0000000) - Recurring Manual Discount (0.00%)\&quot;}],\&quot;OT_STD_PRC_TOTAL\&quot;:[{\&quot;ChargeTiming\&quot;:\&quot;One-Time\&quot;,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;[One Time Calculated Price (0.00) + Rollup One Time Total (0.00)] x Quantity (1.00)\&quot;}],\&quot;OT_STD_PRC_CALC\&quot;:[{\&quot;ChargeTiming\&quot;:null,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;One Time Charge (0.00) - One Time Manual Discount (0.00%)\&quot;}],\&quot;REC_MNTH_STD_PRC\&quot;:[{\&quot;LogSequence\&quot;:0,\&quot;IsEffective\&quot;:true,\&quot;EndDate\&quot;:null,\&quot;StartDate\&quot;:null,\&quot;AdjustmentType\&quot;:\&quot;None\&quot;,\&quot;LoyaltyCode\&quot;:\&quot;PTS\&quot;,\&quot;CurrencyCode\&quot;:\&quot;USD\&quot;,\&quot;CurrencyType\&quot;:\&quot;Currency\&quot;,\&quot;Amount\&quot;:100.00000,\&quot;AdjustmentValue\&quot;:0.00,\&quot;AdjustmentMethod\&quot;:null,\&quot;BaseValue\&quot;:100.00000,\&quot;BaseAdjustment\&quot;:null,\&quot;PriceListId\&quot;:\&quot;a3C4x000000cXvqEAE\&quot;,\&quot;OfferId\&quot;:null,\&quot;PromotionId\&quot;:null,\&quot;PricingElementId\&quot;:\&quot;a3E4x000000uQ2kEAE\&quot;,\&quot;PricingVariableCode\&quot;:\&quot;REC_MNTH_STD_PRC\&quot;,\&quot;DisplayText\&quot;:\&quot;PLE Recurring\&quot;,\&quot;EndValue\&quot;:100.00000,\&quot;ChargeTiming\&quot;:\&quot;Recurring\&quot;,\&quot;Frequency\&quot;:\&quot;Monthly\&quot;,\&quot;SubType\&quot;:\&quot;Standard\&quot;,\&quot;StartValue\&quot;:100.00000,\&quot;PricingElementGlobalKey\&quot;:\&quot;ebfdf064-a44c-2a29-8988-feca8c742474\&quot;,\&quot;LogType\&quot;:\&quot;PRICE\&quot;,\&quot;PriceListEntryId\&quot;:\&quot;a3B4x000001bPzTEAU\&quot;},{\&quot;LogSequence\&quot;:1,\&quot;IsEffective\&quot;:true,\&quot;EndDate\&quot;:null,\&quot;StartDate\&quot;:null,\&quot;DateApplied\&quot;:\&quot;2023-02-16T07:54:44.000Z\&quot;,\&quot;AppliedBy\&quot;:\&quot;epc epc\&quot;,\&quot;DisplayText\&quot;:\&quot;Discount applied by epc epc\&quot;,\&quot;PricingAdjustmentId\&quot;:\&quot;a344x000000mCBRAA2\&quot;,\&quot;Source\&quot;:\&quot;Agent\&quot;,\&quot;AdjustmentType\&quot;:\&quot;Discount\&quot;,\&quot;Amount\&quot;:0.00,\&quot;AdjustmentValue\&quot;:-10.00,\&quot;AdjustmentMethod\&quot;:\&quot;Percent\&quot;,\&quot;PricingVariableCode\&quot;:\&quot;REC_MNTH_STD_PRC_ADJ_PCT\&quot;,\&quot;EndValue\&quot;:90.0000000,\&quot;ChargeTiming\&quot;:\&quot;Adjustment\&quot;,\&quot;Frequency\&quot;:\&quot;Monthly\&quot;,\&quot;SubType\&quot;:\&quot;Standard\&quot;,\&quot;StartValue\&quot;:100.00000,\&quot;LogType\&quot;:\&quot;ADJUSTMENT\&quot;}]},\&quot;PricingVariableCodeFieldBinding\&quot;:{\&quot;vlocity_cmt__EffectiveQuantity__c\&quot;:\&quot;EFFECTIVE_QUANTITY\&quot;,\&quot;Quantity\&quot;:\&quot;LINE_QUANTITY\&quot;,\&quot;vlocity_cmt__EffectiveRecurringTotal__c\&quot;:\&quot;EFF_REC_MNTH_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__RecurringTotal__c\&quot;:\&quot;REC_MNTH_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__RecurringCalculatedPrice__c\&quot;:\&quot;REC_MNTH_STD_PRC_CALC\&quot;,\&quot;vlocity_cmt__RecurringCharge__c\&quot;:\&quot;REC_MNTH_STD_PRC\&quot;,\&quot;vlocity_cmt__EffectiveOneTimeTotal__c\&quot;:\&quot;EFF_OT_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__OneTimeTotal__c\&quot;:\&quot;OT_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__OneTimeCalculatedPrice__c\&quot;:\&quot;OT_STD_PRC_CALC\&quot;,\&quot;vlocity_cmt__OneTimeCharge__c\&quot;:\&quot;OT_STD_PRC\&quot;,\&quot;vlocity_cmt__RecurringManualDiscount__c\&quot;:\&quot;REC_MNTH_STD_PRC_DISC_PCT_MAN\&quot;,\&quot;vlocity_cmt__OneTimeManualDiscount__c\&quot;:\&quot;OT_STD_PRC_DISC_PCT_MAN\&quot;},\&quot;PriceAdjustmentPromoKeys\&quot;:[],\&quot;PricingVariableCodeValues\&quot;:{\&quot;DISP_OT_STD_PRC\&quot;:0.00,\&quot;ROLLUP_OT_STD_PRC_TOTAL\&quot;:0.00,\&quot;ROLLUP_REC_MNTH_STD_PRC_TOTAL\&quot;:0.00,\&quot;EFFECTIVE_QUANTITY\&quot;:1.00,\&quot;LINE_QUANTITY\&quot;:1.00,\&quot;EFF_REC_MNTH_STD_PRC_TOTAL\&quot;:90.00,\&quot;REC_MNTH_STD_PRC_TOTAL\&quot;:90.00,\&quot;REC_MNTH_STD_PRC_CALC\&quot;:90.00,\&quot;REC_MNTH_STD_PRC\&quot;:90.0000000,\&quot;EFF_OT_STD_PRC_TOTAL\&quot;:0.00,\&quot;OT_STD_PRC_TOTAL\&quot;:0.00,\&quot;OT_STD_PRC_CALC\&quot;:0.00,\&quot;OT_STD_PRC\&quot;:0.00,\&quot;REC_MNTH_STD_PRC_DISC_PCT_MAN\&quot;:0.00,\&quot;OT_STD_PRC_DISC_PCT_MAN\&quot;:0.00},\&quot;PricingVariableCodeBaseValues\&quot;:{\&quot;REC_MNTH_STD_PRC\&quot;:100.00000},\&quot;LogVersion\&quot;:\&quot;3.0\&quot;,\&quot;PriceAsOfDateTime\&quot;:\&quot;2023-02-22T14:19:33.905Z\&quot;,\&quot;LastPricingTime\&quot;:\&quot;2023-02-22T14:19:33.905Z\&quot;,\&quot;SequentialOffers\&quot;:false,\&quot;SequentialPromotions\&quot;:false,\&quot;SequentialDiscounts\&quot;:false}&quot;,
+    &quot;vlocity_cmt__ProductGroupKey__c&quot; : &quot;f591696e-e1a5-3e1c-0af2-bb1b6f06e291&quot;,
+    &quot;Id&quot; : &quot;8024x00000TFbeWAAT&quot;,
+    &quot;OrderId&quot; : &quot;8014x000000njmoAAA&quot;,
+    &quot;Quantity&quot; : 1,
+    &quot;pricingAdjustments&quot; : {
+      &quot;Percent&quot; : -10,
+      &quot;priceType&quot; : &quot;Recurring&quot;
+    }
+  }, {
+    &quot;vlocity_cmt__Action__c&quot; : &quot;Add&quot;,
+    &quot;vlocity_cmt__BillingAccountId__c&quot; : &quot;0014x00000KlmAgAAJ&quot;,
+    &quot;vlocity_cmt__PricingLogData__c&quot; : &quot;{\&quot;LogData\&quot;:{\&quot;REC_MNTH_STD_PRC_TOTAL\&quot;:[{\&quot;ChargeTiming\&quot;:null,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;[Recurring Calculated Price (0.00) + Rollup Recurring Total (0.00)] x Quantity (1.00)\&quot;}],\&quot;REC_MNTH_STD_PRC_CALC\&quot;:[{\&quot;ChargeTiming\&quot;:null,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;Recurring Charge (0.00) - Recurring Manual Discount (0.00%)\&quot;}],\&quot;OT_STD_PRC_TOTAL\&quot;:[{\&quot;ChargeTiming\&quot;:\&quot;One-Time\&quot;,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;[One Time Calculated Price (12.00) + Rollup One Time Total (0.00)] x Quantity (1.00)\&quot;}],\&quot;OT_STD_PRC_CALC\&quot;:[{\&quot;ChargeTiming\&quot;:null,\&quot;LogSequence\&quot;:0,\&quot;DisplayText\&quot;:\&quot;One Time Charge (12.00000) - One Time Manual Discount (0.00%)\&quot;}],\&quot;OT_STD_PRC\&quot;:[{\&quot;LogSequence\&quot;:0,\&quot;IsEffective\&quot;:true,\&quot;EndDate\&quot;:null,\&quot;StartDate\&quot;:null,\&quot;AdjustmentType\&quot;:\&quot;None\&quot;,\&quot;LoyaltyCode\&quot;:\&quot;PTS\&quot;,\&quot;CurrencyCode\&quot;:\&quot;USD\&quot;,\&quot;CurrencyType\&quot;:\&quot;Currency\&quot;,\&quot;Amount\&quot;:12.00000,\&quot;AdjustmentValue\&quot;:0.00,\&quot;AdjustmentMethod\&quot;:null,\&quot;BaseValue\&quot;:12.00000,\&quot;BaseAdjustment\&quot;:null,\&quot;PriceListId\&quot;:\&quot;a3C4x000000cXvqEAE\&quot;,\&quot;OfferId\&quot;:null,\&quot;PromotionId\&quot;:null,\&quot;PricingElementId\&quot;:\&quot;a3E4x000000cFWdEAM\&quot;,\&quot;PricingVariableCode\&quot;:\&quot;OT_STD_PRC\&quot;,\&quot;DisplayText\&quot;:\&quot;PLE\&quot;,\&quot;EndValue\&quot;:12.00000,\&quot;ChargeTiming\&quot;:\&quot;One-time\&quot;,\&quot;Frequency\&quot;:null,\&quot;SubType\&quot;:\&quot;Standard\&quot;,\&quot;StartValue\&quot;:12.00000,\&quot;PricingElementGlobalKey\&quot;:\&quot;9b7a8cc9-093b-9867-858a-414b0927cd13\&quot;,\&quot;LogType\&quot;:\&quot;PRICE\&quot;,\&quot;PriceListEntryId\&quot;:\&quot;a3B4x000001bQKCEA2\&quot;}]},\&quot;PricingVariableCodeFieldBinding\&quot;:{\&quot;vlocity_cmt__EffectiveQuantity__c\&quot;:\&quot;EFFECTIVE_QUANTITY\&quot;,\&quot;Quantity\&quot;:\&quot;LINE_QUANTITY\&quot;,\&quot;vlocity_cmt__EffectiveRecurringTotal__c\&quot;:\&quot;EFF_REC_MNTH_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__RecurringTotal__c\&quot;:\&quot;REC_MNTH_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__RecurringCalculatedPrice__c\&quot;:\&quot;REC_MNTH_STD_PRC_CALC\&quot;,\&quot;vlocity_cmt__RecurringCharge__c\&quot;:\&quot;REC_MNTH_STD_PRC\&quot;,\&quot;vlocity_cmt__EffectiveOneTimeTotal__c\&quot;:\&quot;EFF_OT_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__OneTimeTotal__c\&quot;:\&quot;OT_STD_PRC_TOTAL\&quot;,\&quot;vlocity_cmt__OneTimeCalculatedPrice__c\&quot;:\&quot;OT_STD_PRC_CALC\&quot;,\&quot;vlocity_cmt__OneTimeCharge__c\&quot;:\&quot;OT_STD_PRC\&quot;,\&quot;vlocity_cmt__RecurringManualDiscount__c\&quot;:\&quot;REC_MNTH_STD_PRC_DISC_PCT_MAN\&quot;,\&quot;vlocity_cmt__OneTimeManualDiscount__c\&quot;:\&quot;OT_STD_PRC_DISC_PCT_MAN\&quot;},\&quot;PriceAdjustmentPromoKeys\&quot;:[],\&quot;PricingVariableCodeValues\&quot;:{\&quot;DISP_OT_STD_PRC\&quot;:12.00000,\&quot;ROLLUP_OT_STD_PRC_TOTAL\&quot;:0.00,\&quot;ROLLUP_REC_MNTH_STD_PRC_TOTAL\&quot;:0.00,\&quot;EFFECTIVE_QUANTITY\&quot;:1.00,\&quot;LINE_QUANTITY\&quot;:1.00,\&quot;EFF_REC_MNTH_STD_PRC_TOTAL\&quot;:0.00,\&quot;REC_MNTH_STD_PRC_TOTAL\&quot;:0.00,\&quot;REC_MNTH_STD_PRC_CALC\&quot;:0.00,\&quot;REC_MNTH_STD_PRC\&quot;:0.00,\&quot;EFF_OT_STD_PRC_TOTAL\&quot;:12.00,\&quot;OT_STD_PRC_TOTAL\&quot;:12.00,\&quot;OT_STD_PRC_CALC\&quot;:12.00,\&quot;OT_STD_PRC\&quot;:12.00000,\&quot;REC_MNTH_STD_PRC_DISC_PCT_MAN\&quot;:0.00,\&quot;OT_STD_PRC_DISC_PCT_MAN\&quot;:0.00},\&quot;PricingVariableCodeBaseValues\&quot;:{\&quot;OT_STD_PRC\&quot;:12.00000},\&quot;LogVersion\&quot;:\&quot;3.0\&quot;,\&quot;PriceAsOfDateTime\&quot;:\&quot;2023-02-22T14:19:33.905Z\&quot;,\&quot;LastPricingTime\&quot;:\&quot;2023-02-22T14:19:33.905Z\&quot;,\&quot;SequentialOffers\&quot;:false,\&quot;SequentialPromotions\&quot;:false,\&quot;SequentialDiscounts\&quot;:false}&quot;,
+    &quot;vlocity_cmt__ProductGroupKey__c&quot; : &quot;b7073c11-4c86-713e-5797-03c01880f951&quot;,
+    &quot;Id&quot; : &quot;8024x00000TFfdsAAD&quot;,
+    &quot;OrderId&quot; : &quot;8014x000000njmoAAA&quot;,
+    &quot;Quantity&quot; : 1,
+    &quot;pricingAdjustments&quot; : { },
+    &quot;productCharacteristic&quot; : [ {
+      &quot;$$AttributeDefinitionEnd$$&quot; : null,
+      &quot;$$AttributeDefinitionStart$$&quot; : null,
+      &quot;attributeRunTimeInfo&quot; : {
+        &quot;dataType&quot; : &quot;Text&quot;,
+        &quot;default&quot; : &quot;test data&quot;,
+        &quot;uiDisplayType&quot; : &quot;Text&quot;,
+        &quot;value&quot; : &quot;test data&quot;
+      },
+      &quot;attributecategoryid__c&quot; : &quot;a0b4x000000qCcAAAU&quot;,
+      &quot;attributecloneable__c&quot; : true,
+      &quot;attributeconfigurable__c&quot; : true,
+      &quot;attributedisplayname__c&quot; : &quot;Rohit Attribute Text&quot;,
+      &quot;attributedisplaysequence__c&quot; : &quot;1&quot;,
+      &quot;attributefilterable__c&quot; : true,
+      &quot;attributegrouptype__c&quot; : null,
+      &quot;attributeid__c&quot; : &quot;a0c4x000002XTHtAAO&quot;,
+      &quot;attributeuniquecode__c&quot; : &quot;Rohit Attribute Text&quot;,
+      &quot;categorycode__c&quot; : &quot;f81b1831-8146-600a-90e4-90ea01c36eea&quot;,
+      &quot;categorydisplaysequence__c&quot; : 123,
+      &quot;categoryname__c&quot; : &quot;Rohit Attribute Category&quot;,
+      &quot;customconfiguitemplate__c&quot; : null,
+      &quot;displaysequence__c&quot; : &quot;123&quot;,
+      &quot;formatmask__c&quot; : null,
+      &quot;hasrule__c&quot; : false,
+      &quot;id&quot; : &quot;a234x000000n3D5AAI&quot;,
+      &quot;isactive__c&quot; : true,
+      &quot;isconfigurable__c&quot; : false,
+      &quot;ishidden__c&quot; : false,
+      &quot;isnotassetizable__c&quot; : false,
+      &quot;isnottranslatable__c&quot; : false,
+      &quot;isquerydriven__c&quot; : false,
+      &quot;isreadonly__c&quot; : false,
+      &quot;isrequired__c&quot; : false,
+      &quot;objectid__c&quot; : &quot;01t4x000004b4wwAAA&quot;,
+      &quot;objecttype__c&quot; : &quot;vlocity_cmt__ObjectClass__c&quot;,
+      &quot;querycode__c&quot; : null,
+      &quot;querylabel__c&quot; : null,
+      &quot;rulemessage__c&quot; : null,
+      &quot;uidisplaytype__c&quot; : &quot;Text&quot;,
+      &quot;value__c&quot; : &quot;test data&quot;,
+      &quot;valuedatatype__c&quot; : &quot;Text&quot;,
+      &quot;valuedescription__c&quot; : null,
+      &quot;valueinnumber__c&quot; : null
+    }, {
+      &quot;$$AttributeDefinitionEnd$$&quot; : null,
+      &quot;$$AttributeDefinitionStart$$&quot; : null,
+      &quot;attributeRunTimeInfo&quot; : {
+        &quot;dataType&quot; : &quot;Multi Picklist&quot;,
+        &quot;default&quot; : [ ],
+        &quot;selectedItems&quot; : [ ],
+        &quot;uiDisplayType&quot; : &quot;Dropdown&quot;,
+        &quot;values&quot; : [ {
+          &quot;displayText&quot; : &quot;test&quot;,
+          &quot;id&quot; : &quot;856190cf-e62b-035f-7f6d-e351bfa5f496&quot;,
+          &quot;sequence&quot; : 1,
+          &quot;value&quot; : null
+        }, {
+          &quot;displayText&quot; : &quot;test1label&quot;,
+          &quot;id&quot; : &quot;f00aceba-cb5a-afe8-7e9c-348eb649d93c&quot;,
+          &quot;sequence&quot; : 2,
+          &quot;value&quot; : &quot;test1&quot;
+        }, {
+          &quot;displayText&quot; : &quot;test2label&quot;,
+          &quot;id&quot; : &quot;b749d4b3-68c1-b2c6-d454-edbcf77d8252&quot;,
+          &quot;sequence&quot; : 3,
+          &quot;value&quot; : &quot;test2&quot;
+        }, {
+          &quot;displayText&quot; : &quot;test3label&quot;,
+          &quot;id&quot; : &quot;8a1267c2-2d77-849c-3feb-52e306382f4f&quot;,
+          &quot;sequence&quot; : 4,
+          &quot;value&quot; : &quot;test3&quot;
+        } ]
+      },
+      &quot;attributecategoryid__c&quot; : &quot;a0b4x000000owWtAAI&quot;,
+      &quot;attributecloneable__c&quot; : true,
+      &quot;attributeconfigurable__c&quot; : true,
+      &quot;attributedisplayname__c&quot; : &quot;Test multipicklist&quot;,
+      &quot;attributedisplaysequence__c&quot; : &quot;100&quot;,
+      &quot;attributefilterable__c&quot; : true,
+      &quot;attributegrouptype__c&quot; : null,
+      &quot;attributeid__c&quot; : &quot;a0c4x000002YJYzAAO&quot;,
+      &quot;attributeuniquecode__c&quot; : &quot;Test multipicklist&quot;,
+      &quot;categorycode__c&quot; : &quot;d8b91c60-a1a2-b3ca-d7e0-13324e77b1fc&quot;,
+      &quot;categorydisplaysequence__c&quot; : 1,
+      &quot;categoryname__c&quot; : &quot;Physical Attribute Category&quot;,
+      &quot;customconfiguitemplate__c&quot; : null,
+      &quot;displaysequence__c&quot; : &quot;1&quot;,
+      &quot;formatmask__c&quot; : null,
+      &quot;hasrule__c&quot; : false,
+      &quot;id&quot; : &quot;a234x000000n3D6AAI&quot;,
+      &quot;isactive__c&quot; : true,
+      &quot;isconfigurable__c&quot; : true,
+      &quot;ishidden__c&quot; : false,
+      &quot;isnotassetizable__c&quot; : false,
+      &quot;isnottranslatable__c&quot; : false,
+      &quot;isquerydriven__c&quot; : false,
+      &quot;isreadonly__c&quot; : false,
+      &quot;isrequired__c&quot; : false,
+      &quot;objectid__c&quot; : &quot;01t4x000004b4wwAAA&quot;,
+      &quot;objecttype__c&quot; : &quot;vlocity_cmt__ObjectClass__c&quot;,
+      &quot;querycode__c&quot; : null,
+      &quot;querylabel__c&quot; : null,
+      &quot;rulemessage__c&quot; : null,
+      &quot;uidisplaytype__c&quot; : &quot;Dropdown&quot;,
+      &quot;value__c&quot; : null,
+      &quot;valuedatatype__c&quot; : &quot;Multi Picklist&quot;,
+      &quot;valuedescription__c&quot; : null,
+      &quot;valueinnumber__c&quot; : null
+    }, {
+      &quot;$$AttributeDefinitionEnd$$&quot; : null,
+      &quot;$$AttributeDefinitionStart$$&quot; : null,
+      &quot;attributeRunTimeInfo&quot; : {
+        &quot;dataType&quot; : &quot;Text&quot;,
+        &quot;default&quot; : &quot;Some text&quot;,
+        &quot;uiDisplayType&quot; : &quot;Text&quot;,
+        &quot;value&quot; : &quot;Some text&quot;
+      },
+      &quot;attributecategoryid__c&quot; : &quot;a0b4x000000owWtAAI&quot;,
+      &quot;attributecloneable__c&quot; : true,
+      &quot;attributeconfigurable__c&quot; : true,
+      &quot;attributedisplayname__c&quot; : &quot;Text Attribute&quot;,
+      &quot;attributedisplaysequence__c&quot; : &quot;1&quot;,
+      &quot;attributefilterable__c&quot; : true,
+      &quot;attributegrouptype__c&quot; : null,
+      &quot;attributeid__c&quot; : &quot;a0c4x000000mgUhAAI&quot;,
+      &quot;attributeuniquecode__c&quot; : &quot;Text Attribute&quot;,
+      &quot;categorycode__c&quot; : &quot;d8b91c60-a1a2-b3ca-d7e0-13324e77b1fc&quot;,
+      &quot;categorydisplaysequence__c&quot; : 1,
+      &quot;categoryname__c&quot; : &quot;Physical Attribute Category&quot;,
+      &quot;customconfiguitemplate__c&quot; : null,
+      &quot;displaysequence__c&quot; : &quot;1&quot;,
+      &quot;formatmask__c&quot; : null,
+      &quot;hasrule__c&quot; : false,
+      &quot;id&quot; : &quot;a234x000000n3D8AAI&quot;,
+      &quot;isactive__c&quot; : true,
+      &quot;isconfigurable__c&quot; : false,
+      &quot;ishidden__c&quot; : false,
+      &quot;isnotassetizable__c&quot; : false,
+      &quot;isnottranslatable__c&quot; : false,
+      &quot;isquerydriven__c&quot; : false,
+      &quot;isreadonly__c&quot; : false,
+      &quot;isrequired__c&quot; : false,
+      &quot;objectid__c&quot; : &quot;01t4x000004b4wwAAA&quot;,
+      &quot;objecttype__c&quot; : &quot;vlocity_cmt__ObjectClass__c&quot;,
+      &quot;querycode__c&quot; : null,
+      &quot;querylabel__c&quot; : null,
+      &quot;rulemessage__c&quot; : null,
+      &quot;uidisplaytype__c&quot; : &quot;Text&quot;,
+      &quot;value__c&quot; : &quot;Some text&quot;,
+      &quot;valuedatatype__c&quot; : &quot;Text&quot;,
+      &quot;valuedescription__c&quot; : null,
+      &quot;valueinnumber__c&quot; : null
+    }, {
+      &quot;$$AttributeDefinitionEnd$$&quot; : null,
+      &quot;$$AttributeDefinitionStart$$&quot; : null,
+      &quot;attributeRunTimeInfo&quot; : {
+        &quot;dataType&quot; : &quot;Date&quot;,
+        &quot;value&quot; : null
+      },
+      &quot;attributecategoryid__c&quot; : &quot;a0b4x000000qFlpAAE&quot;,
+      &quot;attributecloneable__c&quot; : true,
+      &quot;attributeconfigurable__c&quot; : true,
+      &quot;attributedisplayname__c&quot; : &quot;TEST_DATE&quot;,
+      &quot;attributedisplaysequence__c&quot; : &quot;900&quot;,
+      &quot;attributefilterable__c&quot; : true,
+      &quot;attributegrouptype__c&quot; : null,
+      &quot;attributeid__c&quot; : &quot;a0c4x000002qkMOAAY&quot;,
+      &quot;attributeuniquecode__c&quot; : &quot;TEST_DATE&quot;,
+      &quot;categorycode__c&quot; : &quot;1e1d2942-1c2e-b2cb-4275-17128ccad489&quot;,
+      &quot;categorydisplaysequence__c&quot; : 5,
+      &quot;categoryname__c&quot; : &quot;CategoryEPC-5756&quot;,
+      &quot;customconfiguitemplate__c&quot; : null,
+      &quot;displaysequence__c&quot; : &quot;5&quot;,
+      &quot;formatmask__c&quot; : null,
+      &quot;hasrule__c&quot; : false,
+      &quot;id&quot; : &quot;a234x000000n3D7AAI&quot;,
+      &quot;isactive__c&quot; : true,
+      &quot;isconfigurable__c&quot; : false,
+      &quot;ishidden__c&quot; : false,
+      &quot;isnotassetizable__c&quot; : false,
+      &quot;isnottranslatable__c&quot; : false,
+      &quot;isquerydriven__c&quot; : false,
+      &quot;isreadonly__c&quot; : false,
+      &quot;isrequired__c&quot; : false,
+      &quot;objectid__c&quot; : &quot;01t4x000004b4wwAAA&quot;,
+      &quot;objecttype__c&quot; : &quot;vlocity_cmt__ObjectClass__c&quot;,
+      &quot;querycode__c&quot; : null,
+      &quot;querylabel__c&quot; : null,
+      &quot;rulemessage__c&quot; : null,
+      &quot;uidisplaytype__c&quot; : null,
+      &quot;value__c&quot; : null,
+      &quot;valuedatatype__c&quot; : &quot;Date&quot;,
+      &quot;valuedescription__c&quot; : null,
+      &quot;valueinnumber__c&quot; : null
+    } ]
+  } ],
+  &quot;relatedParty&quot; : [ {
+    &quot;AccountNumber&quot; : &quot;CD451791&quot;,
+    &quot;Id&quot; : &quot;0014x00000KlmAgAAJ&quot;,
+    &quot;Name&quot; : &quot;Test Sh1&quot;,
+    &quot;attributes&quot; : {
+      &quot;type&quot; : &quot;Account&quot;,
+      &quot;url&quot; : &quot;/services/data/v57.0/sobjects/Account/0014x00000KlmAgAAJ&quot;
+    }
+  } ],
+  &quot;requestUrl&quot; : &quot;/services/apexrest/vlocity_cmt/tmforum/productopenapi/v1/&quot;
+} ]</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>TMFTMForumGetProductOrderOutputTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
