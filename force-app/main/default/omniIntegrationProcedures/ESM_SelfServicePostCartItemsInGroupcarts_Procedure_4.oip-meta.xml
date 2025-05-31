@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;productBundles&quot;:[{&quot;Name&quot;:&quot;Business Postpaid PRO Plan + Device&quot;,&quot;PriceBookId&quot;:&quot;01s8Z000001n9bDQAQ&quot;,&quot;PricebookEntryId&quot;:&quot;01u8Z00002kDOE3QAO&quot;,&quot;ProductFamily&quot;:&quot;None&quot;,&quot;ProductId&quot;:&quot;01t8Z00000AnjXsQAJ&quot;,&quot;Quantity&quot;:2,&quot;assetIds&quot;:[&quot;02i8Z00000X4krSQAR&quot;,&quot;02i8Z00000X4kraQAB&quot;],&quot;groupCartId&quot;:&quot;8018Z000006VpHjQAK&quot;,&quot;groupId&quot;:&quot;a3X8Z0000011GLSUA2&quot;},{&quot;Name&quot;:&quot;iPhone 12&quot;,&quot;PriceBookId&quot;:&quot;01s8Z000001n9bDQAQ&quot;,&quot;PricebookEntryId&quot;:&quot;01u8Z00002kDODPQA4&quot;,&quot;ProductFamily&quot;:&quot;None&quot;,&quot;ProductId&quot;:&quot;01t8Z00000AnjXEQAZ&quot;,&quot;Quantity&quot;:3,&quot;assetIds&quot;:[&quot;02i8Z00000X4kriQAB&quot;,&quot;02i8Z00000X4krnQAB&quot;,&quot;02i8Z00000X4krsQAB&quot;],&quot;groupCartId&quot;:&quot;8018Z000006VpHkQAK&quot;,&quot;groupId&quot;:&quot;a3X8Z0000011GLTUA2&quot;},{&quot;Name&quot;:&quot;Business Internet Essential&quot;,&quot;PriceBookId&quot;:&quot;01s8Z000001n9bDQAQ&quot;,&quot;PricebookEntryId&quot;:&quot;01u8Z00002kDODpQAO&quot;,&quot;ProductFamily&quot;:&quot;Internet&quot;,&quot;ProductId&quot;:&quot;01t8Z00000AnjXZQAZ&quot;,&quot;Quantity&quot;:2,&quot;assetIds&quot;:[&quot;02i8Z00000X4ks2QAB&quot;,&quot;02i8Z00000X4ks8QAB&quot;],&quot;groupCartId&quot;:&quot;8018Z000006VpHlQAK&quot;,&quot;groupId&quot;:&quot;a3X8Z0000011GLUUA2&quot;}]}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>ESM_SelfService_PostCartItemsInGroupCart</name>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>postCartItems</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;additionalInput&quot; : {
+    &quot;cartId&quot; : &quot;%productBundles:groupCartId%&quot;,
+    &quot;items&quot; : [ {
+      &quot;itemId&quot; : &quot;%productBundles:PricebookEntryId%&quot;
+    } ],
+    &quot;price&quot; : true,
+    &quot;random&quot; : &quot;%productBundles:groupCartId%&quot;,
+    &quot;validate&quot; : false
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;RemoteAction1&quot;,
+  &quot;remoteClass&quot; : &quot;CpqAppHandler&quot;,
+  &quot;remoteMethod&quot; : &quot;postCartsItems&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Remote Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ForEachProductGroup</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;LoopBlock1&quot;,
+  &quot;loopList&quot; : &quot;productBundles&quot;,
+  &quot;loopOutput&quot; : { },
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Loop Block</type>
+    </omniProcessElements>
+    <omniProcessKey>ESM_SelfServicePostCartItemsInGroupcarts</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;description&quot; : &quot;This IP creates line items in group carts&quot;,
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;mockResponseMap&quot; : { },
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;rollbackOnError&quot; : false,
+  &quot;trackingCustomData&quot; : { },
+  &quot;ttlMinutes&quot; : 5
+}</propertySetConfig>
+    <subType>SelfServicePostCartItemsInGroupcarts</subType>
+    <type>ESM</type>
+    <uniqueName>ESM_SelfServicePostCartItemsInGroupcarts_Procedure_4</uniqueName>
+    <versionNumber>4.0</versionNumber>
+    <webComponentKey>2080fcb9-3b58-2684-f283-d4635b7e914a</webComponentKey>
+</OmniIntegrationProcedure>

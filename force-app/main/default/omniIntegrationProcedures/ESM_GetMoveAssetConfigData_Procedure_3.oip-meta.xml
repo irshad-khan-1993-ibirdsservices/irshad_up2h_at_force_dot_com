@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>GetMoveAssetConfigData</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponseAction1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;additionalOutput&quot; : {
+    &quot;responseData&quot; : &quot;%responseData%&quot;
+  },
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true,
+  &quot;vlcResponseHeaders&quot; : { }
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>responseData</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;elementValueMap&quot; : {
+    &quot;b2bGetOrderItemsFields&quot; : &quot;vlocity_cmt__ValidationDate__c,vlocity_cmt__IsValidated__c,vlocity_cmt__BillingAccountId__r.BillingAddress,vlocity_cmt__ServiceIdentifier__c,vlocity_cmt__ConnectDate__c,vlocity_cmt__OrderMemberId__r.vlocity_cmt__StreetAddress__c,vlocity_cmt__OrderMemberId__r.vlocity_cmt__MemberType__c,vlocity_cmt__OrderGroupId__r.Name,vlocity_cmt__OrderGroupId__r.vlocity_cmt__MemberType__c,vlocity_cmt__OrderMemberId__r.Name,vlocity_cmt__OrderMemberId__r.vlocity_cmt__City__c,vlocity_cmt__OrderMemberId__r.State__c&quot;,
+    &quot;b2bGetQuoteItemsFields&quot; : &quot;vlocity_cmt__ValidationDate__c,vlocity_cmt__IsValidated__c,vlocity_cmt__BillingAccountId__r.BillingAddress,vlocity_cmt__ServiceIdentifier__c,vlocity_cmt__ConnectDate__c,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__StreetAddress__c,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__MemberType__c,vlocity_cmt__QuoteGroupId__r.Name,vlocity_cmt__QuoteGroupId__r.vlocity_cmt__MemberType__c,vlocity_cmt__QuoteMemberId__r.Name,vlocity_cmt__QuoteMemberId__r.vlocity_cmt__City__c,vlocity_cmt__QuoteMemberId__r.State__c&quot;,
+    &quot;b2bProductFamily&quot; : [ {
+      &quot;label&quot; : &quot;Internet&quot;,
+      &quot;value&quot; : &quot;Internet-test&quot;
+    }, {
+      &quot;label&quot; : &quot;Landline&quot;,
+      &quot;value&quot; : &quot;Landline-test&quot;
+    }, {
+      &quot;label&quot; : &quot;TV&quot;,
+      &quot;value&quot; : &quot;TV-test&quot;
+    } ],
+    &quot;columnMap&quot; : [ {
+      &quot;apiName&quot; : &quot;Id&quot;,
+      &quot;label&quot; : &quot;Id&quot;,
+      &quot;topic&quot; : [ &quot;All&quot; ],
+      &quot;type&quot; : &quot;Text&quot;,
+      &quot;valueMap&quot; : &quot;Id&quot;,
+      &quot;visible&quot; : false
+    }, {
+      &quot;apiName&quot; : &quot;Product2.Name&quot;,
+      &quot;collapsable&quot; : true,
+      &quot;dataType&quot; : &quot;Text&quot;,
+      &quot;label&quot; : &quot;Name&quot;,
+      &quot;showAttrs&quot; : true,
+      &quot;topic&quot; : [ &quot;All&quot; ],
+      &quot;type&quot; : &quot;Text&quot;,
+      &quot;valueMap&quot; : &quot;Product2.Name&quot;
+    }, {
+      &quot;apiName&quot; : &quot;isEligible&quot;,
+      &quot;dataType&quot; : &quot;Text&quot;,
+      &quot;label&quot; : &quot;Eligibility Status&quot;,
+      &quot;topic&quot; : [ &quot;All&quot; ],
+      &quot;type&quot; : &quot;Text&quot;,
+      &quot;valueMap&quot; : &quot;isEligible&quot;
+    }, {
+      &quot;apiName&quot; : &quot;ineligibilityReasons&quot;,
+      &quot;dataType&quot; : &quot;Text&quot;,
+      &quot;label&quot; : &quot;Status Reason&quot;,
+      &quot;topic&quot; : [ &quot;All&quot; ],
+      &quot;type&quot; : &quot;Text&quot;,
+      &quot;valueMap&quot; : &quot;ineligibilityReasons&quot;
+    }, {
+      &quot;apiName&quot; : &quot;vlocity_cmt__ServiceAccountId__r.Name&quot;,
+      &quot;dataType&quot; : &quot;Text&quot;,
+      &quot;label&quot; : &quot;Service Account&quot;,
+      &quot;topic&quot; : [ &quot;All&quot; ],
+      &quot;type&quot; : &quot;Text&quot;,
+      &quot;valueMap&quot; : &quot;vlocity_cmt__ServiceAccountId__r.Name&quot;
+    }, {
+      &quot;apiName&quot; : &quot;vlocity_cmt__ServiceIdentifier__c&quot;,
+      &quot;dataType&quot; : &quot;Text&quot;,
+      &quot;label&quot; : &quot;Service Identifier&quot;,
+      &quot;topic&quot; : [ &quot;All&quot; ],
+      &quot;type&quot; : &quot;Text&quot;,
+      &quot;valueMap&quot; : &quot;vlocity_cmt__ServiceIdentifier__c&quot;
+    }, {
+      &quot;align&quot; : &quot;right&quot;,
+      &quot;apiName&quot; : &quot;vlocity_cmt__RecurringTotal__c&quot;,
+      &quot;dataType&quot; : &quot;Currency&quot;,
+      &quot;label&quot; : &quot;Recurring Total&quot;,
+      &quot;topic&quot; : [ &quot;All&quot; ],
+      &quot;type&quot; : &quot;Currency&quot;,
+      &quot;valueMap&quot; : &quot;vlocity_cmt__RecurringTotal__c&quot;
+    }, {
+      &quot;align&quot; : &quot;right&quot;,
+      &quot;apiName&quot; : &quot;vlocity_cmt__OneTimeTotal__c&quot;,
+      &quot;dataType&quot; : &quot;Currency&quot;,
+      &quot;label&quot; : &quot;One-Time Payment Total&quot;,
+      &quot;topic&quot; : [ &quot;All&quot; ],
+      &quot;type&quot; : &quot;Currency&quot;,
+      &quot;valueMap&quot; : &quot;vlocity_cmt__OneTimeTotal__c&quot;
+    } ],
+    &quot;contextFieldMapping&quot; : {
+      &quot;vlocity_cmt__City__c&quot; : &quot;City&quot;
+    },
+    &quot;pageLimit&quot; : &quot;3&quot;,
+    &quot;pageSize&quot; : &quot;3&quot;,
+    &quot;readOnlyFields&quot; : {
+      &quot;fields&quot; : {
+        &quot;OneTimeTotal__c&quot; : &quot;OneTimeTotal__c&quot;,
+        &quot;Product2.Name&quot; : &quot;Product2.Name&quot;,
+        &quot;RecurringTotal__c&quot; : &quot;RecurringTotal__c&quot;,
+        &quot;ServiceAccountId__r.name&quot; : &quot;ServiceAccountId__r.name&quot;,
+        &quot;ServiceIdentifier__c&quot; : &quot;ServiceIdentifier__c&quot;,
+        &quot;id&quot; : &quot;Id&quot;
+      }
+    },
+    &quot;searchByFields&quot; : &quot;Product2.Name&quot;
+  },
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessKey>ESM_GetMoveAssetConfigData</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;description&quot; : &quot;&quot;,
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;mockResponseMap&quot; : { },
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;rollbackOnError&quot; : false,
+  &quot;trackingCustomData&quot; : { },
+  &quot;ttlMinutes&quot; : 5
+}</propertySetConfig>
+    <subType>GetMoveAssetConfigData</subType>
+    <type>ESM</type>
+    <uniqueName>ESM_GetMoveAssetConfigData_Procedure_3</uniqueName>
+    <versionNumber>3.0</versionNumber>
+    <webComponentKey>000c4835-76e3-d6e1-fee8-323c2d358b62</webComponentKey>
+</OmniIntegrationProcedure>

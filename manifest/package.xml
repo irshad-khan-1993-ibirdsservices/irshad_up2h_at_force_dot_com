@@ -28,5 +28,9 @@
         <members>*</members>
         <name>OmniUiCard</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>OmniIntegrationProcedure</name>
+    </types>
     <version>63.0</version>
 </Package>

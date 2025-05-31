@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;additionalData&quot;:{&quot;AssetIds&quot;:[&quot;02iHs00000JpWabIAF&quot;,&quot;02iHs00000JpWaFIAV&quot;],&quot;DefaultFieldValues&quot;:{&quot;Name&quot;:&quot;Temp ATQ Working Cart&quot;,&quot;Status&quot;:&quot;Draft&quot;},&quot;FieldsToCopy&quot;:[&quot;Id&quot;,&quot;AccountId&quot;,&quot;OpportunityId&quot;,&quot;vlocity_cmt__PriceListId__c&quot;,&quot;vlocity_cmt__OriginatingChannel__c&quot;,&quot;vlocity_cmt__PriceListId__r.Name&quot;],&quot;QuoteId&quot;:&quot;0Q0Hs000003NcZyKAK&quot;,&quot;accountId&quot;:&quot;001Hs00003AE5DfIAL&quot;,&quot;isAsyncATQFlow&quot;:true,&quot;opportunityId&quot;:&quot;006Hs00001Qc1s7IAB&quot;},&quot;itemsToProcessSubsetList&quot;:[&quot;02iHs00000JpWabIAF&quot;,&quot;02iHs00000JpWaFIAV&quot;]}</customJavaScript>
+    <description>This IP is used to create quote members and quote product relationships during async asset to quote flow</description>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>ESM_AsyncCreateQuoteMembersFromAssets</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>createQuoteMembers</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;additionalInput&quot; : {
+    &quot;AccountToQuoteMemberFieldMap&quot; : {
+      &quot;vlocity_cmt__BillingEmailAddress__c&quot; : &quot;vlocity_cmt__Email__c&quot;,
+      &quot;Id&quot; : &quot;vlocity_cmt__ServiceAccountId__c&quot;,
+      &quot;Name&quot; : &quot;Name&quot;,
+      &quot;RecordTypeId&quot; : &quot;vlocity_cmt__MemberType__c&quot;,
+      &quot;ShippingCity&quot; : &quot;vlocity_cmt__City__c&quot;,
+      &quot;ShippingCountry&quot; : &quot;vlocity_cmt__Country__c&quot;,
+      &quot;ShippingPostalCode&quot; : &quot;vlocity_cmt__PostalCode__c&quot;,
+      &quot;ShippingState&quot; : &quot;vlocity_cmt__State__c&quot;,
+      &quot;ShippingStreet&quot; : &quot;vlocity_cmt__StreetAddress__c&quot;
+    },
+    &quot;additionalQuoteMemberData&quot; : &quot;%additionalData:additionalQuoteMemberData%&quot;,
+    &quot;assetIds&quot; : &quot;%itemsToProcessSubsetList%&quot;,
+    &quot;checkDuplicateWithCreatedQM&quot; : true,
+    &quot;quoteId&quot; : &quot;%additionalData:QuoteId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;RemoteAction1&quot;,
+  &quot;remoteClass&quot; : &quot;B2BCmexAppHandler&quot;,
+  &quot;remoteMethod&quot; : &quot;createQuoteMembersFromAssets&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessKey>ESM_AsyncCreateQuoteMembersFromAssets</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;description&quot; : &quot;&quot;,
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;mockResponseMap&quot; : { },
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;rollbackOnError&quot; : false,
+  &quot;trackingCustomData&quot; : { },
+  &quot;ttlMinutes&quot; : 5
+}</propertySetConfig>
+    <subType>AsyncCreateQuoteMembersFromAssets</subType>
+    <type>ESM</type>
+    <uniqueName>ESM_AsyncCreateQuoteMembersFromAssets_Procedure_3</uniqueName>
+    <versionNumber>3.0</versionNumber>
+    <webComponentKey>2dce6605-e804-4901-61d6-7a45ad0b6e5c</webComponentKey>
+</OmniIntegrationProcedure>

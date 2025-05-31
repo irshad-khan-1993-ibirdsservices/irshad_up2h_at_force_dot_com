@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;accountId&quot;:&quot;0018Z00002fQjCvQAK&quot;,&quot;cartConfiguration&quot;:[{&quot;target&quot;:[{&quot;attributes&quot;:{&quot;newValues&quot;:{&quot;VEPC_ATTR_NUMBER_OF_SECURITY_SOFTWARE_LICENSES&quot;:&quot;10&quot;}},&quot;bulkAction&quot;:&quot;UPDATE&quot;,&quot;parentHierarchyPath&quot;:&quot;01t8Z00000AnjXZQAZ&quot;,&quot;productCode&quot;:&quot;VEPC_OFFERING_INTERNET_SECURITY_SOFTWARE&quot;,&quot;productHierarchyPath&quot;:&quot;01t8Z00000AnjXZQAZ&lt;01t8Z00000AnjXIQAZ&quot;,&quot;productPbeId&quot;:&quot;01u8Z00002kDODTQA4&quot;}]}],&quot;cartId&quot;:&quot;8018Z000006z9WEQAY&quot;,&quot;cartType&quot;:&quot;Order&quot;,&quot;groupCartId&quot;:&quot;8018Z000006z9WFQAY&quot;,&quot;groupCartName&quot;:&quot;Business Internet Essential&quot;}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>ESM_SelfServiceStartBulkChange</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>OrderResponse</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;additionalOutput&quot; : { },
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;%cartType% == &apos;Order&apos;&quot;,
+  &quot;label&quot; : &quot;ResponseAction2&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;StartAsyncJobForOrder&quot;,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true,
+  &quot;vlcResponseHeaders&quot; : { }
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SetUserId</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;elementValueMap&quot; : {
+    &quot;asyncProcessName&quot; : &quot;Bulk Change for %cartId% %groupCartName%&quot;,
+    &quot;userID&quot; : &quot;= $Vlocity.UserId&quot;
+  },
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>StartAsyncJobForOrder</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;additionalInput&quot; : {
+    &quot;additionalData&quot; : {
+      &quot;accountId&quot; : &quot;%accountId%&quot;,
+      &quot;cartConfiguration&quot; : &quot;%cartConfiguration%&quot;,
+      &quot;cartId&quot; : &quot;%cartId%&quot;,
+      &quot;cartType&quot; : &quot;%cartType%&quot;,
+      &quot;groupCartId&quot; : &quot;%groupCartId%&quot;,
+      &quot;userID&quot; : &quot;%SetUserId:userID%&quot;
+    },
+    &quot;asyncProcessName&quot; : &quot;%SetUserId:asyncProcessName%&quot;,
+    &quot;asyncProcessSteps&quot; : [ {
+      &quot;asyncJobDetails&quot; : {
+        &quot;executeProcess&quot; : {
+          &quot;asyncJobNumberOfRetriesOnFail&quot; : 0,
+          &quot;executeAsyncJobsInSequence&quot; : true,
+          &quot;itemsToProcessPerAsyncJob&quot; : 1,
+          &quot;name&quot; : &quot;ESM_SelfServiceCreateAssetizedOrderItem&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        },
+        &quot;finishProcess&quot; : {
+          &quot;name&quot; : &quot;ESM_SelfServiceCreateLineItemsFinishProcess&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        },
+        &quot;startProcess&quot; : {
+          &quot;asyncJobNumberOfRetriesOnFail&quot; : 0,
+          &quot;name&quot; : &quot;ESM_SelfServiceGetAssetsFromGroupCart&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        }
+      },
+      &quot;stepName&quot; : &quot;Create Line Items&quot;
+    }, {
+      &quot;asyncJobDetails&quot; : {
+        &quot;executeProcess&quot; : {
+          &quot;asyncJobNumberOfRetriesOnFail&quot; : 0,
+          &quot;executeAsyncJobsInSequence&quot; : true,
+          &quot;itemsToProcessPerAsyncJob&quot; : 1,
+          &quot;name&quot; : &quot;ESM_SelfServiceExecuteAddLineItems&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        },
+        &quot;finishProcess&quot; : {
+          &quot;name&quot; : &quot;ESM_SelfServiceBulkAddFinishProcess&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        },
+        &quot;startProcess&quot; : {
+          &quot;asyncJobNumberOfRetriesOnFail&quot; : 0,
+          &quot;name&quot; : &quot;ESM_SelfServiceGetLineItemIdsUsingAssetIds&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        }
+      },
+      &quot;stepName&quot; : &quot;Bulk Add&quot;
+    }, {
+      &quot;asyncJobDetails&quot; : {
+        &quot;executeProcess&quot; : {
+          &quot;asyncJobNumberOfRetriesOnFail&quot; : 0,
+          &quot;executeAsyncJobsInSequence&quot; : true,
+          &quot;itemsToProcessPerAsyncJob&quot; : 1,
+          &quot;name&quot; : &quot;ESM_SelfServiceExecuteDisconnectLineItems&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        },
+        &quot;finishProcess&quot; : {
+          &quot;name&quot; : &quot;ESM_SelfServiceBulkDisconnectFinishProcess&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        },
+        &quot;startProcess&quot; : {
+          &quot;asyncJobNumberOfRetriesOnFail&quot; : 0,
+          &quot;name&quot; : &quot;ESM_SelfServiceGetLineItemIdsUsingAssetIds&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        }
+      },
+      &quot;stepName&quot; : &quot;Bulk Disconnect&quot;
+    }, {
+      &quot;asyncJobDetails&quot; : {
+        &quot;executeProcess&quot; : {
+          &quot;asyncJobNumberOfRetriesOnFail&quot; : 0,
+          &quot;executeAsyncJobsInSequence&quot; : true,
+          &quot;itemsToProcessPerAsyncJob&quot; : 1,
+          &quot;name&quot; : &quot;ESM_SelfServiceExecuteUpdateLineItems&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        },
+        &quot;finishProcess&quot; : {
+          &quot;name&quot; : &quot;ESM_SelfServiceBulkUpdateFinishProcess&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        },
+        &quot;startProcess&quot; : {
+          &quot;asyncJobNumberOfRetriesOnFail&quot; : 0,
+          &quot;name&quot; : &quot;ESM_SelfServiceGetLineItemIdsUsingAssetIds&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        }
+      },
+      &quot;stepName&quot; : &quot;Bulk Update&quot;
+    }, {
+      &quot;asyncJobDetails&quot; : {
+        &quot;executeProcess&quot; : {
+          &quot;asyncJobNumberOfRetriesOnFail&quot; : 0,
+          &quot;executeAsyncJobsInSequence&quot; : true,
+          &quot;itemsToProcessPerAsyncJob&quot; : 5,
+          &quot;name&quot; : &quot;ESM_SelfServiceValidateLineItems&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        },
+        &quot;startProcess&quot; : {
+          &quot;asyncJobNumberOfRetriesOnFail&quot; : 0,
+          &quot;name&quot; : &quot;ESM_SelfServiceGetLineItemIdsUsingAssetIds&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        }
+      },
+      &quot;stepName&quot; : &quot;Validate&quot;
+    }, {
+      &quot;asyncJobDetails&quot; : {
+        &quot;executeProcess&quot; : {
+          &quot;asyncJobNumberOfRetriesOnFail&quot; : 0,
+          &quot;executeAsyncJobsInSequence&quot; : true,
+          &quot;itemsToProcessPerAsyncJob&quot; : 5,
+          &quot;name&quot; : &quot;ESM_SelfServicePriceLineItems&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        },
+        &quot;finishProcess&quot; : {
+          &quot;asyncJobNumberOfRetriesOnFail&quot; : 0,
+          &quot;name&quot; : &quot;ESM_SelfServicePriceLineItemsFinishProcess&quot;,
+          &quot;type&quot; : &quot;Integration Procedure&quot;
+        }
+      },
+      &quot;stepName&quot; : &quot;Price&quot;
+    } ],
+    &quot;referenceId&quot; : &quot;%cartId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;%cartType% == &apos;Order&apos;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;RemoteAction2&quot;,
+  &quot;remoteClass&quot; : &quot;VOIAsyncProcess&quot;,
+  &quot;remoteMethod&quot; : &quot;startAsyncJob&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessKey>ESM_SelfServiceStartBulkChange</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;description&quot; : &quot;This IP contains all the steps for async process for bulk order flow&quot;,
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;mockResponseMap&quot; : { },
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;rollbackOnError&quot; : false,
+  &quot;trackingCustomData&quot; : { },
+  &quot;ttlMinutes&quot; : 5
+}</propertySetConfig>
+    <subType>SelfServiceStartBulkChange</subType>
+    <type>ESM</type>
+    <uniqueName>ESM_SelfServiceStartBulkChange_Procedure_6</uniqueName>
+    <versionNumber>6.0</versionNumber>
+    <webComponentKey>e07b307b-cea5-d5d2-fd4a-763dd0e64413</webComponentKey>
+</OmniIntegrationProcedure>

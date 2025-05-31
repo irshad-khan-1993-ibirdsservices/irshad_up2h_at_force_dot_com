@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;inquiryType&quot;: &quot;CallUsageInquiry&quot;
+}</customJavaScript>
+    <description>IP to fetch Billing Usage Records from AccountId and InvoiceNumber</description>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>SFIBillingGetUsageData</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponseAction</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%inquiryType% != &apos;DataConsumptionInquiry&apos;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;BillingUsageData&quot; : &quot;%UsageLoopBlock:BillingUsage%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponseActionForDataInquiry</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%inquiryType% == &apos;DataConsumptionInquiry&apos;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;BillingUsageData&quot; : &quot;%usageData%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CallUsageData</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%inquiryType% == &apos;CallUsageInquiry&apos;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;usageData&quot; : [ {
+      &quot;id&quot; : &quot;5130d5131a23&quot;,
+      &quot;href&quot; : &quot;https://api.csp.com/tmf-api/usageManagement/v4/Usage/5130d5131a23&quot;,
+      &quot;ratedProductUsage&quot; : [ {
+        &quot;ratingDate&quot; : &quot;2024-02-04T17:00:00.000Z&quot;,
+        &quot;usageRatingTag&quot; : &quot;Usage&quot;,
+        &quot;ratingAmountType&quot; : &quot;Total&quot;,
+        &quot;taxIncludedRatingAmount&quot; : {
+          &quot;value&quot; : 12,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxExcludedRatingAmount&quot; : {
+          &quot;value&quot; : 10,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxRate&quot; : 20,
+        &quot;isTaxExempt&quot; : false,
+        &quot;offerTariffType&quot; : &quot;Normal&quot;,
+        &quot;bucketValueConvertedInAmount&quot; : {
+          &quot;value&quot; : 10,
+          &quot;unit&quot; : &quot;EUR&quot;
+        }
+      } ],
+      &quot;relatedParty&quot; : [ {
+        &quot;id&quot; : &quot;a396-5c90a41a23ea&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/organization/a396-5c90a41a23ea&quot;,
+        &quot;role&quot; : &quot;serviceProvider&quot;,
+        &quot;@referredType&quot; : &quot;Organization&quot;
+      }, {
+        &quot;id&quot; : &quot;8a41-d6451fe98963&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/individual/8a41-d6451fe98963&quot;,
+        &quot;role&quot; : &quot;customer&quot;,
+        &quot;@referredType&quot; : &quot;Individual&quot;
+      } ],
+      &quot;status&quot; : &quot;rated&quot;,
+      &quot;usageType&quot; : &quot;Voice&quot;,
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;name&quot; : &quot;originatingCountryCode&quot;,
+        &quot;value&quot; : &quot;43&quot;
+      }, {
+        &quot;name&quot; : &quot;originatingNumber&quot;,
+        &quot;value&quot; : &quot;676123456789&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationCountryCode&quot;,
+        &quot;value&quot; : &quot;49&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationNumber&quot;,
+        &quot;value&quot; : &quot;170123456789&quot;
+      }, {
+        &quot;name&quot; : &quot;duration&quot;,
+        &quot;value&quot; : 20
+      }, {
+        &quot;name&quot; : &quot;unit&quot;,
+        &quot;value&quot; : &quot;SEC&quot;
+      } ],
+      &quot;usageSpecification&quot; : {
+        &quot;id&quot; : &quot;af59-b504c742900e&quot;,
+        &quot;href&quot; : &quot;https:/api.csp.com/tmf-api/usageManagement/v4/usageSpecification/af59-b504c742900e&quot;,
+        &quot;name&quot; : &quot;VoiceCall&quot;
+      }
+    }, {
+      &quot;id&quot; : &quot;5130d5131a24&quot;,
+      &quot;href&quot; : &quot;https://api.csp.com/tmf-api/usageManagement/v4/Usage/5130d5131a24&quot;,
+      &quot;ratedProductUsage&quot; : [ {
+        &quot;ratingDate&quot; : &quot;2024-02-10T17:00:00.000Z&quot;,
+        &quot;usageRatingTag&quot; : &quot;Usage&quot;,
+        &quot;ratingAmountType&quot; : &quot;Total&quot;,
+        &quot;taxIncludedRatingAmount&quot; : {
+          &quot;value&quot; : 12,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxExcludedRatingAmount&quot; : {
+          &quot;value&quot; : 10,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxRate&quot; : 20,
+        &quot;isTaxExempt&quot; : false,
+        &quot;offerTariffType&quot; : &quot;Normal&quot;,
+        &quot;bucketValueConvertedInAmount&quot; : {
+          &quot;value&quot; : 10,
+          &quot;unit&quot; : &quot;EUR&quot;
+        }
+      } ],
+      &quot;relatedParty&quot; : [ {
+        &quot;id&quot; : &quot;a396-5c90a41a23ea&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/organization/a396-5c90a41a23ea&quot;,
+        &quot;role&quot; : &quot;serviceProvider&quot;,
+        &quot;@referredType&quot; : &quot;Organization&quot;
+      }, {
+        &quot;id&quot; : &quot;8a41-d6451fe98963&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/individual/8a41-d6451fe98963&quot;,
+        &quot;role&quot; : &quot;customer&quot;,
+        &quot;@referredType&quot; : &quot;Individual&quot;
+      } ],
+      &quot;status&quot; : &quot;rated&quot;,
+      &quot;usageType&quot; : &quot;Voice&quot;,
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;name&quot; : &quot;originatingCountryCode&quot;,
+        &quot;value&quot; : &quot;43&quot;
+      }, {
+        &quot;name&quot; : &quot;originatingNumber&quot;,
+        &quot;value&quot; : &quot;676123456789&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationCountryCode&quot;,
+        &quot;value&quot; : &quot;49&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationNumber&quot;,
+        &quot;value&quot; : &quot;170123456789&quot;
+      }, {
+        &quot;name&quot; : &quot;duration&quot;,
+        &quot;value&quot; : 30
+      }, {
+        &quot;name&quot; : &quot;unit&quot;,
+        &quot;value&quot; : &quot;SEC&quot;
+      } ],
+      &quot;usageSpecification&quot; : {
+        &quot;id&quot; : &quot;af59-b504c742901f&quot;,
+        &quot;href&quot; : &quot;https:/api.csp.com/tmf-api/usageManagement/v4/usageSpecification/af59-b504c742901f&quot;,
+        &quot;name&quot; : &quot;VoiceCall&quot;
+      }
+    }, {
+      &quot;id&quot; : &quot;5130d5131a24&quot;,
+      &quot;href&quot; : &quot;https://api.csp.com/tmf-api/usageManagement/v4/Usage/5130d5131a24&quot;,
+      &quot;ratedProductUsage&quot; : [ {
+        &quot;ratingDate&quot; : &quot;2024-02-13T17:00:00.000Z&quot;,
+        &quot;usageRatingTag&quot; : &quot;Usage&quot;,
+        &quot;ratingAmountType&quot; : &quot;Total&quot;,
+        &quot;taxIncludedRatingAmount&quot; : {
+          &quot;value&quot; : 15,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxExcludedRatingAmount&quot; : {
+          &quot;value&quot; : 15,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxRate&quot; : 20,
+        &quot;isTaxExempt&quot; : false,
+        &quot;offerTariffType&quot; : &quot;Normal&quot;,
+        &quot;bucketValueConvertedInAmount&quot; : {
+          &quot;value&quot; : 10,
+          &quot;unit&quot; : &quot;EUR&quot;
+        }
+      } ],
+      &quot;relatedParty&quot; : [ {
+        &quot;id&quot; : &quot;a396-5c90a41a23ea&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/organization/a396-5c90a41a23ea&quot;,
+        &quot;role&quot; : &quot;serviceProvider&quot;,
+        &quot;@referredType&quot; : &quot;Organization&quot;
+      }, {
+        &quot;id&quot; : &quot;8a41-d6451fe98963&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/individual/8a41-d6451fe98963&quot;,
+        &quot;role&quot; : &quot;customer&quot;,
+        &quot;@referredType&quot; : &quot;Individual&quot;
+      } ],
+      &quot;status&quot; : &quot;rated&quot;,
+      &quot;usageType&quot; : &quot;Voice&quot;,
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;name&quot; : &quot;originatingCountryCode&quot;,
+        &quot;value&quot; : &quot;43&quot;
+      }, {
+        &quot;name&quot; : &quot;originatingNumber&quot;,
+        &quot;value&quot; : &quot;676123456789&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationCountryCode&quot;,
+        &quot;value&quot; : &quot;52&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationNumber&quot;,
+        &quot;value&quot; : &quot;990123467789&quot;
+      }, {
+        &quot;name&quot; : &quot;duration&quot;,
+        &quot;value&quot; : 300
+      }, {
+        &quot;name&quot; : &quot;unit&quot;,
+        &quot;value&quot; : &quot;SEC&quot;
+      } ],
+      &quot;usageSpecification&quot; : {
+        &quot;id&quot; : &quot;af59-b504c742901f&quot;,
+        &quot;href&quot; : &quot;https:/api.csp.com/tmf-api/usageManagement/v4/usageSpecification/af59-b504c742901f&quot;,
+        &quot;name&quot; : &quot;VoiceCall&quot;
+      }
+    }, {
+      &quot;id&quot; : &quot;5130d5131b74&quot;,
+      &quot;href&quot; : &quot;https://api.csp.com/tmf-api/usageManagement/v4/Usage/5130d5131a24&quot;,
+      &quot;ratedProductUsage&quot; : [ {
+        &quot;ratingDate&quot; : &quot;2024-02-09T17:00:00.000Z&quot;,
+        &quot;usageRatingTag&quot; : &quot;Usage&quot;,
+        &quot;ratingAmountType&quot; : &quot;Total&quot;,
+        &quot;taxIncludedRatingAmount&quot; : {
+          &quot;value&quot; : 200,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxExcludedRatingAmount&quot; : {
+          &quot;value&quot; : 100,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxRate&quot; : 20,
+        &quot;isTaxExempt&quot; : false,
+        &quot;offerTariffType&quot; : &quot;Normal&quot;,
+        &quot;bucketValueConvertedInAmount&quot; : {
+          &quot;value&quot; : 10,
+          &quot;unit&quot; : &quot;EUR&quot;
+        }
+      } ],
+      &quot;relatedParty&quot; : [ {
+        &quot;id&quot; : &quot;a396-5c90a41a23ea&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/organization/a396-5c90a41a23ea&quot;,
+        &quot;role&quot; : &quot;serviceProvider&quot;,
+        &quot;@referredType&quot; : &quot;Organization&quot;
+      }, {
+        &quot;id&quot; : &quot;8a41-d6451fe98963&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/individual/8a41-d6451fe98963&quot;,
+        &quot;role&quot; : &quot;customer&quot;,
+        &quot;@referredType&quot; : &quot;Individual&quot;
+      } ],
+      &quot;status&quot; : &quot;rated&quot;,
+      &quot;usageType&quot; : &quot;Voice&quot;,
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;name&quot; : &quot;originatingCountryCode&quot;,
+        &quot;value&quot; : &quot;43&quot;
+      }, {
+        &quot;name&quot; : &quot;originatingNumber&quot;,
+        &quot;value&quot; : &quot;676123456789&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationCountryCode&quot;,
+        &quot;value&quot; : &quot;54&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationNumber&quot;,
+        &quot;value&quot; : &quot;1799999999&quot;
+      }, {
+        &quot;name&quot; : &quot;duration&quot;,
+        &quot;value&quot; : 3000
+      }, {
+        &quot;name&quot; : &quot;unit&quot;,
+        &quot;value&quot; : &quot;SEC&quot;
+      } ],
+      &quot;usageSpecification&quot; : {
+        &quot;id&quot; : &quot;af59-b504c742901f&quot;,
+        &quot;href&quot; : &quot;https:/api.csp.com/tmf-api/usageManagement/v4/usageSpecification/af59-b504c742901f&quot;,
+        &quot;name&quot; : &quot;VoiceCall&quot;
+      }
+    } ]
+  },
+  &quot;responseJSONPath&quot; : &quot;usageData&quot;,
+  &quot;responseJSONNode&quot; : &quot;usageData&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DataConsumptionUsageData</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%inquiryType% == &apos;DataConsumptionInquiry&apos;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;usageData&quot; : [ {
+      &quot;id&quot; : &quot;96c2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-14T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1014&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;1.1&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    }, {
+      &quot;id&quot; : &quot;95c2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-13T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1013&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;1.5&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    }, {
+      &quot;id&quot; : &quot;94c2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-12T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1012&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;0.5&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    }, {
+      &quot;id&quot; : &quot;93c2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-11T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1011&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;0.2&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    }, {
+      &quot;id&quot; : &quot;92c2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-10T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1010&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;0.5&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    }, {
+      &quot;id&quot; : &quot;91c2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-09T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1009&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;1.5&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    }, {
+      &quot;id&quot; : &quot;90c2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-08T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1008&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;0.5&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    }, {
+      &quot;id&quot; : &quot;96b2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-07T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1007&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;1.2&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    }, {
+      &quot;id&quot; : &quot;95b2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-06T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1006&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;0.5&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    }, {
+      &quot;id&quot; : &quot;94b2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-05T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1005&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;0.45&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    }, {
+      &quot;id&quot; : &quot;93b2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-04T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1004&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;0.35&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    }, {
+      &quot;id&quot; : &quot;92b2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-03T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1003&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;0.5&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    }, {
+      &quot;id&quot; : &quot;91b2-683ea281566c&quot;,
+      &quot;usageDate&quot; : &quot;2024-02-02T16:07:00Z&quot;,
+      &quot;description&quot; : &quot;Data Usage&quot;,
+      &quot;usageType&quot; : &quot;Data&quot;,
+      &quot;dataPlanLimit&quot; : {
+        &quot;value&quot; : &quot;10&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      },
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;id&quot; : &quot;abcd1002&quot;,
+        &quot;name&quot; : &quot;dataUsage&quot;,
+        &quot;value&quot; : &quot;1.1&quot;,
+        &quot;unit&quot; : &quot;GB&quot;
+      } ]
+    } ]
+  },
+  &quot;responseJSONPath&quot; : &quot;usageData&quot;,
+  &quot;responseJSONNode&quot; : &quot;usageData&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>HighBillUsageData</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;usageData&quot; : [ {
+      &quot;id&quot; : &quot;5130d5131a23&quot;,
+      &quot;href&quot; : &quot;https://api.csp.com/tmf-api/usageManagement/v4/Usage/5130d5131a23&quot;,
+      &quot;ratedProductUsage&quot; : [ {
+        &quot;ratingDate&quot; : &quot;2023-10-20T17:00:00.000Z&quot;,
+        &quot;usageRatingTag&quot; : &quot;Usage&quot;,
+        &quot;ratingAmountType&quot; : &quot;Total&quot;,
+        &quot;taxIncludedRatingAmount&quot; : {
+          &quot;value&quot; : 12,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxExcludedRatingAmount&quot; : {
+          &quot;value&quot; : 10,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxRate&quot; : 20,
+        &quot;isTaxExempt&quot; : false,
+        &quot;offerTariffType&quot; : &quot;Normal&quot;,
+        &quot;bucketValueConvertedInAmount&quot; : {
+          &quot;value&quot; : 10,
+          &quot;unit&quot; : &quot;EUR&quot;
+        }
+      } ],
+      &quot;relatedParty&quot; : [ {
+        &quot;id&quot; : &quot;a396-5c90a41a23ea&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/organization/a396-5c90a41a23ea&quot;,
+        &quot;role&quot; : &quot;serviceProvider&quot;,
+        &quot;@referredType&quot; : &quot;Organization&quot;
+      }, {
+        &quot;id&quot; : &quot;8a41-d6451fe98963&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/individual/8a41-d6451fe98963&quot;,
+        &quot;role&quot; : &quot;customer&quot;,
+        &quot;@referredType&quot; : &quot;Individual&quot;
+      } ],
+      &quot;status&quot; : &quot;rated&quot;,
+      &quot;usageType&quot; : &quot;Voice&quot;,
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;name&quot; : &quot;originatingCountryCode&quot;,
+        &quot;value&quot; : &quot;43&quot;
+      }, {
+        &quot;name&quot; : &quot;originatingNumber&quot;,
+        &quot;value&quot; : &quot;676123456789&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationCountryCode&quot;,
+        &quot;value&quot; : &quot;49&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationNumber&quot;,
+        &quot;value&quot; : &quot;170123456789&quot;
+      }, {
+        &quot;name&quot; : &quot;duration&quot;,
+        &quot;value&quot; : 20
+      }, {
+        &quot;name&quot; : &quot;unit&quot;,
+        &quot;value&quot; : &quot;SEC&quot;
+      } ],
+      &quot;usageSpecification&quot; : {
+        &quot;id&quot; : &quot;af59-b504c742900e&quot;,
+        &quot;href&quot; : &quot;https:/api.csp.com/tmf-api/usageManagement/v4/usageSpecification/af59-b504c742900e&quot;,
+        &quot;name&quot; : &quot;VoiceCall&quot;
+      }
+    }, {
+      &quot;id&quot; : &quot;5130d5131a24&quot;,
+      &quot;href&quot; : &quot;https://api.csp.com/tmf-api/usageManagement/v4/Usage/5130d5131a24&quot;,
+      &quot;ratedProductUsage&quot; : [ {
+        &quot;ratingDate&quot; : &quot;2023-10-10T17:00:00.000Z&quot;,
+        &quot;usageRatingTag&quot; : &quot;Usage&quot;,
+        &quot;ratingAmountType&quot; : &quot;Total&quot;,
+        &quot;taxIncludedRatingAmount&quot; : {
+          &quot;value&quot; : 12,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxExcludedRatingAmount&quot; : {
+          &quot;value&quot; : 10,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxRate&quot; : 20,
+        &quot;isTaxExempt&quot; : false,
+        &quot;offerTariffType&quot; : &quot;Normal&quot;,
+        &quot;bucketValueConvertedInAmount&quot; : {
+          &quot;value&quot; : 10,
+          &quot;unit&quot; : &quot;EUR&quot;
+        }
+      } ],
+      &quot;relatedParty&quot; : [ {
+        &quot;id&quot; : &quot;a396-5c90a41a23ea&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/organization/a396-5c90a41a23ea&quot;,
+        &quot;role&quot; : &quot;serviceProvider&quot;,
+        &quot;@referredType&quot; : &quot;Organization&quot;
+      }, {
+        &quot;id&quot; : &quot;8a41-d6451fe98963&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/individual/8a41-d6451fe98963&quot;,
+        &quot;role&quot; : &quot;customer&quot;,
+        &quot;@referredType&quot; : &quot;Individual&quot;
+      } ],
+      &quot;status&quot; : &quot;rated&quot;,
+      &quot;usageType&quot; : &quot;Voice&quot;,
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;name&quot; : &quot;originatingCountryCode&quot;,
+        &quot;value&quot; : &quot;43&quot;
+      }, {
+        &quot;name&quot; : &quot;originatingNumber&quot;,
+        &quot;value&quot; : &quot;676123456789&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationCountryCode&quot;,
+        &quot;value&quot; : &quot;49&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationNumber&quot;,
+        &quot;value&quot; : &quot;170123456789&quot;
+      }, {
+        &quot;name&quot; : &quot;duration&quot;,
+        &quot;value&quot; : 30
+      }, {
+        &quot;name&quot; : &quot;unit&quot;,
+        &quot;value&quot; : &quot;SEC&quot;
+      } ],
+      &quot;usageSpecification&quot; : {
+        &quot;id&quot; : &quot;af59-b504c742901f&quot;,
+        &quot;href&quot; : &quot;https:/api.csp.com/tmf-api/usageManagement/v4/usageSpecification/af59-b504c742901f&quot;,
+        &quot;name&quot; : &quot;VoiceCall&quot;
+      }
+    }, {
+      &quot;id&quot; : &quot;5130d5131a24&quot;,
+      &quot;href&quot; : &quot;https://api.csp.com/tmf-api/usageManagement/v4/Usage/5130d5131a24&quot;,
+      &quot;ratedProductUsage&quot; : [ {
+        &quot;ratingDate&quot; : &quot;2023-10-13T17:00:00.000Z&quot;,
+        &quot;usageRatingTag&quot; : &quot;Usage&quot;,
+        &quot;ratingAmountType&quot; : &quot;Total&quot;,
+        &quot;taxIncludedRatingAmount&quot; : {
+          &quot;value&quot; : 15,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxExcludedRatingAmount&quot; : {
+          &quot;value&quot; : 15,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxRate&quot; : 20,
+        &quot;isTaxExempt&quot; : false,
+        &quot;offerTariffType&quot; : &quot;Normal&quot;,
+        &quot;bucketValueConvertedInAmount&quot; : {
+          &quot;value&quot; : 10,
+          &quot;unit&quot; : &quot;EUR&quot;
+        }
+      } ],
+      &quot;relatedParty&quot; : [ {
+        &quot;id&quot; : &quot;a396-5c90a41a23ea&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/organization/a396-5c90a41a23ea&quot;,
+        &quot;role&quot; : &quot;serviceProvider&quot;,
+        &quot;@referredType&quot; : &quot;Organization&quot;
+      }, {
+        &quot;id&quot; : &quot;8a41-d6451fe98963&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/individual/8a41-d6451fe98963&quot;,
+        &quot;role&quot; : &quot;customer&quot;,
+        &quot;@referredType&quot; : &quot;Individual&quot;
+      } ],
+      &quot;status&quot; : &quot;rated&quot;,
+      &quot;usageType&quot; : &quot;Voice&quot;,
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;name&quot; : &quot;originatingCountryCode&quot;,
+        &quot;value&quot; : &quot;43&quot;
+      }, {
+        &quot;name&quot; : &quot;originatingNumber&quot;,
+        &quot;value&quot; : &quot;676123456789&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationCountryCode&quot;,
+        &quot;value&quot; : &quot;52&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationNumber&quot;,
+        &quot;value&quot; : &quot;990123467789&quot;
+      }, {
+        &quot;name&quot; : &quot;duration&quot;,
+        &quot;value&quot; : 300
+      }, {
+        &quot;name&quot; : &quot;unit&quot;,
+        &quot;value&quot; : &quot;SEC&quot;
+      } ],
+      &quot;usageSpecification&quot; : {
+        &quot;id&quot; : &quot;af59-b504c742901f&quot;,
+        &quot;href&quot; : &quot;https:/api.csp.com/tmf-api/usageManagement/v4/usageSpecification/af59-b504c742901f&quot;,
+        &quot;name&quot; : &quot;VoiceCall&quot;
+      }
+    }, {
+      &quot;id&quot; : &quot;5130d5131b74&quot;,
+      &quot;href&quot; : &quot;https://api.csp.com/tmf-api/usageManagement/v4/Usage/5130d5131a24&quot;,
+      &quot;ratedProductUsage&quot; : [ {
+        &quot;ratingDate&quot; : &quot;2023-10-29T17:00:00.000Z&quot;,
+        &quot;usageRatingTag&quot; : &quot;Usage&quot;,
+        &quot;ratingAmountType&quot; : &quot;Total&quot;,
+        &quot;taxIncludedRatingAmount&quot; : {
+          &quot;value&quot; : 200,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxExcludedRatingAmount&quot; : {
+          &quot;value&quot; : 100,
+          &quot;unit&quot; : &quot;EUR&quot;
+        },
+        &quot;taxRate&quot; : 20,
+        &quot;isTaxExempt&quot; : false,
+        &quot;offerTariffType&quot; : &quot;Normal&quot;,
+        &quot;bucketValueConvertedInAmount&quot; : {
+          &quot;value&quot; : 10,
+          &quot;unit&quot; : &quot;EUR&quot;
+        }
+      } ],
+      &quot;relatedParty&quot; : [ {
+        &quot;id&quot; : &quot;a396-5c90a41a23ea&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/organization/a396-5c90a41a23ea&quot;,
+        &quot;role&quot; : &quot;serviceProvider&quot;,
+        &quot;@referredType&quot; : &quot;Organization&quot;
+      }, {
+        &quot;id&quot; : &quot;8a41-d6451fe98963&quot;,
+        &quot;href&quot; : &quot;https://api.csp.com/tmf-api/partyManagement/v4/individual/8a41-d6451fe98963&quot;,
+        &quot;role&quot; : &quot;customer&quot;,
+        &quot;@referredType&quot; : &quot;Individual&quot;
+      } ],
+      &quot;status&quot; : &quot;rated&quot;,
+      &quot;usageType&quot; : &quot;Voice&quot;,
+      &quot;usageCharacteristic&quot; : [ {
+        &quot;name&quot; : &quot;originatingCountryCode&quot;,
+        &quot;value&quot; : &quot;43&quot;
+      }, {
+        &quot;name&quot; : &quot;originatingNumber&quot;,
+        &quot;value&quot; : &quot;676123456789&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationCountryCode&quot;,
+        &quot;value&quot; : &quot;54&quot;
+      }, {
+        &quot;name&quot; : &quot;destinationNumber&quot;,
+        &quot;value&quot; : &quot;1799999999&quot;
+      }, {
+        &quot;name&quot; : &quot;duration&quot;,
+        &quot;value&quot; : 3000
+      }, {
+        &quot;name&quot; : &quot;unit&quot;,
+        &quot;value&quot; : &quot;SEC&quot;
+      } ],
+      &quot;usageSpecification&quot; : {
+        &quot;id&quot; : &quot;af59-b504c742901f&quot;,
+        &quot;href&quot; : &quot;https:/api.csp.com/tmf-api/usageManagement/v4/usageSpecification/af59-b504c742901f&quot;,
+        &quot;name&quot; : &quot;VoiceCall&quot;
+      }
+    } ]
+  },
+  &quot;responseJSONPath&quot; : &quot;usageData&quot;,
+  &quot;responseJSONNode&quot; : &quot;usageData&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>UsageDataForInquiry</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;isIfElseBlock&quot; : true,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>BilllingUsageDataTransformAction</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%inquiryType% != &apos;DataConsumptionInquiry&apos;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;usageData&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;SFIBilllingUsageDataTransform&quot;,
+  &quot;chainOnStep&quot; : true,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorTransformAction1&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;additionalChainableResponse&quot; : { }
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Transform Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>UsageLoopBlock</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;loopList&quot; : &quot;usageData&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;loopOutput&quot; : {
+    &quot;BillingUsage&quot; : &quot;%BilllingUsageDataTransformAction%&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;LoopBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Loop Block</type>
+    </omniProcessElements>
+    <omniProcessKey>sfi_GetUsageData</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <overrideKey>comms_billing_inquiry__sfi_GetUsageData_Procedure_1</overrideKey>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>GetUsageData</subType>
+    <type>sfi</type>
+    <uniqueName>sfi_GetUsageData_Procedure_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <webComponentKey>3d171323-2a75-53ba-59f2-fb6edd0e4245</webComponentKey>
+</OmniIntegrationProcedure>

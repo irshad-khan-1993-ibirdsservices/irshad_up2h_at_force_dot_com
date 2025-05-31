@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;AccountId&quot;:&quot;001Dn00000EBnvaIAD&quot;,&quot;MasterOrderId&quot;:&quot;801Dn000000pa4VIAQ&quot;,&quot;Member&quot;:{&quot;City&quot;:&quot;San Francisco&quot;,&quot;Email&quot;:&quot;msommer@test.com&quot;,&quot;FirstName&quot;:&quot;Michael&quot;,&quot;GroupId&quot;:&quot;a36Dn000000pfo3IAA&quot;,&quot;Id&quot;:&quot;a5UDn000000Y0cAMAS&quot;,&quot;LastName&quot;:&quot;Clarke&quot;,&quot;LineItems&quot;:[&quot;802Dn000000UwdEIAS&quot;],&quot;Name&quot;:&quot;Michael Clarke&quot;,&quot;ServiceAccountId&quot;:&quot;001Dn00000EBnvaIAD&quot;,&quot;State&quot;:&quot;CA&quot;},&quot;ObjectType&quot;:&quot;Order&quot;,&quot;SARecordTypeId&quot;:&quot;012Dn000000lrO7IAI&quot;,&quot;SORecordTypeId&quot;:&quot;012Dn000000lrOGIAY&quot;,&quot;SourceObjectId&quot;:&quot;801Dn000000pCNXIA2&quot;}</customJavaScript>
+    <description>This VIP is used to create sub orders for members and groups. Change the field mappings from Member to Service Account in MemberToServiceAccount component.</description>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>CreateSubOrders</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CreateSubOrder</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;additionalInput&quot; : {
+    &quot;AccountId&quot; : &quot;%AccountId%&quot;,
+    &quot;GroupId&quot; : &quot;=IF(ISNOTBLANK(%Member:GroupId%),%Member:GroupId%,%Group:GroupId%)&quot;,
+    &quot;LineItems&quot; : &quot;=IF(ISNOTBLANK(%Member:LineItems%),LIST(%Member:LineItems%),LIST(%Group:LineItems%))&quot;,
+    &quot;MasterOrderId&quot; : &quot;%MasterOrderId%&quot;,
+    &quot;MemberId&quot; : &quot;%Member:Id%&quot;,
+    &quot;ObjectType&quot; : &quot;%ObjectType%&quot;,
+    &quot;RecordTypeId&quot; : &quot;%SORecordTypeId%&quot;,
+    &quot;ServiceAccountId&quot; : &quot;=IF(ISNOTBLANK(%Member:ServiceAccountId%),%Member:ServiceAccountId%,%SearchOrCreateServiceAccount:recordId%)&quot;,
+    &quot;SourceObjectId&quot; : &quot;%SourceObjectId%&quot;
+  },
+  &quot;additionalOutput&quot; : {
+    &quot;RecordId&quot; : &quot;%CreateSubOrder:OrderId%&quot;
+  },
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;RemoteAction2&quot;,
+  &quot;remoteClass&quot; : &quot;B2BCmexAppHandler&quot;,
+  &quot;remoteMethod&quot; : &quot;createOrder&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>MemberToServiceAccount</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;elementValueMap&quot; : {
+    &quot;vlocity_cmt__City__c&quot; : &quot;ShippingCity&quot;,
+    &quot;vlocity_cmt__Country__c&quot; : &quot;ShippingCountry&quot;,
+    &quot;vlocity_cmt__Email__c&quot; : &quot;vlocity_cmt__BillingEmailAddress__c&quot;,
+    &quot;vlocity_cmt__PostalCode__c&quot; : &quot;ShippingPostalCode&quot;,
+    &quot;vlocity_cmt__State__c&quot; : &quot;ShippingState&quot;,
+    &quot;vlocity_cmt__StreetAddress__c&quot; : &quot;ShippingStreet&quot;,
+    &quot;Name&quot; : &quot;Name&quot;
+  },
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>FieldMappings</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;addToCacheConditionalFormula&quot; : &quot;&quot;,
+  &quot;cacheBlockOutput&quot; : { },
+  &quot;cacheKeys&quot; : { },
+  &quot;cacheType&quot; : &quot;Org Cache&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;ignoreCacheConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;CacheBlock1&quot;,
+  &quot;refreshCacheConditionalFormula&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;ttlMinutes&quot; : 5
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Cache Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SearchOrCreateServiceAccount</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;additionalInput&quot; : {
+    &quot;AccountId&quot; : &quot;%AccountId%&quot;,
+    &quot;FieldMap&quot; : &quot;%MemberToServiceAccount%&quot;,
+    &quot;MemberId&quot; : &quot;%Member:Id%&quot;,
+    &quot;ObjectType&quot; : &quot;%ObjectType%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%Member%) &amp;&amp; ISBLANK(%Member:ServiceAccountId%)&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;RemoteAction2&quot;,
+  &quot;remoteClass&quot; : &quot;B2BCmexAppHandler&quot;,
+  &quot;remoteMethod&quot; : &quot;checkForExistingServiceAccount&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SubOrderCreated</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;additionalOutput&quot; : {
+    &quot;RecordId&quot; : &quot;%CreateSubOrder:RecordId%&quot;
+  },
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;ResponseAction2&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true,
+  &quot;vlcResponseHeaders&quot; : { }
+}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>UpdateQuantity</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;GroupId&quot; : &quot;=IF(ISNOTBLANK(%Member:GroupId%),%Member:GroupId%,%Group:GroupId%)&quot;,
+    &quot;ObjectItemType&quot; : &quot;=IF(%ObjectType% == &apos;Order&apos;,&apos;OrderItem&apos;,&apos;QuoteLineItem&apos;)&quot;,
+    &quot;SubOrderId&quot; : &quot;%CreateSubOrder:RecordId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;disableChainable&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%Member:GroupId%) || ISNOTBLANK(%Group:GroupId%)&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;integrationProcedureKey&quot; : &quot;ESM_UpdateQuantityAndPrice&quot;,
+  &quot;label&quot; : &quot;IntegrationProcedureAction3&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessKey>ESM_CreateSubOrders</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;description&quot; : &quot;&quot;,
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;mockResponseMap&quot; : { },
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;rollbackOnError&quot; : false,
+  &quot;trackingCustomData&quot; : { },
+  &quot;ttlMinutes&quot; : 5
+}</propertySetConfig>
+    <subType>CreateSubOrders</subType>
+    <type>ESM</type>
+    <uniqueName>ESM_CreateSubOrders_Procedure_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <webComponentKey>d7a75a95-7aba-949d-cf5e-480773d0accd</webComponentKey>
+</OmniIntegrationProcedure>

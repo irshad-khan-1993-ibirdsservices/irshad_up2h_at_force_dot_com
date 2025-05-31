@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;BillingUsageData&quot;: &quot;{   \&quot;BillingUsageData\&quot;: {     \&quot;data1\&quot;: [       {         \&quot;usageType\&quot;: \&quot;Voice\&quot;,         \&quot;taxIncludedRatingAmountValue\&quot;: 12,         \&quot;destinationNumber\&quot;: \&quot;170123456789\&quot;,         \&quot;taxExcludedRatingAmountValue\&quot;: 10,         \&quot;durationUnit\&quot;: \&quot;SEC\&quot;,         \&quot;destinationCountryCode\&quot;: \&quot;49\&quot;,         \&quot;originatingNumber\&quot;: \&quot;676123456789\&quot;,         \&quot;originatingCountryCode\&quot;: \&quot;43\&quot;,         \&quot;taxRate\&quot;: 20,         \&quot;taxAmountUnit\&quot;: \&quot;EUR\&quot;,         \&quot;duration\&quot;: 20       },       {         \&quot;usageType\&quot;: \&quot;Voice\&quot;,         \&quot;taxIncludedRatingAmountValue\&quot;: 12,         \&quot;destinationNumber\&quot;: \&quot;170123456789\&quot;,         \&quot;taxExcludedRatingAmountValue\&quot;: 10,         \&quot;durationUnit\&quot;: \&quot;SEC\&quot;,         \&quot;destinationCountryCode\&quot;: \&quot;49\&quot;,         \&quot;originatingNumber\&quot;: \&quot;676123456789\&quot;,         \&quot;originatingCountryCode\&quot;: \&quot;43\&quot;,         \&quot;taxRate\&quot;: 20,         \&quot;taxAmountUnit\&quot;: \&quot;EUR\&quot;,         \&quot;duration\&quot;: 30       },       {         \&quot;usageType\&quot;: \&quot;Voice\&quot;,         \&quot;taxIncludedRatingAmountValue\&quot;: 15,         \&quot;destinationNumber\&quot;: \&quot;990123467789\&quot;,         \&quot;taxExcludedRatingAmountValue\&quot;: 15,         \&quot;durationUnit\&quot;: \&quot;SEC\&quot;,         \&quot;destinationCountryCode\&quot;: \&quot;52\&quot;,         \&quot;originatingNumber\&quot;: \&quot;676123456789\&quot;,         \&quot;originatingCountryCode\&quot;: \&quot;43\&quot;,         \&quot;taxRate\&quot;: 20,         \&quot;taxAmountUnit\&quot;: \&quot;EUR\&quot;,         \&quot;duration\&quot;: 300       },       {         \&quot;usageType\&quot;: \&quot;Voice\&quot;,         \&quot;taxIncludedRatingAmountValue\&quot;: 200,         \&quot;destinationNumber\&quot;: \&quot;1799999999\&quot;,         \&quot;taxExcludedRatingAmountValue\&quot;: 100,         \&quot;durationUnit\&quot;: \&quot;SEC\&quot;,         \&quot;destinationCountryCode\&quot;: \&quot;54\&quot;,         \&quot;originatingNumber\&quot;: \&quot;676123456789\&quot;,         \&quot;originatingCountryCode\&quot;: \&quot;43\&quot;,         \&quot;taxRate\&quot;: 20,         \&quot;taxAmountUnit\&quot;: \&quot;EUR\&quot;,         \&quot;duration\&quot;: 3000       }     ],     \&quot;data2\&quot;: [       {         \&quot;usageType\&quot;: \&quot;Voice\&quot;,         \&quot;taxIncludedRatingAmountValue\&quot;: 12,         \&quot;destinationNumber\&quot;: \&quot;170123456789\&quot;,         \&quot;taxExcludedRatingAmountValue\&quot;: 10,         \&quot;durationUnit\&quot;: \&quot;SEC\&quot;,         \&quot;destinationCountryCode\&quot;: \&quot;49\&quot;,         \&quot;originatingNumber\&quot;: \&quot;676123456789\&quot;,         \&quot;originatingCountryCode\&quot;: \&quot;43\&quot;,         \&quot;taxRate\&quot;: 20,         \&quot;taxAmountUnit\&quot;: \&quot;EUR\&quot;,         \&quot;duration\&quot;: 20       },       {         \&quot;usageType\&quot;: \&quot;Voice\&quot;,         \&quot;taxIncludedRatingAmountValue\&quot;: 12,         \&quot;destinationNumber\&quot;: \&quot;170123456789\&quot;,         \&quot;taxExcludedRatingAmountValue\&quot;: 10,         \&quot;durationUnit\&quot;: \&quot;SEC\&quot;,         \&quot;destinationCountryCode\&quot;: \&quot;49\&quot;,         \&quot;originatingNumber\&quot;: \&quot;676123456789\&quot;,         \&quot;originatingCountryCode\&quot;: \&quot;43\&quot;,         \&quot;taxRate\&quot;: 20,         \&quot;taxAmountUnit\&quot;: \&quot;EUR\&quot;,         \&quot;duration\&quot;: 30       },       {         \&quot;usageType\&quot;: \&quot;Voice\&quot;,         \&quot;taxIncludedRatingAmountValue\&quot;: 15,         \&quot;destinationNumber\&quot;: \&quot;990123467789\&quot;,         \&quot;taxExcludedRatingAmountValue\&quot;: 15,         \&quot;durationUnit\&quot;: \&quot;SEC\&quot;,         \&quot;destinationCountryCode\&quot;: \&quot;52\&quot;,         \&quot;originatingNumber\&quot;: \&quot;676123456789\&quot;,         \&quot;originatingCountryCode\&quot;: \&quot;43\&quot;,         \&quot;taxRate\&quot;: 20,         \&quot;taxAmountUnit\&quot;: \&quot;EUR\&quot;,         \&quot;duration\&quot;: 300       },       {         \&quot;usageType\&quot;: \&quot;Voice\&quot;,         \&quot;taxIncludedRatingAmountValue\&quot;: 200,         \&quot;destinationNumber\&quot;: \&quot;1799999999\&quot;,         \&quot;taxExcludedRatingAmountValue\&quot;: 100,         \&quot;durationUnit\&quot;: \&quot;SEC\&quot;,         \&quot;destinationCountryCode\&quot;: \&quot;54\&quot;,         \&quot;originatingNumber\&quot;: \&quot;676123456789\&quot;,         \&quot;originatingCountryCode\&quot;: \&quot;43\&quot;,         \&quot;taxRate\&quot;: 20,         \&quot;taxAmountUnit\&quot;: \&quot;EUR\&quot;,         \&quot;duration\&quot;: 3000       }     ]   } }&quot;,
+    &quot;numberOfInvoices&quot;: &quot;2&quot;
+}</customJavaScript>
+    <description>Analyses a high bill based on provide usage data using Einstein GPT and generates context and suggestions.</description>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>SFIBillingAnalysisHighBill</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>GPTErrorResponse</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%SendRequestToEinsteinGPT:ErrorMessage% &amp;&amp; %SendRequestToEinsteinGPT:ErrorMessage% != &apos;&apos;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;ErrorMessage&quot; : &quot;%SendRequestToEinsteinGPT:ErrorMessage%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>GPTSuccessResponseAction</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%SendRequestToEinsteinGPT:response% &amp;&amp; %SendRequestToEinsteinGPT:response% != &apos;&apos;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;response&quot; : &quot;%SendRequestToEinsteinGPT:response%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SendRequestToEinsteinGPT</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;context&quot; : &quot;%SetPromptForBillAnalysis:Prompt%&quot;,
+    &quot;data&quot; : &quot;=SERIALIZE(LIST(%BillingUsageData%))&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;remoteClass&quot; : &quot;comms_billing_inquiry.BillingAssistant&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;sendRequest&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;RemoteAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SetPromptForBillAnalysis</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;Prompt&quot; : &quot;=IF(%numberOfInvoices% &amp;&amp; %numberOfInvoices% == 1,\&quot;You are an experienced customer support agent.  It is your job to analyze why a customer&apos;s bill is higher than usual.  You will be provided with a list of charges for telephone calls made by the customer. You should summarize the top 5 charges and provide a brief summary of your analysis. In result always mention duration by converting it from seconds to minutes if seconds value is greater than 60 seconds. You should also provide a recommendation for how a customer could reduce their bill in the future.\&quot;,\&quot;You are an experienced customer support agent. You will be provided with two list of charges for telephone calls made by the customer. You should compare charges from both list and provide a brief summary of the differences.\&quot;)&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessKey>sfi_HighBillAnalysis</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <overrideKey>comms_billing_inquiry__sfi_HighBillAnalysis_Procedure_1</overrideKey>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>HighBillAnalysis</subType>
+    <type>sfi</type>
+    <uniqueName>sfi_HighBillAnalysis_Procedure_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <webComponentKey>330b5fee-8331-b03a-6245-a6bc1de7ec98</webComponentKey>
+</OmniIntegrationProcedure>

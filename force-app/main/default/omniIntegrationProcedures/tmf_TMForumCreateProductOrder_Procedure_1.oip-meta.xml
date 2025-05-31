@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;@type&quot;:&quot;ProductOrder&quot;,&quot;category&quot;:&quot;B2C product order&quot;,&quot;channel&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Online chanel&quot;,&quot;role&quot;:&quot;Used channel for order capture&quot;}],&quot;description&quot;:&quot;Product Order illustration sample&quot;,&quot;externalId&quot;:&quot;PO-456&quot;,&quot;note&quot;:[{&quot;author&quot;:&quot;Jean Pontus&quot;,&quot;date&quot;:&quot;2019-04-30T08:13:59.509Z&quot;,&quot;id&quot;:&quot;1&quot;,&quot;text&quot;:&quot;This is a TMF product order illustration&quot;}],&quot;priority&quot;:&quot;1&quot;,&quot;productOrderItem&quot;:[{&quot;@type&quot;:&quot;ProductOrderItem&quot;,&quot;action&quot;:&quot;add&quot;,&quot;id&quot;:&quot;205ccd31-5934-766e-848f-0bff644e6338&quot;,&quot;itemPrice&quot;:[{&quot;description&quot;:&quot;Access Fee&quot;,&quot;name&quot;:&quot;Access Fee&quot;,&quot;price&quot;:{&quot;dutyFreeAmount&quot;:{&quot;unit&quot;:&quot;EUR&quot;,&quot;value&quot;:0.99},&quot;taxIncludedAmount&quot;:{&quot;unit&quot;:&quot;EUT&quot;,&quot;value&quot;:0.99},&quot;taxRate&quot;:0},&quot;priceAlteration&quot;:[{&quot;applicationDuration&quot;:3,&quot;description&quot;:&quot;20% for first 3 months&quot;,&quot;name&quot;:&quot;WelcomeDiscount&quot;,&quot;price&quot;:{&quot;@type&quot;:&quot;price&quot;,&quot;absolute&quot;:2,&quot;taxRate&quot;:0},&quot;priceType&quot;:&quot;onetime&quot;,&quot;priority&quot;:1,&quot;recurringChargePeriod&quot;:&quot;month&quot;}],&quot;priceType&quot;:&quot;nonRecurring&quot;}],&quot;payment&quot;:[{&quot;@referredType&quot;:&quot;Payment&quot;,&quot;@type&quot;:&quot;CashPayment&quot;,&quot;href&quot;:&quot;https://host:port/paymentManagement/v4/cashPayment/2365&quot;,&quot;id&quot;:&quot;2365&quot;,&quot;name&quot;:&quot;Cash payment for access fee&quot;}],&quot;product&quot;:{&quot;@type&quot;:&quot;Product&quot;,&quot;isBundle&quot;:false,&quot;productCharacteristic&quot;:[{&quot;name&quot;:&quot;VEPC_ATTR_CPE_DELIVERY_OPTION&quot;,&quot;value&quot;:&quot;shipping&quot;,&quot;valueType&quot;:&quot;string&quot;}],&quot;productSpecification&quot;:{&quot;@type&quot;:&quot;ProductSpecificationRef&quot;,&quot;href&quot;:&quot;https://host:port/productCatalogManagement/v4/productSpecification/14307&quot;,&quot;id&quot;:&quot;14307&quot;,&quot;name&quot;:&quot;Mobile Telephony&quot;,&quot;version&quot;:&quot;1&quot;}},&quot;productOffering&quot;:{&quot;href&quot;:&quot;https://host:port/productCatalogManagement/v4/productOffering/14305&quot;,&quot;id&quot;:&quot;14305&quot;,&quot;name&quot;:&quot;TMF Mobile Telephony&quot;},&quot;quantity&quot;:1}],&quot;relatedParty&quot;:[{&quot;@referredType&quot;:&quot;account&quot;,&quot;@type&quot;:&quot;RelatedParty&quot;,&quot;href&quot;:&quot;https://host:port/partyManagement/v4/individual/456-dd-df45&quot;,&quot;id&quot;:&quot;CD451791&quot;,&quot;name&quot;:&quot;Test Sh1&quot;,&quot;role&quot;:&quot;&quot;},{&quot;@referredType&quot;:&quot;Customer&quot;,&quot;@type&quot;:&quot;RelatedParty&quot;,&quot;href&quot;:&quot;https://host:port/partyRoleManagement/v4/customer/ff55-hjy4&quot;,&quot;id&quot;:&quot;ff55-hjy4&quot;,&quot;name&quot;:&quot;Jean Pontus&quot;}],&quot;requestedCompletionDate&quot;:&quot;2019-05-02T08:13:59.506Z&quot;,&quot;requestedStartDate&quot;:&quot;2019-05-03T08:13:59.506Z&quot;}</customJavaScript>
+    <description>v244.0 - IP used to invoke TMF api to create product order.</description>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>true</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>TMFTMForumCreateProductOrder</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TMFCreateProductOrderAPIRA</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;RemoteAction1&quot;,
+  &quot;remoteClass&quot; : &quot;TMFOpenAPIProductOrderService&quot;,
+  &quot;remoteMethod&quot; : &quot;postProductOrder&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;TransformProductOrderRequestDR&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TMForumCreateProductOrderFailureResponseAction</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;additionalOutput&quot; : { },
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;%TMFCreateProductOrderAPIRA:epcResponse:overallResult% == &apos;failure&apos;&quot;,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;TMFCreateProductOrderAPIRA:epcResponse&quot;,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true,
+  &quot;vlcResponseHeaders&quot; : { }
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TMForumCreateProductOrderSuccessResponseAction</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;additionalOutput&quot; : { },
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;%TMFCreateProductOrderAPIRA:epcResponse% == null&quot;,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;TransformProductOrderResponseDR:outputResponse&quot;,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true,
+  &quot;vlcResponseHeaders&quot; : { }
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TransformProductOrderRequestDR</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;TMFTMForumTransformProductOrderRequest&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;ignoreCache&quot; : false,
+  &quot;label&quot; : &quot;DataRaptorTransformAction1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Transform Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TransformProductOrderResponseDR</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;bundle&quot; : &quot;TMFTMForumGetProductOrderOutputTransform&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;%TMFCreateProductOrderAPIRA:allRecords% != null&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;ignoreCache&quot; : false,
+  &quot;label&quot; : &quot;DataRaptorTransformAction2&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;TMFCreateProductOrderAPIRA:allRecords&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>DataRaptor Transform Action</type>
+    </omniProcessElements>
+    <omniProcessKey>tmf_TMForumCreateProductOrder</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;description&quot; : &quot;&quot;,
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;mockResponseMap&quot; : { },
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;rollbackOnError&quot; : false,
+  &quot;sfiVersion&quot; : &quot;244.0&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;ttlMinutes&quot; : 5
+}</propertySetConfig>
+    <subType>TMForumCreateProductOrder</subType>
+    <type>tmf</type>
+    <uniqueName>tmf_TMForumCreateProductOrder_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <webComponentKey>14a0bcca-a1b8-340b-94a8-403ac43bd964</webComponentKey>
+</OmniIntegrationProcedure>

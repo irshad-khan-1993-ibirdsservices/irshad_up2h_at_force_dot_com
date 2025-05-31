@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;cartId&quot;:&quot;8018Z000006VnttQAC&quot;,&quot;cartType&quot;:&quot;Order&quot;,&quot;groupsToCreate&quot;:[{&quot;Name&quot;:&quot;Business Postpaid PRO Plan + Device&quot;,&quot;groupDescription&quot;:&quot;01t8Z00000AnjXsQAJ&quot;,&quot;groupName&quot;:&quot;Business Postpaid PRO Plan + Device&quot;,&quot;isGroupAssociatedWithCart&quot;:true,&quot;memberType&quot;:&quot;ServicePoint&quot;,&quot;productId&quot;:&quot;01t8Z00000AnjXsQAJ&quot;,&quot;selectedAssetsCommonConfiguration&quot;:{&quot;bulkRequestType&quot;:&quot;bulkChange&quot;,&quot;productFamily&quot;:&quot;None&quot;,&quot;productId&quot;:&quot;01t8Z00000AnjXsQAJ&quot;}},{&quot;Name&quot;:&quot;iPhone 12&quot;,&quot;groupDescription&quot;:&quot;01t8Z00000AnjXEQAZ&quot;,&quot;groupName&quot;:&quot;iPhone 12&quot;,&quot;isGroupAssociatedWithCart&quot;:true,&quot;memberType&quot;:&quot;ServicePoint&quot;,&quot;productId&quot;:&quot;01t8Z00000AnjXEQAZ&quot;,&quot;selectedAssetsCommonConfiguration&quot;:{&quot;bulkRequestType&quot;:&quot;bulkChange&quot;,&quot;productFamily&quot;:&quot;None&quot;,&quot;productId&quot;:&quot;01t8Z00000AnjXEQAZ&quot;}},{&quot;Name&quot;:&quot;Business Internet Essential&quot;,&quot;groupDescription&quot;:&quot;01t8Z00000AnjXZQAZ&quot;,&quot;groupName&quot;:&quot;Business Internet Essential&quot;,&quot;isGroupAssociatedWithCart&quot;:true,&quot;memberType&quot;:&quot;ServicePoint&quot;,&quot;productId&quot;:&quot;01t8Z00000AnjXZQAZ&quot;,&quot;selectedAssetsCommonConfiguration&quot;:{&quot;bulkRequestType&quot;:&quot;bulkChange&quot;,&quot;productFamily&quot;:&quot;Internet&quot;,&quot;productId&quot;:&quot;01t8Z00000AnjXZQAZ&quot;}}]}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>ESM_SelfServiceCreateGroups</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CreateGroups</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;additionalInput&quot; : {
+    &quot;cartType&quot; : &quot;%cartType%&quot;,
+    &quot;contextId&quot; : &quot;%cartId%&quot;,
+    &quot;groupsToCreate&quot; : &quot;%groupsToCreate%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;label&quot; : &quot;RemoteAction1&quot;,
+  &quot;remoteClass&quot; : &quot;MultiServiceAppHandler&quot;,
+  &quot;remoteMethod&quot; : &quot;createGroups&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CreateGroupsResponse</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;additionalOutput&quot; : {
+    &quot;groups&quot; : &quot;%CreateGroups:result%&quot;
+  },
+  &quot;disOnTplt&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;useFormulas&quot; : true,
+  &quot;vlcResponseHeaders&quot; : { }
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessKey>ESM_SelfServiceCreateGroups</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;description&quot; : &quot;This IP creates groups according to selected assets&quot;,
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;mockResponseMap&quot; : { },
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;rollbackOnError&quot; : false,
+  &quot;trackingCustomData&quot; : { },
+  &quot;ttlMinutes&quot; : 5
+}</propertySetConfig>
+    <subType>SelfServiceCreateGroups</subType>
+    <type>ESM</type>
+    <uniqueName>ESM_SelfServiceCreateGroups_Procedure_10</uniqueName>
+    <versionNumber>10.0</versionNumber>
+    <webComponentKey>c6db78e7-c2bf-acf4-0e22-14a878b7caba</webComponentKey>
+</OmniIntegrationProcedure>
