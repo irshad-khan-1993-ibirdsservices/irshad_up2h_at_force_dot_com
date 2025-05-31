@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniUiCard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorName>Salesforce</authorName>
+    <dataSourceConfig>{&quot;dataSource&quot;:{&quot;contextVariables&quot;:[],&quot;orderBy&quot;:{},&quot;type&quot;:null,&quot;value&quot;:{}}}</dataSourceConfig>
+    <isActive>true</isActive>
+    <name>ESM_SelfService_EachOrderItem</name>
+    <omniUiCardType>Child</omniUiCardType>
+    <propertySetConfig>{&quot;dataSource&quot;:{&quot;contextVariables&quot;:[],&quot;orderBy&quot;:{},&quot;type&quot;:null,&quot;value&quot;:{}},&quot;enableLwc&quot;:true,&quot;isFlex&quot;:true,&quot;lwc&quot;:{&quot;DeveloperName&quot;:&quot;cfESM_SelfService_EachOrderItem_1_Salesforce&quot;,&quot;Id&quot;:&quot;0RbRN0000003K610AE&quot;,&quot;ManageableState&quot;:&quot;unmanaged&quot;,&quot;MasterLabel&quot;:&quot;cfESM_SelfService_EachOrderItem_1_Salesforce&quot;,&quot;NamespacePrefix&quot;:&quot;vlocity_cmt&quot;},&quot;selectableMode&quot;:&quot;Multi&quot;,&quot;states&quot;:[{&quot;conditions&quot;:{&quot;group&quot;:[],&quot;id&quot;:&quot;state-condition-object&quot;,&quot;isParent&quot;:true},&quot;definedActions&quot;:{&quot;actions&quot;:[]},&quot;fields&quot;:[],&quot;isSmartAction&quot;:false,&quot;name&quot;:&quot;Active&quot;,&quot;smartAction&quot;:{},&quot;styleObject&quot;:{&quot;class&quot;:&quot;slds-card slds-p-around_x-small slds-m-bottom_x-small&quot;,&quot;container&quot;:{&quot;class&quot;:&quot;slds-card&quot;},&quot;margin&quot;:[{&quot;size&quot;:&quot;none&quot;,&quot;type&quot;:&quot;around&quot;}],&quot;padding&quot;:[{&quot;size&quot;:&quot;x-small&quot;,&quot;type&quot;:&quot;around&quot;}],&quot;size&quot;:{&quot;default&quot;:&quot;12&quot;,&quot;isResponsive&quot;:false},&quot;sizeClass&quot;:&quot;slds-size_12-of-12&quot;}}],&quot;theme&quot;:&quot;slds&quot;,&quot;title&quot;:&quot;ESM_SelfService_EachOrderItem&quot;}</propertySetConfig>
+    <versionNumber>1</versionNumber>
+</OmniUiCard>

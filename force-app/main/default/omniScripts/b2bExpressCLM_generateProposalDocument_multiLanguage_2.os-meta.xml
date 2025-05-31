@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniScript xmlns="http://soap.sforce.com/2006/04/metadata">
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>false</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Multi-Language</language>
+    <lastPreviewPage>Newport</lastPreviewPage>
+    <name>generateProposalDocument</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>DRE_GetQuoteDetailsForDocGen</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;GetQuoteDetailsDocGen&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;dataRaptor Input Parameters&quot; : [ {
+    &quot;element&quot; : &quot;ContextId&quot;,
+    &quot;inputParam&quot; : &quot;QuoteId&quot;
+  } ],
+  &quot;disOnTplt&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;failureAbortLabel&quot; : null,
+  &quot;failureAbortMessage&quot; : null,
+  &quot;failureGoBackLabel&quot; : null,
+  &quot;failureNextLabel&quot; : null,
+  &quot;ignoreCache&quot; : false,
+  &quot;inProgressMessage&quot; : null,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXDREGetQuoteDetailsForDocGen&quot;,
+  &quot;message&quot; : { },
+  &quot;postMessage&quot; : null,
+  &quot;pubsub&quot; : false,
+  &quot;redirectNextLabel&quot; : null,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectPreviousLabel&quot; : null,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;responseJSONNode&quot; : &quot;GenerationOptions&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>DRT_InitDocumentTemplates</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;ESMInitDocumentTemplates&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;disOnTplt&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;failureAbortLabel&quot; : null,
+  &quot;failureAbortMessage&quot; : null,
+  &quot;failureGoBackLabel&quot; : null,
+  &quot;failureNextLabel&quot; : null,
+  &quot;ignoreCache&quot; : false,
+  &quot;inProgressMessage&quot; : null,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXDRTInitDocumentTemplates&quot;,
+  &quot;message&quot; : { },
+  &quot;postMessage&quot; : null,
+  &quot;pubsub&quot; : false,
+  &quot;redirectNextLabel&quot; : null,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectPreviousLabel&quot; : null,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;validationRequired&quot; : null,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>13.0</sequenceNumber>
+        <type>DataRaptor Transform Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Disclaimer</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 10,
+  &quot;dataJSON&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : null,
+  &quot;show&quot; : null,
+  &quot;text&quot; : &quot;&lt;p style=\&quot;text-align: right;\&quot;&gt;Please wait until documents are generated to close this window...&amp;nbsp; &amp;nbsp;&lt;/p&gt;&quot;,
+  &quot;textKey&quot; : null
+}</propertySetConfig>
+            <sequenceNumber>31.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>EmailPDFPPT</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;OrgWideEmailAddress&quot; : &quot;&quot;,
+  &quot;attachmentList&quot; : &quot;&quot;,
+  &quot;contentVersionList&quot; : &quot;%pdfGenContentVersionId%&quot;,
+  &quot;controlWidth&quot; : 5,
+  &quot;disOnTplt&quot; : false,
+  &quot;docList&quot; : &quot;&quot;,
+  &quot;emailInformation&quot; : {
+    &quot;bccAddressList&quot; : [ ],
+    &quot;ccAddressList&quot; : [ ],
+    &quot;emailBody&quot; : &quot;Please find attached your quote proposal from Vlocity.&quot;,
+    &quot;emailSubject&quot; : &quot;Your quote %EnterObject:QuoteName% from Vlocity&quot;,
+    &quot;setHtmlBody&quot; : false,
+    &quot;toAddressList&quot; : [ &quot;%EnterObject:ContactEmail%&quot; ]
+  },
+  &quot;emailTemplateInformation&quot; : {
+    &quot;emailTargetObjectId&quot; : &quot;&quot;,
+    &quot;emailTemplateName&quot; : &quot;&quot;,
+    &quot;saveAsActivity&quot; : false,
+    &quot;whatId&quot; : &quot;&quot;
+  },
+  &quot;enableActionMessage&quot; : false,
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;failureAbortLabel&quot; : null,
+  &quot;failureAbortMessage&quot; : null,
+  &quot;failureGoBackLabel&quot; : null,
+  &quot;failureNextLabel&quot; : null,
+  &quot;fileAttachments&quot; : &quot;&quot;,
+  &quot;inProgressMessage&quot; : null,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXEmailPdf&quot;,
+  &quot;message&quot; : { },
+  &quot;postMessage&quot; : null,
+  &quot;pubsub&quot; : false,
+  &quot;redirectNextLabel&quot; : null,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectPreviousLabel&quot; : null,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;group&quot; : {
+          &quot;operator&quot; : &quot;OR&quot;,
+          &quot;rules&quot; : [ {
+            &quot;condition&quot; : &quot;=&quot;,
+            &quot;data&quot; : &quot;false&quot;,
+            &quot;field&quot; : &quot;inTest&quot;
+          }, {
+            &quot;condition&quot; : &quot;=&quot;,
+            &quot;data&quot; : null,
+            &quot;field&quot; : &quot;inTest&quot;
+          } ]
+        }
+      }, {
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;data&quot; : &quot;true&quot;,
+        &quot;field&quot; : &quot;isPDFAttachDone&quot;
+      } ]
+    }
+  },
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;staticDocList&quot; : [ ],
+  &quot;useTemplate&quot; : false,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>29.0</sequenceNumber>
+            <type>Email Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>EmailWordPPT</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;OrgWideEmailAddress&quot; : &quot;&quot;,
+  &quot;attachmentList&quot; : &quot;&quot;,
+  &quot;contentVersionList&quot; : &quot;%docGenContentVersionId%&quot;,
+  &quot;controlWidth&quot; : 5,
+  &quot;disOnTplt&quot; : false,
+  &quot;docList&quot; : &quot;&quot;,
+  &quot;emailInformation&quot; : {
+    &quot;bccAddressList&quot; : [ ],
+    &quot;ccAddressList&quot; : [ ],
+    &quot;emailBody&quot; : &quot;Please find attached your quote proposal from Vlocity.&quot;,
+    &quot;emailSubject&quot; : &quot;Your quote %EnterObject:QuoteName% from Vlocity&quot;,
+    &quot;setHtmlBody&quot; : false,
+    &quot;toAddressList&quot; : [ &quot;%EnterObject:ContactEmail%&quot; ]
+  },
+  &quot;emailTemplateInformation&quot; : {
+    &quot;emailTargetObjectId&quot; : &quot;&quot;,
+    &quot;emailTemplateName&quot; : &quot;&quot;,
+    &quot;saveAsActivity&quot; : false,
+    &quot;whatId&quot; : &quot;&quot;
+  },
+  &quot;enableActionMessage&quot; : false,
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;failureAbortLabel&quot; : null,
+  &quot;failureAbortMessage&quot; : null,
+  &quot;failureGoBackLabel&quot; : null,
+  &quot;failureNextLabel&quot; : null,
+  &quot;fileAttachments&quot; : &quot;&quot;,
+  &quot;inProgressMessage&quot; : null,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXEmailPowerpoint&quot;,
+  &quot;message&quot; : { },
+  &quot;postMessage&quot; : null,
+  &quot;pubsub&quot; : false,
+  &quot;redirectNextLabel&quot; : null,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectPreviousLabel&quot; : null,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;group&quot; : {
+          &quot;operator&quot; : &quot;OR&quot;,
+          &quot;rules&quot; : [ {
+            &quot;condition&quot; : &quot;=&quot;,
+            &quot;data&quot; : &quot;false&quot;,
+            &quot;field&quot; : &quot;inTest&quot;
+          }, {
+            &quot;condition&quot; : &quot;=&quot;,
+            &quot;data&quot; : null,
+            &quot;field&quot; : &quot;inTest&quot;
+          } ]
+        }
+      }, {
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;data&quot; : &quot;true&quot;,
+        &quot;field&quot; : &quot;isWordAttachDone&quot;
+      } ]
+    }
+  },
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;staticDocList&quot; : [ ],
+  &quot;useTemplate&quot; : false,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>28.0</sequenceNumber>
+            <type>Email Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>GenerateDocumentWordPPT</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;b2b-express-object-document-creation-docx-template&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;documentType&quot; : &quot;word&quot;,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXProposal&quot;,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;preTransformBundle&quot; : &quot;&quot;,
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteOptions&quot; : {
+    &quot;postTransformBundle&quot; : &quot;&quot;,
+    &quot;preTransformBundle&quot; : &quot;&quot;
+  },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;data&quot; : &quot;true&quot;,
+        &quot;field&quot; : &quot;ValidateMessage&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>27.0</sequenceNumber>
+            <type>Input Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>GoToQuote</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;Outcome&quot; : &quot;&quot;,
+  &quot;consoleTabLabel&quot; : null,
+  &quot;controlWidth&quot; : 2,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXDone&quot;,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;redirectPageName&quot; : &quot;mobileDone&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcMobileConfirmation.html&quot;,
+  &quot;show&quot; : null,
+  &quot;source&quot; : &quot;%ContextId%&quot;,
+  &quot;ssm&quot; : false,
+  &quot;type&quot; : &quot;SObject&quot;,
+  &quot;validationRequired&quot; : &quot;Submit&quot;,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>32.0</sequenceNumber>
+            <type>Done Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LineBreak</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : &quot;LineBreak2&quot;,
+  &quot;padding&quot; : 0,
+  &quot;show&quot; : null
+}</propertySetConfig>
+            <sequenceNumber>30.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <description>For validation purposes</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ValidateMessage</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;disOnTplt&quot; : false,
+  &quot;hideLabel&quot; : true,
+  &quot;label&quot; : null,
+  &quot;messages&quot; : [ {
+    &quot;active&quot; : false,
+    &quot;text&quot; : null,
+    &quot;type&quot; : &quot;Success&quot;,
+    &quot;value&quot; : true
+  }, {
+    &quot;active&quot; : true,
+    &quot;text&quot; : null,
+    &quot;type&quot; : &quot;Requirement&quot;,
+    &quot;value&quot; : false
+  } ],
+  &quot;show&quot; : null,
+  &quot;validateExpression&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;data&quot; : &quot;true&quot;,
+        &quot;field&quot; : &quot;ValidateVariables&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>26.0</sequenceNumber>
+            <type>Validation</type>
+        </childElements>
+        <childElements>
+            <description>For validation purposes
+
+Required Variables:  templateId, contextId, templateType</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ValidateVariables</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;dataType&quot; : null,
+  &quot;dateFormat&quot; : &quot;MM-dd-yyyy&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;expression&quot; : &quot;AND( AND( AND( %templateId% != NULL, %contextId% != NULL ), %templateType% != NULL), AND( %templateId% != &apos;&apos;, %contextId% != &apos;&apos;), %templateType% != &apos;&apos;)&quot;,
+  &quot;hide&quot; : true,
+  &quot;hideGroupSep&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;label&quot; : null,
+  &quot;mask&quot; : null,
+  &quot;show&quot; : null,
+  &quot;showInputWidth&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>25.0</sequenceNumber>
+            <type>Formula</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>GenerateDocument</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;allowSaveForLater&quot; : false,
+  &quot;cancelLabel&quot; : null,
+  &quot;cancelMessage&quot; : &quot;vlocity_cmt__CMEXAreYouSure&quot;,
+  &quot;completeLabel&quot; : null,
+  &quot;completeMessage&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;knowledgeOptions&quot; : {
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;remoteTimeout&quot; : 30000
+  },
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXGenerateDocument&quot;,
+  &quot;nextLabel&quot; : null,
+  &quot;nextWidth&quot; : 0,
+  &quot;previousLabel&quot; : null,
+  &quot;previousWidth&quot; : 0,
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;saveLabel&quot; : null,
+  &quot;saveMessage&quot; : null,
+  &quot;show&quot; : null,
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;validationRequired&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>24.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>AttachFileFormat</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;b2b-express-radio-button-as-link&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;
+  },
+  &quot;defaultValue&quot; : null,
+  &quot;disOnTplt&quot; : false,
+  &quot;enableCaption&quot; : true,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : null,
+  &quot;hide&quot; : false,
+  &quot;horizontalMode&quot; : &quot;image&quot;,
+  &quot;imageCountInRow&quot; : 2,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXSelectFileFormatQuote&quot;,
+  &quot;optionHeight&quot; : 50,
+  &quot;optionSource&quot; : {
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;image&quot;
+  },
+  &quot;optionWidth&quot; : 50,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;docx,pdf&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__CMEXWordAndPDF&quot;
+  }, {
+    &quot;name&quot; : &quot;docx&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__CMEXMicrosoftWord&quot;
+  }, {
+    &quot;name&quot; : &quot;pdf&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__CMEXPDF&quot;
+  }, {
+    &quot;name&quot; : &quot;none&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__CMEXNone&quot;
+  } ],
+  &quot;options|0:value&quot; : &quot;vlocity_cmt__CMEXWordAndPDF&quot;,
+  &quot;options|1:value&quot; : &quot;vlocity_cmt__CMEXMicrosoftWord&quot;,
+  &quot;options|2:value&quot; : &quot;vlocity_cmt__CMEXPDF&quot;,
+  &quot;options|3:value&quot; : &quot;vlocity_cmt__CMEXNone&quot;,
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;required&quot; : true,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;data&quot; : null,
+        &quot;field&quot; : &quot;DownloadFileFormat&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>10.0</sequenceNumber>
+            <type>Radio</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DisplayTitle</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;debounceValue&quot; : 0,
+  &quot;defaultValue&quot; : null,
+  &quot;disOnTplt&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : null,
+  &quot;hide&quot; : true,
+  &quot;inputWidth&quot; : 12,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXDisplayTitle&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;maxLength&quot; : 255,
+  &quot;minLength&quot; : 0,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;required&quot; : false,
+  &quot;show&quot; : null,
+  &quot;showInputWidth&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>11.0</sequenceNumber>
+            <type>Text</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DownloadFileFormat</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;b2b-express-radio-button-as-link&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;
+  },
+  &quot;defaultValue&quot; : null,
+  &quot;disOnTplt&quot; : false,
+  &quot;enableCaption&quot; : true,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : null,
+  &quot;hide&quot; : false,
+  &quot;horizontalMode&quot; : &quot;image&quot;,
+  &quot;imageCountInRow&quot; : 4,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXSelectAvailableFileFormats&quot;,
+  &quot;optionHeight&quot; : 50,
+  &quot;optionSource&quot; : {
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;image&quot;
+  },
+  &quot;optionWidth&quot; : 50,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;all&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__CMEXWordAndPDF&quot;
+  }, {
+    &quot;name&quot; : &quot;docx&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__CMEXMicrosoftWord&quot;
+  }, {
+    &quot;name&quot; : &quot;pdf&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__CMEXPDF&quot;
+  }, {
+    &quot;name&quot; : &quot;none&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__CMEXNone&quot;
+  } ],
+  &quot;options|0:value&quot; : &quot;vlocity_cmt__CMEXWordAndPDF&quot;,
+  &quot;options|1:value&quot; : &quot;vlocity_cmt__CMEXMicrosoftWord&quot;,
+  &quot;options|2:value&quot; : &quot;vlocity_cmt__CMEXPDF&quot;,
+  &quot;options|3:value&quot; : &quot;vlocity_cmt__CMEXNone&quot;,
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;required&quot; : true,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;data&quot; : null,
+        &quot;field&quot; : &quot;ProposalGrouping&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>9.0</sequenceNumber>
+            <type>Radio</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>EnterOptionsNext</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;b2b-express-radio-button-as-link&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;
+  },
+  &quot;defaultValue&quot; : &quot;Next&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;enableCaption&quot; : true,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : null,
+  &quot;hide&quot; : false,
+  &quot;horizontalMode&quot; : &quot;image&quot;,
+  &quot;imageCountInRow&quot; : 6,
+  &quot;label&quot; : &quot;&quot;,
+  &quot;optionHeight&quot; : 50,
+  &quot;optionSource&quot; : {
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;image&quot;
+  },
+  &quot;optionWidth&quot; : 50,
+  &quot;options&quot; : [ {
+    &quot;autoAdv&quot; : &quot;next&quot;,
+    &quot;name&quot; : &quot;Next&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__OmniredirectNextLabel&quot;
+  } ],
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;required&quot; : false,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;data&quot; : null,
+        &quot;field&quot; : &quot;AttachFileFormat&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>12.0</sequenceNumber>
+            <type>Radio</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OpportunityName</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 5,
+  &quot;debounceValue&quot; : 0,
+  &quot;defaultValue&quot; : null,
+  &quot;disOnTplt&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : null,
+  &quot;hide&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXOpprName&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;maxLength&quot; : 255,
+  &quot;minLength&quot; : 0,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : null,
+  &quot;readOnly&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;required&quot; : false,
+  &quot;show&quot; : null,
+  &quot;showInputWidth&quot; : true
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>Text</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ProposalGrouping</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;b2b-express-radio-button-as-link&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;
+  },
+  &quot;defaultValue&quot; : null,
+  &quot;disOnTplt&quot; : false,
+  &quot;enableCaption&quot; : true,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : null,
+  &quot;hide&quot; : false,
+  &quot;horizontalMode&quot; : &quot;image&quot;,
+  &quot;imageCountInRow&quot; : 2,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXAggrLevel&quot;,
+  &quot;optionHeight&quot; : 50,
+  &quot;optionSource&quot; : {
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;image&quot;
+  },
+  &quot;optionWidth&quot; : 50,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Member&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__CMEXAggrByMembers&quot;
+  }, {
+    &quot;name&quot; : &quot;Group&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__CMEXAggrByGroups&quot;
+  } ],
+  &quot;options|0:value&quot; : &quot;vlocity_cmt__CMEXAggrByMembers&quot;,
+  &quot;options|1:value&quot; : &quot;vlocity_cmt__CMEXAggrByGroups&quot;,
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;required&quot; : true,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;data&quot; : null,
+        &quot;field&quot; : &quot;ProposalType&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>8.0</sequenceNumber>
+            <type>Radio</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ProposalType</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;b2b-express-radio-button-as-link&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;
+  },
+  &quot;defaultValue&quot; : null,
+  &quot;disOnTplt&quot; : false,
+  &quot;enableCaption&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : null,
+  &quot;hide&quot; : false,
+  &quot;horizontalMode&quot; : &quot;image&quot;,
+  &quot;imageCountInRow&quot; : 2,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXSelectProposal&quot;,
+  &quot;optionHeight&quot; : 50,
+  &quot;optionSource&quot; : {
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;image&quot;
+  },
+  &quot;optionWidth&quot; : 50,
+  &quot;options&quot; : [ {
+    &quot;imgId&quot; : null,
+    &quot;name&quot; : &quot;Summary&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__CMEXSummary&quot;
+  }, {
+    &quot;imgId&quot; : null,
+    &quot;name&quot; : &quot;Detailed&quot;,
+    &quot;value&quot; : &quot;vlocity_cmt__CMEXDetailed&quot;
+  } ],
+  &quot;options|0:value&quot; : &quot;vlocity_cmt__CMEXSummary&quot;,
+  &quot;options|1:value&quot; : &quot;vlocity_cmt__CMEXDetailed&quot;,
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;required&quot; : true,
+  &quot;show&quot; : null
+}</propertySetConfig>
+            <sequenceNumber>7.0</sequenceNumber>
+            <type>Radio</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>QuoteName</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 5,
+  &quot;debounceValue&quot; : 0,
+  &quot;defaultValue&quot; : null,
+  &quot;disOnTplt&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : null,
+  &quot;hide&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXQuoteName&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;maxLength&quot; : 255,
+  &quot;minLength&quot; : 0,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : null,
+  &quot;readOnly&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;required&quot; : false,
+  &quot;show&quot; : null,
+  &quot;showInputWidth&quot; : true
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>Text</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>QuoteNumber</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 2,
+  &quot;debounceValue&quot; : 0,
+  &quot;defaultValue&quot; : null,
+  &quot;disOnTplt&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : null,
+  &quot;hide&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXQuoteNumber&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;maxLength&quot; : 255,
+  &quot;minLength&quot; : 0,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : null,
+  &quot;readOnly&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;required&quot; : false,
+  &quot;show&quot; : null,
+  &quot;showInputWidth&quot; : true
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Text</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>GenerationOptions</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;allowSaveForLater&quot; : false,
+  &quot;cancelLabel&quot; : null,
+  &quot;cancelMessage&quot; : &quot;vlocity_cmt__CMEXAreYouSure&quot;,
+  &quot;completeLabel&quot; : null,
+  &quot;completeMessage&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;knowledgeOptions&quot; : {
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;remoteTimeout&quot; : 30000
+  },
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXGenerateQuoteProposal&quot;,
+  &quot;nextLabel&quot; : null,
+  &quot;nextWidth&quot; : 0,
+  &quot;previousLabel&quot; : null,
+  &quot;previousWidth&quot; : 0,
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;saveLabel&quot; : null,
+  &quot;saveMessage&quot; : null,
+  &quot;show&quot; : null,
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;validationRequired&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>IP_GetDocumentTemplates</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;disOnTplt&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;extraPayload&quot; : {
+    &quot;AggregationLevel&quot; : &quot;%ProposalGrouping%&quot;,
+    &quot;TemplateCategory&quot; : &quot;%TemplateCategory%&quot;,
+    &quot;TemplateSubtype&quot; : &quot;%ProposalType%&quot;,
+    &quot;TemplateType&quot; : &quot;%TemplateType%&quot;
+  },
+  &quot;failureAbortLabel&quot; : null,
+  &quot;failureAbortMessage&quot; : null,
+  &quot;failureGoBackLabel&quot; : null,
+  &quot;failureNextLabel&quot; : null,
+  &quot;inProgressMessage&quot; : null,
+  &quot;integrationProcedureKey&quot; : &quot;b2bExpress_TemplateConfigData&quot;,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXIPGetDocumentTemplates&quot;,
+  &quot;message&quot; : { },
+  &quot;postMessage&quot; : null,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;preTransformBundle&quot; : &quot;&quot;,
+  &quot;pubsub&quot; : false,
+  &quot;redirectNextLabel&quot; : null,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectPreviousLabel&quot; : null,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;remoteOptions&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;postTransformBundle&quot; : &quot;&quot;,
+    &quot;preTransformBundle&quot; : &quot;&quot;,
+    &quot;useFuture&quot; : false
+  },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;svgIcon&quot; : &quot;&quot;,
+  &quot;svgSprite&quot; : &quot;&quot;,
+  &quot;useContinuation&quot; : false,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>14.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>BackNoTemplates</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;b2b-express-restart-os-template&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 2,
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;
+  },
+  &quot;defaultValue&quot; : &quot;Back&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;enableCaption&quot; : true,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : null,
+  &quot;hide&quot; : false,
+  &quot;horizontalMode&quot; : &quot;image&quot;,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXBack&quot;,
+  &quot;optionHeight&quot; : 50,
+  &quot;optionSource&quot; : {
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;image&quot;
+  },
+  &quot;optionWidth&quot; : 50,
+  &quot;options&quot; : [ {
+    &quot;autoAdv&quot; : &quot;next&quot;,
+    &quot;name&quot; : &quot;Back&quot;,
+    &quot;value&quot; : null
+  } ],
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;required&quot; : false,
+  &quot;show&quot; : null
+}</propertySetConfig>
+            <sequenceNumber>21.0</sequenceNumber>
+            <type>Radio</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DocumentTemplate</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;b2b-express-selectable-items-clm-templates&quot;,
+  &quot;accessibleInFutureSteps&quot; : true,
+  &quot;dataJSON&quot; : true,
+  &quot;itemsKey&quot; : &quot;recSet&quot;,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXTemplates&quot;,
+  &quot;maxCompareSize&quot; : 4,
+  &quot;modalConfigurationSetting&quot; : {
+    &quot;modalController&quot; : &quot;ModalProductCtrl&quot;,
+    &quot;modalHTMLTemplateId&quot; : &quot;vlcProductConfig.html&quot;,
+    &quot;modalSize&quot; : &quot;lg&quot;
+  },
+  &quot;modalController&quot; : &quot;ModalInstanceCtrl&quot;,
+  &quot;modalHTMLTemplateId&quot; : &quot;vlcModalContent.html&quot;,
+  &quot;modalSize&quot; : &quot;&quot;,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;preTransformBundle&quot; : &quot;&quot;,
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteOptions&quot; : {
+    &quot;postTransformBundle&quot; : &quot;&quot;,
+    &quot;preTransformBundle&quot; : &quot;&quot;
+  },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;selectMode&quot; : &quot;Single&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;&gt;&quot;,
+        &quot;data&quot; : &quot;1&quot;,
+        &quot;field&quot; : &quot;AvailableTemplates&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>18.0</sequenceNumber>
+            <type>Selectable Items</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>FinishNoTemplates</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;Outcome&quot; : &quot;&quot;,
+  &quot;consoleTabLabel&quot; : null,
+  &quot;controlWidth&quot; : 2,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXFinish&quot;,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;redirectPageName&quot; : &quot;mobileDone&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcMobileConfirmation.html&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;data&quot; : &quot;0&quot;,
+        &quot;field&quot; : &quot;AvailableTemplates&quot;
+      } ]
+    }
+  },
+  &quot;source&quot; : &quot;%ContextId%&quot;,
+  &quot;ssm&quot; : false,
+  &quot;type&quot; : &quot;SObject&quot;,
+  &quot;validationRequired&quot; : &quot;Submit&quot;,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>22.0</sequenceNumber>
+            <type>Done Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>NoTemplatesAvailable</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;disOnTplt&quot; : false,
+  &quot;hideLabel&quot; : true,
+  &quot;label&quot; : null,
+  &quot;messages&quot; : [ {
+    &quot;active&quot; : false,
+    &quot;text&quot; : null,
+    &quot;type&quot; : &quot;Success&quot;,
+    &quot;value&quot; : true
+  }, {
+    &quot;active&quot; : true,
+    &quot;text&quot; : null,
+    &quot;type&quot; : &quot;Requirement&quot;,
+    &quot;value&quot; : false
+  } ],
+  &quot;show&quot; : null,
+  &quot;validateExpression&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;data&quot; : &quot;0&quot;,
+        &quot;field&quot; : &quot;AvailableTemplates&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>17.0</sequenceNumber>
+            <type>Validation</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PickTemplateNext</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;b2b-express-radio-button-as-link&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;
+  },
+  &quot;defaultValue&quot; : &quot;Next&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;enableCaption&quot; : true,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : null,
+  &quot;hide&quot; : false,
+  &quot;horizontalMode&quot; : &quot;image&quot;,
+  &quot;imageCountInRow&quot; : 6,
+  &quot;label&quot; : null,
+  &quot;optionHeight&quot; : 50,
+  &quot;optionSource&quot; : {
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;image&quot;
+  },
+  &quot;optionWidth&quot; : 50,
+  &quot;options&quot; : [ {
+    &quot;autoAdv&quot; : &quot;next&quot;,
+    &quot;name&quot; : &quot;Next&quot;,
+    &quot;value&quot; : null
+  } ],
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;required&quot; : false,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;data&quot; : null,
+        &quot;field&quot; : &quot;DocumentTemplate&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>19.0</sequenceNumber>
+            <type>Radio</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>TextBlock_Empty</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 4,
+  &quot;dataJSON&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : null,
+  &quot;sanitize&quot; : false,
+  &quot;show&quot; : null,
+  &quot;text&quot; : &quot;&quot;,
+  &quot;textKey&quot; : null
+}</propertySetConfig>
+            <sequenceNumber>20.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>PickTemplate</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;allowSaveForLater&quot; : false,
+  &quot;cancelLabel&quot; : null,
+  &quot;cancelMessage&quot; : &quot;vlocity_cmt__CMEXAreYouSure&quot;,
+  &quot;completeLabel&quot; : null,
+  &quot;completeMessage&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;instruction&quot; : &quot;&lt;p&gt;(Allow only one template to be selected)&lt;/p&gt;&quot;,
+  &quot;knowledgeOptions&quot; : {
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;remoteTimeout&quot; : 30000
+  },
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXPickTemplate&quot;,
+  &quot;message&quot; : { },
+  &quot;nextLabel&quot; : null,
+  &quot;nextWidth&quot; : 0,
+  &quot;previousLabel&quot; : null,
+  &quot;previousWidth&quot; : 0,
+  &quot;pubsub&quot; : false,
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;saveLabel&quot; : null,
+  &quot;saveMessage&quot; : null,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;data&quot; : &quot;1&quot;,
+        &quot;field&quot; : &quot;AvailableTemplates&quot;
+      } ]
+    }
+  },
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;validationRequired&quot; : true,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>16.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SetVal_SetAvailableTemples</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;disOnTplt&quot; : false,
+  &quot;elementValueMap&quot; : {
+    &quot;AvailableTemplates&quot; : &quot;=COUNT(%DocumentTemplates:Id%)&quot;
+  },
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXSetValSetAvailableTemples&quot;,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;show&quot; : null,
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>15.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Optional settings that can be changed to customize document generation</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SetVal_SetGenerationOptions</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;disOnTplt&quot; : false,
+  &quot;elementValueMap&quot; : {
+    &quot;attachFileFormat&quot; : &quot;=%GenerationOptions:AttachFileFormat%&quot;,
+    &quot;contextId&quot; : &quot;=%GenerationOptions:ObjectId%&quot;,
+    &quot;docGenerationMechanism&quot; : &quot;=\&quot;VlocityClientSide\&quot;&quot;,
+    &quot;documentType&quot; : &quot;=%GenerationOptions:DownloadFileFormat%&quot;,
+    &quot;pdfGenerationSource&quot; : &quot;=\&quot;VlocityClientSide\&quot;&quot;,
+    &quot;pdfViewer&quot; : &quot;=\&quot;None\&quot;&quot;,
+    &quot;templateId&quot; : &quot;=IF(%AvailableTemplates%=1,%DocumentTemplates|1:Id%,%PickTemplate:DocumentTemplate|1:Id%)&quot;,
+    &quot;templateType&quot; : &quot;=%TemplateType%&quot;,
+    &quot;useTemplateDRExtract&quot; : &quot;=\&quot;Yes\&quot;&quot;
+  },
+  &quot;label&quot; : null,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;show&quot; : null,
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>23.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SetVal_SetVariables</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;disOnTplt&quot; : false,
+  &quot;elementValueMap&quot; : {
+    &quot;TemplateCategory&quot; : &quot;=\&quot;Proposal\&quot;&quot;,
+    &quot;TemplateType&quot; : &quot;=\&quot;Microsoft Word .DOCX Template\&quot;&quot;
+  },
+  &quot;label&quot; : &quot;vlocity_cmt__CMEXSetValSetVariables&quot;,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;show&quot; : null,
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessType>OmniScript</omniProcessType>
+    <propertySetConfig>{&quot;allowCancel&quot;:true,&quot;allowSaveForLater&quot;:true,&quot;autoFocus&quot;:false,&quot;autoSaveOnStepNext&quot;:false,&quot;bLK&quot;:false,&quot;cancelRedirectPageName&quot;:&quot;OmniScriptCancelled&quot;,&quot;cancelRedirectTemplateUrl&quot;:&quot;vlcCancelled.html&quot;,&quot;cancelSource&quot;:&quot;%ContextId%&quot;,&quot;cancelType&quot;:&quot;SObject&quot;,&quot;consoleTabIcon&quot;:&quot;custom:custom18&quot;,&quot;consoleTabLabel&quot;:null,&quot;consoleTabTitle&quot;:null,&quot;currencyCode&quot;:&quot;&quot;,&quot;customPages&quot;:{&quot;ContractPreview&quot;:&quot;ContractAmendmentPreview?verticalMode=true&quot;},&quot;disableUnloadWarn&quot;:true,&quot;elementTypeToHTMLTemplateMapping&quot;:{},&quot;enableKnowledge&quot;:false,&quot;errorMessage&quot;:{&quot;custom&quot;:[]},&quot;hideStepChart&quot;:false,&quot;includeCustomization&quot;:true,&quot;knowledgeArticleTypeQueryFieldsMap&quot;:{},&quot;lkObjName&quot;:null,&quot;message&quot;:{},&quot;persistentComponent&quot;:[{&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;label&quot;:null,&quot;modalConfigurationSetting&quot;:{&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalSize&quot;:&quot;lg&quot;},&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteOptions&quot;:{&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;},&quot;remoteTimeout&quot;:30000,&quot;render&quot;:false,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;},{&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;label&quot;:null,&quot;modalConfigurationSetting&quot;:{&quot;modalController&quot;:&quot;&quot;,&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;},&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteOptions&quot;:{&quot;postTransformBundle&quot;:&quot;&quot;,&quot;preTransformBundle&quot;:&quot;&quot;},&quot;remoteTimeout&quot;:30000,&quot;render&quot;:false}],&quot;pubsub&quot;:false,&quot;rtpSeed&quot;:false,&quot;saveContentEncoded&quot;:false,&quot;saveExpireInDays&quot;:null,&quot;saveForLaterRedirectPageName&quot;:&quot;sflRedirect&quot;,&quot;saveForLaterRedirectTemplateUrl&quot;:&quot;vlcSaveForLaterAcknowledge.html&quot;,&quot;saveNameTemplate&quot;:null,&quot;saveObjectId&quot;:&quot;%ContextId%&quot;,&quot;saveURLPatterns&quot;:{},&quot;seedDataJSON&quot;:{},&quot;showInputWidth&quot;:true,&quot;ssm&quot;:false,&quot;stylesheet&quot;:{&quot;lightning&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;,&quot;newport&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;},&quot;timeTracking&quot;:true,&quot;trackingCustomData&quot;:{},&quot;visualforcePagesAvailableInPreview&quot;:{},&quot;wpm&quot;:false}</propertySetConfig>
+    <subType>generateProposalDocument</subType>
+    <type>b2bExpressCLM</type>
+    <uniqueName>b2bExpressCLM_generateProposalDocument_multiLanguage_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <webComponentKey>994d6db0-e2a6-4cad-a427-dd62c6d903bc</webComponentKey>
+</OmniScript>

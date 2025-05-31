@@ -1,0 +1,60 @@
+<template>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+            <thead>
+                <tr class="slds-line-height_reset slds-p-vertical_x-large">
+                    <!-- <th class="" scope="col">
+                        <div class="slds-truncate fw-bold">Select</div>
+                    </th> -->
+                    <th class="slds-p-vertical_x-large" scope="col">
+                        <div class="slds-truncate fw-bold slds-var-p-around_xx-small fs-2rem">Book Name</div>
+                    </th>
+                    <th class="slds-p-vertical_x-large" scope="col">
+                        <div class="slds-truncate fw-bold fs-2rem">Rent Per Day</div>
+                    </th>
+                    <th class="slds-p-vertical_x-large" scope="col">
+                        <div class="slds-truncate fw-bold fs-2rem">Book Cover</div>
+                    </th>
+                    <th class="slds-p-vertical_x-large" scope="col">
+                        <div class="slds-truncate fw-bold fs-2rem">Book ISBN</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={products} for:item="item">
+                
+                <tr key={item.Id} class="slds-hint-parent">
+                    <!-- <th scope="row">
+                        <div class="slds-truncate">
+                            <lightning-input class="slds-p-around_small" data-checkboxid={item.id} onchange={handleCheckbox} variant="label-hidden" label={item.id} type="checkbox"></lightning-input>
+                        </div>
+                    </th> -->
+                    <th scope="row">
+                        <div class="slds-truncate slds-grid slds-grid_vertical-align-center">
+                            <span class="f-family-monospace"> 
+                                <lightning-input class="slds-var-p-around_xx-small fs-1p5rem" data-checkboxid={item.id} onchange={handleCheckbox} variant="label-hidden" label={item.id} type="checkbox"></lightning-input>
+                            </span>
+                            <span class="f-family-monospace fs-1p5rem"> {item.name} </span>
+                        </div>
+                    </th>
+                    <th scope="row">
+                        <div class="slds-truncate">
+                            <p class="f-family-monospace fs-1p5rem"> &#8377;{item.price}</p>
+                        </div>
+                    </th>
+                    <th scope="row">
+                        <div class="slds-truncate slds-grid w-76px">
+                            <div>
+                                <img src={item.book_cover} alt={item.name} class="img scale-1p5"/>
+                            </div>
+                        </div>
+                    </th>
+                    <th scope="row">
+                        <div class="slds-truncate">
+                            <p class="f-family-monospace fs-1p5rem"> {item.isbn}</p>
+                        </div>
+                    </th>
+                </tr>
+                </template>
+            </tbody>
+        </table>
+</template>

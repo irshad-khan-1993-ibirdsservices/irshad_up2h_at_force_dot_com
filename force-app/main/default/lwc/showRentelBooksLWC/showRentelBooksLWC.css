@@ -1,0 +1,21 @@
+.img{
+    height: 100px !important;
+}
+.fw-bold{
+    font-weight: bold !important;
+}
+.fs-2rem{
+    font-size: 1.3rem !important;
+}
+.fs-1p5rem{
+    font-size: 1.2rem !important;
+}
+.w-76px{
+    width: 76px !important;
+}
+.scale-1p5{
+    scale: 1.6 !important;
+}
+.f-family-monospace{
+    font-family: monospace !important;
+}
