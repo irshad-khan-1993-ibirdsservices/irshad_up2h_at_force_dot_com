@@ -26,6 +26,34 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
+        <globalKey>DRLInsertNewBookRentCustomerCustom1891</globalKey>
+        <inputFieldName>EnterFirstNameAndLastName:SearchAddress-Block:MailingPostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLInsertNewBookRentCustomer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MailingPostalCode</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLInsertNewBookRentCustomerCustom4705</globalKey>
+        <inputFieldName>EnterFirstNameAndLastName:SearchAddress-Block:MailingCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLInsertNewBookRentCustomer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MailingCountry</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
         <globalKey>DRLInsertNewBookRentCustomerCustom4155</globalKey>
         <inputFieldName>status</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
@@ -69,6 +97,20 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
+        <globalKey>DRLInsertNewBookRentCustomerCustom5877</globalKey>
+        <inputFieldName>EnterFirstNameAndLastName:SearchAddress-Block:MailingState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLInsertNewBookRentCustomer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MailingState</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
         <globalKey>DRLInsertNewBookRentCustomerCustom6715</globalKey>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedFieldName>Id</linkedFieldName>
@@ -91,6 +133,20 @@
         <outputCreationSequence>2.0</outputCreationSequence>
         <outputFieldName>Total_Rent__c</outputFieldName>
         <outputObjectName>Book_Rent_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLInsertNewBookRentCustomerCustom115</globalKey>
+        <inputFieldName>EnterFirstNameAndLastName:SearchAddress-Block:MailingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLInsertNewBookRentCustomer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MailingCity</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
     </omniDataTransformItem>
@@ -166,6 +222,20 @@
         <upsertKey>false</upsertKey>
     </omniDataTransformItem>
     <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLInsertNewBookRentCustomerCustom4836</globalKey>
+        <inputFieldName>EnterFirstNameAndLastName:SearchAddress-Block:MailingStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLInsertNewBookRentCustomer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MailingStreet</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
         <disabled>true</disabled>
         <filterGroup>0.0</filterGroup>
         <filterOperator>=</filterOperator>
@@ -199,12 +269,12 @@
   &quot;SelectABook&quot; : {
     &quot;CustomLWC3&quot; : {
       &quot;SelectedBook&quot; : {
-        &quot;id&quot; : &quot;844d5c51-d4c0-43dc-991f-0d628015d604&quot;,
-        &quot;description&quot; : &quot;Enter the enchanting world of Frances Hodgson Burnett&apos;s timeless classic, The Secret Garden. Follow young Mary Lennox as she discovers a hidden paradise, filled with wonders and secrets waiting to be unlocked. This edition captures the magic and beauty of the garden&apos;s transformative power.&quot;,
-        &quot;book_cover&quot; : &quot;https://m.media-amazon.com/images/I/71j6+ZaA2ZL._SY385_.jpg&quot;,
-        &quot;isbn&quot; : &quot;LTP110&quot;,
-        &quot;price&quot; : &quot;149&quot;,
-        &quot;name&quot; : &quot;The Secret Garden&quot;
+        &quot;id&quot; : &quot;175dfed5-5da7-41ba-a11e-366dcc30d395&quot;,
+        &quot;description&quot; : &quot;A powerful portrait of a young woman’s struggle with identity, mental health, and societal pressure, The Bell Jar captures Esther Greenwood’s descent into isolation and her fight to break free from the constraints of 1950s expectations.&quot;,
+        &quot;book_cover&quot; : &quot;https://m.media-amazon.com/images/I/71xz5j-4RSL._SY466_.jpg&quot;,
+        &quot;isbn&quot; : &quot;LTP102&quot;,
+        &quot;price&quot; : &quot;190&quot;,
+        &quot;name&quot; : &quot;The Bell Jar&quot;
       }
     }
   },
@@ -219,7 +289,7 @@
   &quot;theme&quot; : &quot;lightning&quot;,
   &quot;subType&quot; : &quot;BookRental&quot;,
   &quot;userProfile&quot; : &quot;System Administrator&quot;,
-  &quot;timeStamp&quot; : &quot;2025-05-29T09:43:51.930Z&quot;,
+  &quot;timeStamp&quot; : &quot;2025-06-03T10:43:04.197Z&quot;,
   &quot;userTimeZoneName&quot; : &quot;Asia/Kolkata&quot;,
   &quot;userTimeZone&quot; : &quot;330&quot;,
   &quot;userCurrencyCode&quot; : &quot;INR&quot;,
@@ -228,11 +298,19 @@
   &quot;omniProcessId&quot; : &quot;0jNWd0000009InJMAU&quot;,
   &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
   &quot;EnterFirstNameAndLastName&quot; : {
-    &quot;CustomerFirstName&quot; : &quot;fghtr&quot;,
-    &quot;CustomerLastName&quot; : &quot;nnhg&quot;
+    &quot;SearchAddress-Block&quot; : {
+      &quot;SearchAddress&quot; : &quot;150 Chestnut Street&quot;,
+      &quot;MailingCountry&quot; : &quot;Canada&quot;,
+      &quot;MailingState&quot; : &quot;Ontario&quot;,
+      &quot;MailingCity&quot; : &quot;Toronto&quot;,
+      &quot;MailingPostalCode&quot; : &quot;L4B 1Y3&quot;,
+      &quot;MailingStreet&quot; : &quot;150 Chestnut Street&quot;,
+      &quot;Id&quot; : &quot;003Wd000004AzPiIAK&quot;
+    },
+    &quot;CustomerFirstName&quot; : &quot;fgh&quot;,
+    &quot;CustomerLastName&quot; : &quot;hjhj&quot;
   },
   &quot;NewCustomersEntry&quot; : { },
-  &quot;CustomerRentedBook&quot; : null,
   &quot;products&quot; : [ {
     &quot;description&quot; : &quot;Paulo Coelho&apos;s enchanting novel has inspired a devoted following around the world. This story, dazzling in its powerful simplicity and inspiring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried in the Pyramids. Along the way he meets a Gypsy woman, a man who calls himself&quot;,
     &quot;book_cover&quot; : &quot;https://m.media-amazon.com/images/I/61HAE8zahLL._SY466_.jpg&quot;,
@@ -305,15 +383,18 @@
     &quot;id&quot; : &quot;43dbeebe-8524-4984-b32c-2edc31f6bda6&quot;
   } ],
   &quot;BookingDate&quot; : {
-    &quot;DayDifference&quot; : 2,
-    &quot;BookingStartDate&quot; : &quot;2025-06-06&quot;,
-    &quot;BookingEndDate&quot; : &quot;2025-06-07&quot;
+    &quot;DayDifference&quot; : 4,
+    &quot;BookingStartDate&quot; : &quot;2025-06-24&quot;,
+    &quot;BookingEndDate&quot; : &quot;2025-06-27&quot;
   },
   &quot;isBooked&quot; : false,
   &quot;EnterPhoneNumber&quot; : {
-    &quot;TotalRent&quot; : 298,
-    &quot;Phone2&quot; : &quot;7837483747&quot;
+    &quot;TotalRent&quot; : 760,
+    &quot;Phone2&quot; : &quot;9567577577&quot;
   },
+  &quot;cusFirstName&quot; : null,
+  &quot;cusLastName&quot; : null,
+  &quot;cusId&quot; : null,
   &quot;isCustomerAlreadyExists&quot; : false
 }</previewJsonData>
     <processSuperBulk>false</processSuperBulk>
