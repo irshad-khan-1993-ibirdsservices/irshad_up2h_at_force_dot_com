@@ -1,0 +1,46 @@
+<template>
+    <h2 class="pb-1rem fw-bold">Customer Information</h2>
+    <hr/>
+    <template if:true={isCustomerAlreadyExists2}>   
+        <div class="section">
+            <div class="info"><span class="label">Name:</span> {cusFirstName} {cusLastName}</div>
+            <div class="info"><span class="label">Phone Number:</span> {EnterPhoneNumber.Phone2}</div>
+        </div>
+        
+        <h2 class="pb-1rem fw-bold">Address</h2>
+        <div class="section">
+            <div class="info"><span class="label">Country:</span> {cusMailingCountry}</div>
+            <div class="info"><span class="label">State:</span> {cusMailingState}</div>
+            <div class="info"><span class="label">City:</span> {cusMailingCity}</div>
+            <div class="info"><span class="label">Street:</span> {cusMailingStreet}</div>
+            <div class="info"><span class="label">Postal Code:</span> {cusMailingPostalCode} </div>
+        </div>
+    </template>
+    <template if:false={isCustomerAlreadyExists2}>      
+        <div class="section">
+            <div class="info"><span class="label">Name:</span> {EnterFirstNameAndLastName.CustomerFirstName} {EnterFirstNameAndLastName.CustomerLastName}</div>
+            <div class="info"><span class="label">Phone Number:</span> {EnterPhoneNumber.Phone2}</div>
+        </div>
+        
+        <h2 class="pb-1rem fw-bold">Address</h2>
+        <hr/>
+        <div class="section">
+            <div class="info"><span class="label">Country:</span> {MailingCountry}</div>
+            <div class="info"><span class="label">State:</span> {MailingState}</div>
+            <div class="info"><span class="label">City:</span> {MailingCity}</div>
+            <div class="info"><span class="label">Street:</span> {MailingStreet}</div>
+            <div class="info"><span class="label">Postal Code:</span> {MailingPostalCode} </div>
+        </div>
+    </template>
+
+  <h2 class="pb-1rem fw-bold">Selected Book Information</h2>
+  <hr/>
+  <div class="section">
+    <div class="info"><span class="label">Book Name:</span> {SelectABook.CustomLWC3.SelectedBook.name}</div>
+    <div class="info"><span class="label">Rent Per Day:</span> {SelectABook.CustomLWC3.SelectedBook.price}</div>
+    <div class="info"><span class="label">Start Date:</span> {BookingDate.BookingStartDate}</div>
+    <div class="info"><span class="label">End Date:</span> {BookingDate.BookingEndDate}</div>
+    <div class="info"><span class="label">Total Days:</span>  {BookingDate.DayDifference}</div>
+    <div class="info"><span class="label">Total Rent:</span> {EnterPhoneNumber.TotalRent}</div>
+  </div>
+</template>
