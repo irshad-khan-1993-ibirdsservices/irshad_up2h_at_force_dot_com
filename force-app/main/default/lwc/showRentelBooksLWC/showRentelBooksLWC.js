@@ -6,29 +6,23 @@ export default class ShowRentelBooksLWC extends OmniscriptBaseMixin(LightningEle
     @track currentSelectedBook;
     @api priviousState;
     connectedCallback(){
-        console.log('connectedCallback called');
+        console.log('ShowRentelBooksLWC: connectedCallback called');
         this.products = JSON.parse(this.omniJsonDataStr).products;
-        console.log('priviousState : ', JSON.stringify(this.priviousState,null,2));
-        console.log('1')
-        if(this.priviousState != null){
-            setTimeout(() => {
-                // if(this.priviousState != null){
-                    let previousCheckbox = this.template.querySelector(`lightning-input[data-checkboxid="${this.priviousState}"]`);
-                    previousCheckbox.checked = true;
-                    // this.setCheckbox();
-                    console.log('2 : ', previousCheckbox)
-                // }
-            }, 100);
-        }
+        // if(this.priviousState != null){// isko uncomment karke renderedCallback ko hata do
+        //     setTimeout(() => {
+        //         let previousCheckbox = this.template.querySelector(`lightning-input[data-checkboxid="${this.priviousState}"]`);
+        //         previousCheckbox.checked = true;
+        //     }, 100);
+        // }
         
     }
-    // setCheckbox(){
-    //     if(this.priviousState != null){
-    //         let previousCheckbox = this.template.querySelector(`lightning-input[data-checkboxid="b76ab756-6e49-42df-97bc-18cc0847d199"]`);
-    //         //previousCheckbox.checked = true;
-    //         console.log('2 : ', previousCheckbox)
-    //     }
-    // }
+    renderedCallback(){        
+        console.log('ShowRentelBooksLWC: renderedCallback called');
+        if(this.priviousState != null){
+            let previousCheckbox = this.template.querySelector(`lightning-input[data-checkboxid="${this.priviousState}"]`);
+            previousCheckbox.checked = true;
+        }
+    }
     handleCheckbox(e) {
         console.log('handleCheckbox called');
         let isChecked = e.target.checked;
@@ -47,21 +41,6 @@ export default class ShowRentelBooksLWC extends OmniscriptBaseMixin(LightningEle
         this.currentSelectedBook = this.products.find(product =>(product.id == currentCheckboxid));
         this.sendDataToOmniScript();
     }
-    // sendDataToOmniScript() {
-    //     // Create a custom event to update the OmniScript's JSON data
-    //     const response = {
-    //         // Use the same parameter name as defined in your OmniScript's Data JSON
-    //         selectedBook: this.currentSelectedBook
-    //     };
-        
-    //     // Dispatch the omniaggregate event
-    //     this.omniApplyCallResp(response);
-        
-    //     // Alternative: You can also use omniSaveState if you want to persist the data
-    //     // this.omniSaveState({ selectedBook: this.currentSelectedBook });
-    // }
-
-
     sendDataToOmniScript() {
         const currentBook = {
             SelectABook: {
