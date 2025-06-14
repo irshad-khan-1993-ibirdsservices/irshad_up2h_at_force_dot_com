@@ -61,20 +61,22 @@ export default class ShowErrorModalForAnExistingPersonAccount extends Omniscript
         if(this.selectAnOption.AddRecord == 'New' || (this.selectAnOption.AddRecord =='Existing' && this.isPersonAccountFoundByPhone == false)){
             console.log('IF');
             let accToCheck = this.newRecordBlock;
-            try{
-                this.isDuplicateAccount = await hasDuplicatePersonAccount({'acc' : accToCheck});
-                console.log('isDuplicateAccount : ', this.isDuplicateAccount);
-                if(this.isDuplicateAccount){
-                    this.shouldModalOpened = true;
-                    console.log('IF isDuplicateAccount');
-                }else if(!this.isDuplicateAccount) {   
-                    this.shouldModalOpened = false;                 
-                    this.omniNextStep();
-                    console.log('IF not isDuplicateAccount');
+            if(accToCheck.FirstName && accToCheck.LastName && accToCheck.Phone){
+                try{
+                    this.isDuplicateAccount = await hasDuplicatePersonAccount({'acc' : accToCheck});
+                    console.log('isDuplicateAccount : ', this.isDuplicateAccount);
+                    if(this.isDuplicateAccount){
+                        this.shouldModalOpened = true;
+                        console.log('IF isDuplicateAccount');
+                    }else if(!this.isDuplicateAccount) {   
+                        this.shouldModalOpened = false;                 
+                        this.omniNextStep();
+                        console.log('IF not isDuplicateAccount');
+                    }
+                }catch(error){
+                    console.error('error when check duplicate : ', error);
                 }
-            }catch(error){
-                console.error('error when check duplicate : ', error);
-            }
+            }else {console.log('FirstName or LastName or Phone is Empty Please fill');}
         } else if(this.isPersonAccountFoundByPhone == true) {
             console.log('ELSE'); 
             this.omniNextStep();            
