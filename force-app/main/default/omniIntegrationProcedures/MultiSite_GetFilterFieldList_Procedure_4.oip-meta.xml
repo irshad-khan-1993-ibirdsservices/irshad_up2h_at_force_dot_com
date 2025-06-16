@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;cartType&quot;:&quot;Quote&quot;,&quot;contextId&quot;:&quot;0Q05g0000011ALdCAM&quot;,&quot;memberType&quot;:&quot;ServicePoint&quot;,&quot;parentId&quot;:&quot;0065g000002TCacAAG&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

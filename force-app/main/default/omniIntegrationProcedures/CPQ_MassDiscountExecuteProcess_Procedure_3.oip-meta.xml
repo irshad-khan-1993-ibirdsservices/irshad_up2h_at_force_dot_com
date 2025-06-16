@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;additionalData&quot;:{&quot;cartId&quot;:&quot;8015g000000eJ6rAAE&quot;,&quot;rootItemIds&quot;:[&quot;8a76a400-9b61-8bce-c98b-e63bb3a6817d&quot;,&quot;33a87e79-f701-d068-fee1-6f033628f2a6&quot;,&quot;7a0842bc-53b7-2602-b8e7-f8d3233fb55a&quot;],&quot;xliparentfieldname&quot;:&quot;&quot;}}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

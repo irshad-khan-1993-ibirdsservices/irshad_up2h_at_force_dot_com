@@ -128,7 +128,9 @@
     <description>irshad, this IP for get the book rented records for all the date</description>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>
@@ -408,5 +410,5 @@
     <type>Process</type>
     <uniqueName>Process_BookingDate_Procedure_1</uniqueName>
     <versionNumber>1.0</versionNumber>
-    <webComponentKey>665ad2a0-22df-6f5a-80ec-37388429cf5c</webComponentKey>
+    <webComponentKey>322f7b1f-1a52-78db-f4af-8f07de16d81c</webComponentKey>
 </OmniIntegrationProcedure>

@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;groupConfigurations&quot;:[{&quot;accountId&quot;:&quot;0018Z00002fQjCvQAK&quot;,&quot;cartConfiguration&quot;:[{&quot;target&quot;:[{&quot;attributes&quot;:{&quot;newValues&quot;:{&quot;VEPC_ATTR_NUMBER_OF_SECURITY_SOFTWARE_LICENSES&quot;:&quot;10&quot;}},&quot;bulkAction&quot;:&quot;UPDATE&quot;,&quot;parentHierarchyPath&quot;:&quot;01t8Z00000AnjXZQAZ&quot;,&quot;productCode&quot;:&quot;VEPC_OFFERING_INTERNET_SECURITY_SOFTWARE&quot;,&quot;productHierarchyPath&quot;:&quot;01t8Z00000AnjXZQAZ&lt;01t8Z00000AnjXIQAZ&quot;,&quot;productPbeId&quot;:&quot;01u8Z00002kDODTQA4&quot;}]}],&quot;cartId&quot;:&quot;8018Z000006zCnGQAU&quot;,&quot;cartType&quot;:&quot;Order&quot;,&quot;groupCartId&quot;:&quot;8018Z000006zCnHQAU&quot;,&quot;groupCartName&quot;:&quot;Business Internet Essential&quot;}]}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

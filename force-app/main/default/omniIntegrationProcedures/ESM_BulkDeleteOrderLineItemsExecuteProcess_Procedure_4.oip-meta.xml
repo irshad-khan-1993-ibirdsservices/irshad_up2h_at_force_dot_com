@@ -4,7 +4,9 @@
     <description>IP to trigger disconnectOrderLineItems method for Deleting OLIs. Expected parameters: 1) Order Id: String 2) Root Ids of OLIs selected for deletion: List of Object with attribute &quot;Id&quot;(example: [{Id:&quot;rootId1&quot;},{Id:&quot;rootId2&quot;},{Id:&quot;rootId3&quot;}])</description>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

@@ -4,7 +4,9 @@
     <description>The IP is used to store below mapping for custom views 1. Default read-only fields for summary tab. 2. View vs Fields Mapping 3. View vs Omniscript Mapping. 4. Lookup mapping for Location/Subscriber. 5. Column and topics config for Location/Subscriber</description>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

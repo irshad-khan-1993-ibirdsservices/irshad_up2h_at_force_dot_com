@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;Failed&quot;:true,&quot;additionalData&quot;:{&quot;Failed&quot;:true,&quot;cartId&quot;:&quot;a5g5g000000TQfsAAG&quot;,&quot;status&quot;:&quot;true&quot;,&quot;statusMessage&quot;:&quot;Failed&quot;,&quot;userID&quot;:&quot;0055g0000048hxfAAA&quot;},&quot;cartId&quot;:&quot;a5g5g000000TQfsAAG&quot;,&quot;status&quot;:&quot;Failed&quot;,&quot;userID&quot;:&quot;0055g0000048hxfAAA&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

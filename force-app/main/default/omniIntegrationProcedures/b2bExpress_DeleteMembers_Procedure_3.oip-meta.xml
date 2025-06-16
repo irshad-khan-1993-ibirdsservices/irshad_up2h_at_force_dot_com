@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;GroupId&quot;:&quot;a3ZRO00000000vl2AA&quot;,&quot;MemberIds&quot;:[{&quot;Id&quot;:&quot;a5x3h0000000j7I&quot;},{&quot;Id&quot;:&quot;a5x3h0000000j7J&quot;}],&quot;SalesQuoteId&quot;:&quot;0Q03h000000Tu4q&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

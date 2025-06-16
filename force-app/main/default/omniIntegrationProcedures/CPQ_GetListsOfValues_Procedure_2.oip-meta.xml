@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;PricingVariableCode&quot;:&quot;OT_STD_PRC&quot;,&quot;cartId&quot;:&quot;8014W000001yoLzQAI&quot;,&quot;fields&quot;:&quot;vlocity_cmt__OneTimeCharge__c&quot;,&quot;id&quot;:&quot;&quot;,&quot;listkeys&quot;:&quot;TimePlans,TimePolicies,AdjustmentCodes&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

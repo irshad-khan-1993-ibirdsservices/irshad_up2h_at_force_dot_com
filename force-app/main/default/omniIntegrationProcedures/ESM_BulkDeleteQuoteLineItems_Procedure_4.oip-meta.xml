@@ -4,7 +4,9 @@
     <description>IP to trigger Async Engine Job for Bulk Deleting QLIs. Expected parameters: 1) Quote Id: String 2) Root Ids of QLIs selected for deletion: List of Object with attribute &quot;Id&quot;(example: [{Id:&quot;rootId1&quot;},{Id:&quot;rootId2&quot;},{Id:&quot;rootId3&quot;}])</description>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

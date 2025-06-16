@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;accountId&quot;:&quot;0015g00000X9GfdAAF&quot;,&quot;cartConfiguration&quot;:{},&quot;cartGroupId&quot;:&quot;a325g000000xVIAAA2&quot;,&quot;cartId&quot;:&quot;8015g000002msv3AAA&quot;,&quot;cartType&quot;:&quot;Order&quot;,&quot;groupCartId&quot;:&quot;8015g000002msv8AAA&quot;,&quot;groupCartName&quot;:&quot;Service to TVV2&quot;,&quot;targetOfferId&quot;:&quot;01u5g000000PmulAAC&quot;,&quot;userIntent&quot;:&quot;Replace&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

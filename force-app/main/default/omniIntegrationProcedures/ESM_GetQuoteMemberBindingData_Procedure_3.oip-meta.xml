@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;conditions&quot;:[{&quot;fieldName&quot;:&quot;ProductCode&quot;,&quot;value&quot;:&quot;VPL_OFFERING_5GB_500_MINUTES_500_TEXTS_30_DAYS&quot;},{&quot;fieldName&quot;:&quot;ProductCode&quot;,&quot;value&quot;:&quot;VEPC_OFFERING_BUSINESS_INTERNET_ENHANCED&quot;}],&quot;decisionTableId&quot;:&quot;0lDHp000000wruvMAA&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

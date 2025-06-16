@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;accountId&quot;:&quot;0015g00000FXZLL&quot;,&quot;inputValue&quot;:&quot;227&quot;,&quot;lookupObject&quot;:&quot;GoogleMaps&quot;,&quot;rowData&quot;:{&quot;vlocity_cmt__PremisesId__c&quot;:&quot;&quot;}}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;ParentContractDiscountEndDate&quot;:&quot;06/06/2021&quot;,&quot;ParentContractDiscountStartDate&quot;:&quot;06/05/2021&quot;,&quot;ParentContractLineEndDate&quot;:&quot;06/04/2021&quot;,&quot;ParentContractLineStartDate&quot;:&quot;06/03/2021&quot;,&quot;ParentContractLineStatus&quot;:&quot;Active&quot;,&quot;ParentContractStartDate&quot;:&quot;06/01/2021&quot;,&quot;ParentContractStatus&quot;:&quot;Draft&quot;,&quot;ParentContractTerm&quot;:&quot;52&quot;,&quot;SubContractDiscountEndDate&quot;:&quot;06/12/2021&quot;,&quot;SubContractDiscountStartDate&quot;:&quot;06/11/2021&quot;,&quot;SubContractLineEndDate&quot;:&quot;06/10/2021&quot;,&quot;SubContractLineStartDate&quot;:&quot;06/09/2021&quot;,&quot;SubContractLineStatus&quot;:&quot;Active&quot;,&quot;SubContractStartDate&quot;:&quot;06/07/2021&quot;,&quot;SubContractStatus&quot;:&quot;Draft&quot;,&quot;SubContractTerm&quot;:&quot;48&quot;,&quot;objectId&quot;:&quot;8006g000000MeLk&quot;,&quot;processHierarchy&quot;:&quot;true&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

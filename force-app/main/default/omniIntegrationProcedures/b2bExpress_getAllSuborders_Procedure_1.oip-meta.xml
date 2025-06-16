@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;additionalFields&quot;:&quot;OrderNumber,Account.name,Status,TotalAmount,vlocity_cmt__DefaultServiceAccountId__r.Name&quot;,&quot;include&quot;:&quot;count&quot;,&quot;offset&quot;:&quot;2&quot;,&quot;pageSize&quot;:&quot;2&quot;,&quot;parentOrderId&quot;:&quot;8018Z000008r7unQAA&quot;,&quot;sortByField&quot;:&quot;OrderNumber&quot;,&quot;sortDirection&quot;:&quot;DESC&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

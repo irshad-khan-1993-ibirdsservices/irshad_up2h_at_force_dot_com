@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;batchSize&quot;:&quot;10&quot;,&quot;contractHierarchyType&quot;:&quot;Two Level&quot;,&quot;groupsToExcludeList&quot;:&quot;[]&quot;,&quot;isFrameAgreementParent&quot;:&quot;true&quot;,&quot;isFrameAgreementSub&quot;:&quot;true&quot;,&quot;objectId&quot;:&quot;0Q06g000000EgHi&quot;,&quot;parentContractRecordType&quot;:&quot;&quot;,&quot;parentContractStartDate&quot;:&quot;3/28/2021&quot;,&quot;parentContractTerm&quot;:&quot;12&quot;,&quot;processSubQuotes&quot;:&quot;true&quot;,&quot;subContractRecordType&quot;:&quot;&quot;,&quot;subContractStartDate&quot;:&quot;3/31/2021&quot;,&quot;subContractTerm&quot;:&quot;6&quot;,&quot;generateDocument&quot;:&quot;&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

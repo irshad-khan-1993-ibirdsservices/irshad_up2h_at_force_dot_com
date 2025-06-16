@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;AggregationLevel&quot;:&quot;Member&quot;,&quot;TemplateCategory&quot;:&quot;Proposal&quot;,&quot;TemplateSubtype&quot;:&quot;Summary&quot;,&quot;TemplateType&quot;:&quot;Microsoft Word .DOCX Template&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;additionalData&quot;:{&quot;cartConfiguration&quot;:[{&quot;target&quot;:[{&quot;attributes&quot;:{&quot;newValues&quot;:{}},&quot;bulkAction&quot;:&quot;VALIDATE&quot;,&quot;parentHierarchyPath&quot;:&quot;01tDn000003kBesIAE&quot;,&quot;productHierarchyPath&quot;:&quot;01tDn000003kBesIAE&lt;01tDn000003kBetIAE&quot;,&quot;productPbeId&quot;:&quot;01tDn000003kBetIAE&quot;}]}],&quot;cartId&quot;:&quot;0Q0Dn000000R7maKAC&quot;,&quot;cartType&quot;:&quot;Quote&quot;},&quot;itemsToProcessSubsetList&quot;:[&quot;7238d035-cdab-ce5e-cdf8-a5876a29cfe0&quot;]}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

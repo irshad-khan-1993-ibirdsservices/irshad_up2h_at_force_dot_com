@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;cartId&quot;:&quot;0Q0Hs000002p8oF&quot;,&quot;cartType&quot;:&quot;Quote&quot;,&quot;groupCartId&quot;:&quot;0Q0Hs000002p8mEKAQ&quot;,&quot;isMergeFlow&quot;:true,&quot;mergeAction&quot;:&quot;Keep&quot;,&quot;selectedNewOfferPBEId&quot;:&quot;01uHs00000VK0fLIAT&quot;,&quot;selectedRootItemsList&quot;:[&quot;0QLHs000007fuon&quot;,&quot;0QLHs000007fuos&quot;],&quot;userIntent&quot;:&quot;Keep&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

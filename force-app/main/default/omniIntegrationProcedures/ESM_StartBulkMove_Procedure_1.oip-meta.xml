@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;additionalData&quot;:{&quot;cartId&quot;:&quot;0Q0Hs000002p4k2KAA&quot;,&quot;cartType&quot;:&quot;Quote&quot;,&quot;groupCartId&quot;:&quot;0Q0Hs000002p4k1KAA&quot;,&quot;sourceItemsToProcessList&quot;:[&quot;0QLHs000007fhGT&quot;],&quot;targetOfferId&quot;:&quot;01uHs00000SeVtjIAF&quot;,&quot;userIntent&quot;:&quot;Replace&quot;},&quot;itemsToProcessList&quot;:[&quot;0QLHs000007fhGT&quot;]}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;additionalData&quot;:{&quot;cartId&quot;:&quot;0Q0Hs0000029njbKAA&quot;,&quot;cartType&quot;:&quot;Quote&quot;,&quot;movedLineItems&quot;:[{&quot;vlocity_cmt__QuoteLineItemId__c&quot;:&quot;0QLHs000005oWsoOAE&quot;,&quot;vlocity_cmt__RelatedQuoteLineItemId__c&quot;:&quot;0QLHs000005oWsJOAU&quot;,&quot;Id&quot;:&quot;a3cHs0000050ILdIAM&quot;}]},&quot;itemsToProcessSubsetList&quot;:[&quot;0QLHs000005oWsJOAU&quot;]}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

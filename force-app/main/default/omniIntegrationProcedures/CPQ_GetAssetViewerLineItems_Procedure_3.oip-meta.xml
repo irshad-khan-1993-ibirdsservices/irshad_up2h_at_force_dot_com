@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;accountId&quot;:&quot;001SB00000QtAOtYAN&quot;,&quot;currentPage&quot;:&quot;1&quot;,&quot;offset&quot;:&quot;0&quot;,&quot;pagesize&quot;:&quot;4&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

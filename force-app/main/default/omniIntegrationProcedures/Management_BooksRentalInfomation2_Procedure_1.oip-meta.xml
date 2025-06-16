@@ -39,7 +39,9 @@
     <description>irshad, This Ip is used in OS_BookRentalManagement</description>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>
@@ -244,5 +246,5 @@
     <type>Management</type>
     <uniqueName>Management_BooksRentalInfomation2_Procedure_1</uniqueName>
     <versionNumber>1.0</versionNumber>
-    <webComponentKey>53a8e644-7914-06e4-d105-1df498a2cc74</webComponentKey>
+    <webComponentKey>d2c12530-16db-c318-0cb0-e3feba3a904f</webComponentKey>
 </OmniIntegrationProcedure>

@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;additionalData&quot;:{&quot;accountId&quot;:&quot;0015g00000S8XPW&quot;,&quot;cartId&quot;:&quot;8015g000002fnGkAAI&quot;,&quot;cartType&quot;:&quot;Order&quot;,&quot;groups&quot;:[{&quot;Name&quot;:&quot;Calcio&quot;,&quot;groupCartId&quot;:&quot;8015g000002fnK3AAI&quot;,&quot;groupId&quot;:&quot;a325g000000xTvdAAE&quot;,&quot;memberType&quot;:&quot;ServiceAccount&quot;}],&quot;userID&quot;:&quot;0055g0000048hxfAAA&quot;},&quot;itemsToProcessSubsetList&quot;:[&quot;02i5g0000009g17AAA&quot;]}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

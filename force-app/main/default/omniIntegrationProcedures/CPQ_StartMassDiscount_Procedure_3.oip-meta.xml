@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;cartId&quot;:&quot;8015g000000eMWeAAM&quot;,&quot;cartType&quot;:&quot;Order&quot;,&quot;createCustomDiscount&quot;:&quot;no&quot;,&quot;discountTemplateIds&quot;:[&quot;a3T5g000000hA3kEAE&quot;,&quot;a3T5g000000hA3pEAE&quot;,&quot;a3T5g000000g8KYEAY&quot;],&quot;onlyRoot&quot;:&quot;.&quot;,&quot;xliparentfieldname&quot;:&quot;&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

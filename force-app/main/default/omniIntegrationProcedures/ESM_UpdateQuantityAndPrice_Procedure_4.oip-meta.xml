@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;GroupId&quot;:&quot;a36Dn000000ptPVIAY&quot;,&quot;ObjectItemType&quot;:&quot;OrderItem&quot;,&quot;SubOrderId&quot;:&quot;801Dn000000pmUoIAI&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

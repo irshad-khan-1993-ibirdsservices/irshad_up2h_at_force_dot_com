@@ -4,6 +4,7 @@
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[&quot;b2bOmniscriptStep&quot;]}</elementTypeComponentMapping>
     <isActive>true</isActive>
     <isIntegrationProcedure>false</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

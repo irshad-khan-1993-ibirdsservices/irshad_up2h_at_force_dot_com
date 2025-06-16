@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;cartId&quot;:&quot;8014x000000TiX6AAK&quot;,&quot;id&quot;:&quot;a5L4x0000000ssMEAQ&quot;,&quot;methodName&quot;:&quot;deleteCartDiscount&quot;}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>

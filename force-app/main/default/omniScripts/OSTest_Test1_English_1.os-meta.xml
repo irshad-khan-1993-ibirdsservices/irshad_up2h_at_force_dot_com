@@ -4,6 +4,7 @@
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
     <isIntegrationProcedure>false</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>
@@ -471,7 +472,7 @@
   &quot;accessibleInFutureSteps&quot; : false,
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;hide&quot; : false,
-  &quot;mode&quot; : &quot;Cards&quot;,
+  &quot;mode&quot; : &quot;Table&quot;,
   &quot;maxDisplay&quot; : 3,
   &quot;allowClear&quot; : false
 }</propertySetConfig>
@@ -608,5 +609,5 @@
     <type>OSTest</type>
     <uniqueName>OSTest_Test1_English_1</uniqueName>
     <versionNumber>1.0</versionNumber>
-    <webComponentKey>9d2c0430-bbdb-65d0-8394-efbc37d7c17c</webComponentKey>
+    <webComponentKey>a4d39c6c-7f2c-8fa1-579a-2f2cfadbb2eb</webComponentKey>
 </OmniScript>

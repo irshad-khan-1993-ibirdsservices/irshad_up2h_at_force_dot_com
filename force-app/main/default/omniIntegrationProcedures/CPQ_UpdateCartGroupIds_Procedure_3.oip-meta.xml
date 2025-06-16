@@ -3,7 +3,9 @@
     <customJavaScript>{&quot;additionalData&quot;:{&quot;cartGroupId&quot;:&quot;a325g000000xV2p&quot;,&quot;cartId&quot;:&quot;8015g000002m82YAAQ&quot;,&quot;cartType&quot;:&quot;Order&quot;},&quot;itemsToProcessSubsetList&quot;:[&quot;8025g000002ujGY&quot;,&quot;8025g000002ujGZ&quot;]}</customJavaScript>
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
     <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
     <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
     <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
     <isTestProcedure>false</isTestProcedure>
